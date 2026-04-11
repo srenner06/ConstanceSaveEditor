@@ -2,8 +2,134 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:vm="using:ConstanceSaveEditor.UI.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
         x:Class="ConstanceSaveEditor.UI.MainWindow"
-        Title="ConstanceSaveEditor.UI">
-    Welcome to Avalonia!
+        x:DataType="vm:MainWindowViewModel"
+        Title="{Binding WindowTitle}"
+        Width="1200" Height="800"
+        MinWidth="600" MinHeight="400">
+
+    <Window.KeyBindings>
+        <KeyBinding Gesture="Ctrl+O" Command="{Binding OpenCommand}" />
+        <KeyBinding Gesture="Ctrl+S" Command="{Binding SaveCommand}" />
+        <KeyBinding Gesture="Ctrl+Shift+S" Command="{Binding SaveAsCommand}" />
+    </Window.KeyBindings>
+
+    <DockPanel>
+
+        <!-- Menu bar -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open..."
+                          Command="{Binding OpenCommand}"
+                          InputGesture="Ctrl+O" />
+                <MenuItem Header="_Save"
+                          Command="{Binding SaveCommand}"
+                          InputGesture="Ctrl+S" />
+                <MenuItem Header="Save _As..."
+                          Command="{Binding SaveAsCommand}"
+                          InputGesture="Ctrl+Shift+S" />
+                <Separator />
+                <MenuItem Header="_Close"
+                          Command="{Binding CloseCommand}" />
+                <Separator />
+                <MenuItem Header="E_xit"
+                          Command="{Binding ExitCommand}" />
+            </MenuItem>
+        </Menu>
+
+        <!-- Status bar -->
+        <Grid DockPanel.Dock="Bottom"
+              ColumnDefinitions="*,Auto"
+              Margin="8,4">
+            <TextBlock Grid.Column="0"
+                       Text="{Binding FileStatusText}"
+                       FontSize="12"
+                       Opacity="0.7"
+                       TextTrimming="CharacterEllipsis" />
+            <TextBlock Grid.Column="1"
+                       Text="{Binding StatusMessage}"
+                       FontSize="12"
+                       Margin="16,0,0,0" />
+        </Grid>
+
+        <!-- Main content -->
+        <Grid>
+
+            <!-- No file open -->
+            <StackPanel IsVisible="{Binding NoFileOpen}"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="8">
+                <TextBlock Text="No save file open"
+                           FontSize="20"
+                           Opacity="0.5"
+                           HorizontalAlignment="Center" />
+                <TextBlock Text="File &#x2192; Open  or  Ctrl+O"
+                           FontSize="14"
+                           Opacity="0.35"
+                           HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <!-- Editor -->
+            <ContentControl IsVisible="{Binding HasOpenFile}"
+                            Content="{Binding CurrentEditor}">
+                <ContentControl.ContentTemplate>
+                    <DataTemplate x:DataType="vm:SaveEditorViewModel">
+                        <DockPanel>
+
+                            <!-- Info strip -->
+                            <Border DockPanel.Dock="Top"
+                                    Padding="12,8,12,8"
+                                    BorderThickness="0,0,0,1"
+                                    BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}">
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <StackPanel Grid.Column="0" Spacing="2">
+                                        <TextBlock Text="{Binding SourcePath}"
+                                                   FontSize="13"
+                                                   FontWeight="Medium"
+                                                   TextTrimming="CharacterEllipsis"
+                                                   ToolTip.Tip="{Binding SourcePath}" />
+                                        <StackPanel Orientation="Horizontal" Spacing="16">
+                                            <TextBlock Text="{Binding FormatDisplay}"
+                                                       FontSize="12"
+                                                       Opacity="0.6" />
+                                            <TextBlock Text="{Binding LoadedAtDisplay}"
+                                                       FontSize="12"
+                                                       Opacity="0.6" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <Button Grid.Column="1"
+                                            Content="Revert"
+                                            Command="{Binding RevertCommand}"
+                                            IsEnabled="{Binding IsDirty}"
+                                            VerticalAlignment="Center" />
+                                </Grid>
+                            </Border>
+
+                            <!-- Tabs -->
+                            <TabControl>
+                                <TabItem Header="JSON">
+                                    <TextBox Text="{Binding JsonText}"
+                                             AcceptsReturn="True"
+                                             TextWrapping="Wrap"
+                                             FontFamily="Cascadia Code,Consolas,Courier New"
+                                             FontSize="13" />
+                                </TabItem>
+                                <TabItem Header="Validation">
+                                    <TextBlock Text="Validation not yet implemented."
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               Opacity="0.5" />
+                                </TabItem>
+                            </TabControl>
+
+                        </DockPanel>
+                    </DataTemplate>
+                </ContentControl.ContentTemplate>
+            </ContentControl>
+
+        </Grid>
+    </DockPanel>
 </Window>
