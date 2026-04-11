@@ -3,6 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="using:ConstanceSaveEditor.UI.ViewModels"
+        xmlns:b="using:ConstanceSaveEditor.UI.Behaviors"
         mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
         x:Class="ConstanceSaveEditor.UI.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -110,19 +111,188 @@
 
                             <!-- Tabs -->
                             <TabControl>
-                                <TabItem Header="JSON">
-                                    <TextBox Text="{Binding JsonText}"
-                                             AcceptsReturn="True"
-                                             TextWrapping="Wrap"
-                                             FontFamily="Cascadia Code,Consolas,Courier New"
-                                             FontSize="13" />
+
+                                <!-- Player tab -->
+                                <TabItem Header="Player">
+                                    <ScrollViewer Padding="16">
+                                        <StackPanel Spacing="20" MaxWidth="480" HorizontalAlignment="Left">
+
+                                            <!-- Currency section -->
+                                            <TextBlock Text="Currency (Glimmer)"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+
+                                                <TextBlock Grid.Row="0" Grid.Column="0"
+                                                           Text="Balance"
+                                                           VerticalAlignment="Center" />
+                                                <NumericUpDown Grid.Row="0" Grid.Column="1"
+                                                               Value="{Binding PlayerEditor.Balance}"
+                                                               Minimum="0"
+                                                               Increment="1000"
+                                                               FormatString="0" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0"
+                                                           Text="Total Collected"
+                                                           VerticalAlignment="Center" />
+                                                <NumericUpDown Grid.Row="1" Grid.Column="1"
+                                                               Value="{Binding PlayerEditor.TotalCollected}"
+                                                               Minimum="0"
+                                                               Increment="1000"
+                                                               FormatString="0" />
+
+                                                <TextBlock Grid.Row="2" Grid.Column="0"
+                                                           Text="All-Time Glimmer"
+                                                           VerticalAlignment="Center" />
+                                                <NumericUpDown Grid.Row="2" Grid.Column="1"
+                                                               Value="{Binding PlayerEditor.AllTimeGlimmer}"
+                                                               Minimum="0"
+                                                               Increment="1000"
+                                                               FormatString="0" />
+                                            </Grid>
+
+                                            <TextBlock Text="Total Collected must be ≥ Balance. Both are raised automatically if needed."
+                                                       FontSize="11"
+                                                       Opacity="0.5"
+                                                       TextWrapping="Wrap" />
+
+                                            <Button Content="Apply Changes"
+                                                    Command="{Binding PlayerEditor.ApplyChangesCommand}" />
+
+                                            <TextBlock Text="{Binding PlayerEditor.ValidationMessage}"
+                                                       FontSize="12"
+                                                       Foreground="Orange"
+                                                       IsVisible="{Binding PlayerEditor.ValidationMessage, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
+                                                       TextWrapping="Wrap" />
+
+                                            <!-- Separator -->
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
+                                            <!-- Player stats section -->
+                                            <TextBlock Text="Player Stats"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+
+                                                <TextBlock Grid.Row="0" Grid.Column="0"
+                                                           Text="Health"
+                                                           VerticalAlignment="Center" />
+                                                <NumericUpDown Grid.Row="0" Grid.Column="1"
+                                                               Value="{Binding PlayerEditor.Health}"
+                                                               Minimum="0"
+                                                               Increment="1"
+                                                               FormatString="0" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0"
+                                                           Text="Potion Fill"
+                                                           VerticalAlignment="Center" />
+                                                <NumericUpDown Grid.Row="1" Grid.Column="1"
+                                                               Value="{Binding PlayerEditor.PotionFill}"
+                                                               Minimum="0"
+                                                               Increment="0.5"
+                                                               FormatString="0.0" />
+                                            </Grid>
+
+                                            <Button Content="Apply Player Stats"
+                                                    Command="{Binding PlayerEditor.ApplyPlayerStatsCommand}" />
+
+                                            <!-- Separator -->
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
+                                            <!-- Info section -->
+                                            <TextBlock Text="Session Info"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+
+                                                <TextBlock Grid.Row="0" Grid.Column="0"
+                                                           Text="Checkpoint"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="1"
+                                                           Text="{Binding PlayerEditor.CheckpointDisplay}"
+                                                           VerticalAlignment="Center"
+                                                           FontFamily="Cascadia Code,Consolas,Courier New"
+                                                           FontSize="12"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding PlayerEditor.CheckpointDisplay}" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0"
+                                                           Text="Played Time"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="1"
+                                                           Text="{Binding PlayerEditor.PlayedTimeDisplay}"
+                                                           VerticalAlignment="Center" />
+                                            </Grid>
+
+                                        </StackPanel>
+                                    </ScrollViewer>
                                 </TabItem>
+
+                                <!-- JSON tab -->
+                                <TabItem Header="JSON">
+                                    <DockPanel>
+
+                                        <!-- Search bar -->
+                                        <Border DockPanel.Dock="Top"
+                                                Padding="6,4"
+                                                BorderThickness="0,0,0,1"
+                                                BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}">
+                                            <Grid ColumnDefinitions="*,Auto,Auto,Auto"
+                                                  ColumnSpacing="4">
+                                                <TextBox Grid.Column="0"
+                                                         Text="{Binding JsonSearch}"
+                                                         PlaceholderText="Search JSON…"
+                                                         FontSize="13" />
+                                                <TextBlock Grid.Column="1"
+                                                           Text="{Binding SearchResultText}"
+                                                           VerticalAlignment="Center"
+                                                           FontSize="12"
+                                                           Opacity="0.6"
+                                                           MinWidth="64"
+                                                           TextAlignment="Center" />
+                                                <Button Grid.Column="2"
+                                                        Content="↑"
+                                                        Command="{Binding FindPreviousCommand}"
+                                                        ToolTip.Tip="Previous match (Shift+Enter)" />
+                                                <Button Grid.Column="3"
+                                                        Content="↓"
+                                                        Command="{Binding FindNextCommand}"
+                                                        ToolTip.Tip="Next match (Enter)" />
+                                            </Grid>
+                                        </Border>
+
+                                        <TextBox Text="{Binding JsonText}"
+                                                 SelectionStart="{Binding JsonSelectionStart}"
+                                                 SelectionEnd="{Binding JsonSelectionEnd}"
+                                                 b:ScrollToSelectionBehavior.Anchor="{Binding JsonSelectionStart}"
+                                                 AcceptsReturn="True"
+                                                 TextWrapping="Wrap"
+                                                 FontFamily="Cascadia Code,Consolas,Courier New"
+                                                 FontSize="13" />
+                                    </DockPanel>
+                                </TabItem>
+
+                                <!-- Validation tab -->
                                 <TabItem Header="Validation">
                                     <TextBlock Text="Validation not yet implemented."
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center"
                                                Opacity="0.5" />
                                 </TabItem>
+
                             </TabControl>
 
                         </DockPanel>

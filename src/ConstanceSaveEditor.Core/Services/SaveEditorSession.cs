@@ -1,6 +1,6 @@
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using ConstanceSaveEditor.Core.Documents;
+using ConstanceSaveEditor.Core.Models;
 
 namespace ConstanceSaveEditor.Core.Services;
 
@@ -10,6 +10,9 @@ namespace ConstanceSaveEditor.Core.Services;
 /// </summary>
 public sealed class SaveEditorSession
 {
+    private static readonly JsonSerializerOptions WriteOptions = new() { WriteIndented = false };
+    private static readonly JsonSerializerOptions ReadOptions = new() { PropertyNameCaseInsensitive = true };
+
     public SaveDocument Document { get; private set; }
 
     /// <summary>State of the document at the time the session was created. Never mutated.</summary>
@@ -46,13 +49,14 @@ public sealed class SaveEditorSession
 
     private static SaveDocument Clone(SaveDocument source)
     {
-        // Round-trip through a JSON string for a simple, reliable deep clone of JsonNode.
-        JsonNode? clonedJson = JsonNode.Parse(source.SaveJson.ToJsonString());
+        // Round-trip through JSON for a simple, reliable deep clone of SaveData.
+        string json = JsonSerializer.Serialize(source.Save, WriteOptions);
+        SaveData clonedSave = JsonSerializer.Deserialize<SaveData>(json, ReadOptions) ?? new SaveData();
 
         return new SaveDocument
         {
             SourcePath = source.SourcePath,
-            SaveJson = clonedJson ?? new JsonObject(),
+            Save = clonedSave,
             EventLog = source.EventLog?.ToArray(),
             MapFog = source.MapFog?.ToArray(),
             Format = source.Format,

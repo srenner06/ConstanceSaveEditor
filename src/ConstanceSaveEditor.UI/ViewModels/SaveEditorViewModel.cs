@@ -1,14 +1,16 @@
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using ConstanceSaveEditor.Core.Models;
 using ConstanceSaveEditor.Core.Services;
+using ConstanceSaveEditor.UI.ViewModels.Editors;
 
 namespace ConstanceSaveEditor.UI.ViewModels;
 
 public sealed partial class SaveEditorViewModel : ObservableObject
 {
     private static readonly JsonSerializerOptions PrettyOptions = new() { WriteIndented = true };
+    private static readonly JsonSerializerOptions ParseOptions = new() { PropertyNameCaseInsensitive = true };
 
     private readonly SaveEditorSession _session;
     private bool _isRefreshing;
@@ -16,6 +18,31 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     [ObservableProperty]
     private string _jsonText = string.Empty;
 
+    // --- JSON search ---
+    [ObservableProperty]
+    private string _jsonSearch = string.Empty;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(SearchResultText))]
+    private int _searchMatchCount;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(SearchResultText))]
+    private int _searchMatchIndex;
+
+    [ObservableProperty]
+    private int _jsonSelectionStart;
+
+    [ObservableProperty]
+    private int _jsonSelectionEnd;
+
+    private List<int> _matchPositions = [];
+
+    public string SearchResultText => SearchMatchCount == 0
+        ? (string.IsNullOrEmpty(JsonSearch) ? string.Empty : "No results")
+        : $"{SearchMatchIndex + 1} / {SearchMatchCount}";
+
+    // --- Editor identity ---
     public bool IsDirty => _session.Document.IsDirty;
     public string? SourcePath => _session.Document.SourcePath;
     public string FileName => Path.GetFileName(_session.Document.SourcePath) ?? "Unsaved";
@@ -23,29 +50,93 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     public string LoadedAtDisplay => $"Loaded {_session.Document.LoadedAt:HH:mm:ss}";
 
     public SaveEditorSession Session => _session;
+    public PlayerEditorViewModel PlayerEditor { get; }
 
     public SaveEditorViewModel(SaveEditorSession session)
     {
         _session = session;
+        PlayerEditor = new PlayerEditorViewModel(session);
+        PlayerEditor.DataModified += OnPlayerDataModified;
         RefreshFromSession();
     }
 
     partial void OnJsonTextChanged(string value)
     {
-        if (_isRefreshing)
-            return;
-        if (!_session.Document.IsDirty)
+        if (!_isRefreshing)
         {
-            _session.MarkDirty();
-            OnPropertyChanged(nameof(IsDirty));
+            if (!_session.Document.IsDirty)
+            {
+                _session.MarkDirty();
+                OnPropertyChanged(nameof(IsDirty));
+            }
         }
+        RefreshSearch();
+    }
+
+    partial void OnJsonSearchChanged(string value) => RefreshSearch();
+
+    private void RefreshSearch()
+    {
+        _matchPositions.Clear();
+        string term = JsonSearch;
+        if (!string.IsNullOrEmpty(term))
+        {
+            string text = JsonText;
+            int idx = 0;
+            while (true)
+            {
+                int pos = text.IndexOf(term, idx, StringComparison.OrdinalIgnoreCase);
+                if (pos < 0)
+                    break;
+                _matchPositions.Add(pos);
+                idx = pos + 1;
+            }
+        }
+        SearchMatchCount = _matchPositions.Count;
+        SearchMatchIndex = 0;
+        OnPropertyChanged(nameof(SearchResultText));
+        NavigateToCurrentMatch();
+    }
+
+    private void NavigateToCurrentMatch()
+    {
+        if (_matchPositions.Count == 0)
+        {
+            JsonSelectionStart = 0;
+            JsonSelectionEnd = 0;
+            return;
+        }
+        int pos = _matchPositions[SearchMatchIndex];
+        JsonSelectionStart = pos;
+        JsonSelectionEnd = pos + JsonSearch.Length;
+    }
+
+    [RelayCommand]
+    private void FindNext()
+    {
+        if (_matchPositions.Count == 0)
+            return;
+        SearchMatchIndex = (SearchMatchIndex + 1) % _matchPositions.Count;
+        OnPropertyChanged(nameof(SearchResultText));
+        NavigateToCurrentMatch();
+    }
+
+    [RelayCommand]
+    private void FindPrevious()
+    {
+        if (_matchPositions.Count == 0)
+            return;
+        SearchMatchIndex = (SearchMatchIndex - 1 + _matchPositions.Count) % _matchPositions.Count;
+        OnPropertyChanged(nameof(SearchResultText));
+        NavigateToCurrentMatch();
     }
 
     public void RefreshFromSession()
     {
         _isRefreshing = true;
-        JsonText = _session.Document.SaveJson.ToJsonString(PrettyOptions);
+        JsonText = JsonSerializer.Serialize(_session.Document.Save, PrettyOptions);
         _isRefreshing = false;
+        PlayerEditor.LoadFromSession();
         OnPropertyChanged(nameof(IsDirty));
         OnPropertyChanged(nameof(SourcePath));
         OnPropertyChanged(nameof(FileName));
@@ -55,13 +146,13 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     {
         try
         {
-            JsonNode? node = JsonNode.Parse(JsonText);
-            if (node is null)
+            SaveData? parsed = JsonSerializer.Deserialize<SaveData>(JsonText, ParseOptions);
+            if (parsed is null)
             {
                 error = "Parsed to null.";
                 return false;
             }
-            _session.Document.SaveJson = node;
+            _session.Document.Save = parsed;
             error = null;
             return true;
         }
@@ -77,5 +168,19 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     {
         _session.RevertUnsavedChanges();
         RefreshFromSession();
+    }
+
+    private void OnPlayerDataModified()
+    {
+        // Re-serialize so the JSON tab stays in sync.
+        _isRefreshing = true;
+        JsonText = JsonSerializer.Serialize(_session.Document.Save, PrettyOptions);
+        _isRefreshing = false;
+
+        if (!_session.Document.IsDirty)
+        {
+            _session.MarkDirty();
+            OnPropertyChanged(nameof(IsDirty));
+        }
     }
 }

@@ -7,8 +7,8 @@
 - [x] Phase 2 — Document model
 - [x] Phase 3 — Safe save and backups
 - [x] Phase 4 — CLI
-- [ ] Phase 5 — Basic UI
-- [ ] Phase 6 — Structured editors
+- [x] Phase 5 — Basic UI
+- [ ] Phase 6 — Structured editors (in progress)
 - [ ] Phase 7 — Backup and history UI
 - [ ] Phase 8 — Polish and release
 
@@ -229,6 +229,7 @@ Tasks:
 - add field labels and descriptions
 - add range checks and warnings
 - add search and filter
+- quick-edit shortcuts for high-frequency changes (e.g. set currency with one action, respecting game constraints)
 
 Deliverable:
 

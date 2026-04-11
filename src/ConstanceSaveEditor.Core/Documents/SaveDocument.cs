@@ -1,5 +1,5 @@
-using System.Text.Json.Nodes;
 using ConstanceSaveEditor.Core.Documents;
+using ConstanceSaveEditor.Core.Models;
 
 namespace ConstanceSaveEditor.Core.Documents;
 
@@ -8,8 +8,8 @@ public sealed class SaveDocument
     /// <summary>Absolute path to the file this document was loaded from, or null if unsaved.</summary>
     public string? SourcePath { get; set; }
 
-    /// <summary>Parsed save.json. Mutate this to edit the save.</summary>
-    public JsonNode SaveJson { get; set; } = new JsonObject();
+    /// <summary>Strongly typed save data. Mutate this to edit the save.</summary>
+    public SaveData Save { get; set; } = new();
 
     /// <summary>Raw eventlog.bin bytes, or null if the save did not contain one.</summary>
     public byte[]? EventLog { get; set; }

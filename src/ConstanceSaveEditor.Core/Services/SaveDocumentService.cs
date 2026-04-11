@@ -1,14 +1,19 @@
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using ConstanceSaveEditor.Core.Abstractions;
 using ConstanceSaveEditor.Core.Documents;
+using ConstanceSaveEditor.Core.Models;
 
 namespace ConstanceSaveEditor.Core.Services;
 
 public sealed class SaveDocumentService : ISaveDocumentService
 {
-    private static readonly JsonSerializerOptions CompactOptions = new()
+    private static readonly JsonSerializerOptions ReadOptions = new()
+    {
+        PropertyNameCaseInsensitive = true,
+    };
+
+    private static readonly JsonSerializerOptions WriteOptions = new()
     {
         WriteIndented = false,
     };
@@ -18,13 +23,13 @@ public sealed class SaveDocumentService : ISaveDocumentService
         cancellationToken.ThrowIfCancellationRequested();
 
         using var stream = new MemoryStream(Encoding.UTF8.GetBytes(archiveData.SaveJsonText));
-        var saveJson = await JsonNode.ParseAsync(stream, cancellationToken: cancellationToken)
-            ?? throw new InvalidDataException("save.json parsed to null — the save file may be corrupted.");
+        SaveData? save = await JsonSerializer.DeserializeAsync<SaveData>(stream, ReadOptions, cancellationToken)
+            ?? throw new InvalidDataException("save.json deserialized to null — the save file may be corrupted.");
 
         return new SaveDocument
         {
             SourcePath = sourcePath,
-            SaveJson = saveJson,
+            Save = save,
             EventLog = archiveData.EventLog,
             MapFog = archiveData.MapFog,
             Format = archiveData.Format,
@@ -36,7 +41,7 @@ public sealed class SaveDocumentService : ISaveDocumentService
     {
         return new SaveArchiveData
         {
-            SaveJsonText = document.SaveJson.ToJsonString(CompactOptions),
+            SaveJsonText = JsonSerializer.Serialize(document.Save, WriteOptions),
             EventLog = document.EventLog,
             MapFog = document.MapFog,
             Format = document.Format,
