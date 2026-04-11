@@ -6,7 +6,6 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ConstanceSaveEditor.Core.Abstractions;
 using ConstanceSaveEditor.Core.Backup;
-using ConstanceSaveEditor.Core.Services;
 using ConstanceSaveEditor.UI.Services;
 
 namespace ConstanceSaveEditor.UI.ViewModels;
@@ -39,7 +38,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
         {
             if (CurrentEditor is null)
                 return "Constance Save Editor";
-            string dirty = CurrentEditor.IsDirty ? " *" : string.Empty;
+            var dirty = CurrentEditor.IsDirty ? " *" : string.Empty;
             return $"Constance Save Editor \u2014 {CurrentEditor.FileName}{dirty}";
         }
     }
@@ -65,9 +64,9 @@ public sealed partial class MainWindowViewModel : ObservableObject
     private void LoadRecentFiles()
     {
         RecentFiles.Clear();
-        foreach (string path in _recentFilesService.Load())
+        foreach (var path in _recentFilesService.Load())
         {
-            string capturedPath = path;
+            var capturedPath = path;
             RecentFiles.Add(new MenuItem
             {
                 Header = Path.GetFileName(path),
@@ -82,12 +81,12 @@ public sealed partial class MainWindowViewModel : ObservableObject
         if (oldValue is not null)
         {
             oldValue.PropertyChanged -= OnEditorPropertyChanged;
-            oldValue.RestoreRequested -= OnRestoreRequested;
+            oldValue.RestoreRequested -= OnRestoreRequestedAsync;
         }
         if (newValue is not null)
         {
             newValue.PropertyChanged += OnEditorPropertyChanged;
-            newValue.RestoreRequested += OnRestoreRequested;
+            newValue.RestoreRequested += OnRestoreRequestedAsync;
         }
     }
 
@@ -100,14 +99,14 @@ public sealed partial class MainWindowViewModel : ObservableObject
         }
     }
 
-    private async void OnRestoreRequested(BackupEntry entry)
+    private async void OnRestoreRequestedAsync(BackupEntry entry)
     {
-        string? originalPath = CurrentEditor?.SourcePath;
+        var originalPath = CurrentEditor?.SourcePath;
         if (originalPath is null)
             return;
         try
         {
-            SaveEditorSession session = await _fileService.OpenAsync(entry.BackupPath);
+            var session = await _fileService.OpenAsync(entry.BackupPath);
             session.Document.SourcePath = originalPath;
             session.MarkDirty();
             CurrentEditor = new SaveEditorViewModel(session);
@@ -126,7 +125,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
     [RelayCommand]
     private async Task OpenAsync()
     {
-        string? path = await _dialogService.OpenSaveFileAsync();
+        var path = await _dialogService.OpenSaveFileAsync();
         if (path is null)
             return;
         await OpenFileAsync(path);
@@ -136,7 +135,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
     {
         try
         {
-            SaveEditorSession session = await _fileService.OpenAsync(path);
+            var session = await _fileService.OpenAsync(path);
             CurrentEditor = new SaveEditorViewModel(session);
             _recentFilesService.Add(path);
             LoadRecentFiles();
@@ -159,7 +158,7 @@ public sealed partial class MainWindowViewModel : ObservableObject
     {
         if (CurrentEditor is null)
             return;
-        if (!CurrentEditor.TryApplyJsonText(out string? parseError))
+        if (!CurrentEditor.TryApplyJsonText(out var parseError))
         {
             StatusMessage = $"Cannot save \u2014 invalid JSON: {parseError}";
             return;
@@ -182,12 +181,12 @@ public sealed partial class MainWindowViewModel : ObservableObject
     {
         if (CurrentEditor is null)
             return;
-        if (!CurrentEditor.TryApplyJsonText(out string? parseError))
+        if (!CurrentEditor.TryApplyJsonText(out var parseError))
         {
             StatusMessage = $"Cannot save \u2014 invalid JSON: {parseError}";
             return;
         }
-        string? path = await _dialogService.SaveFileAsAsync(CurrentEditor.FileName);
+        var path = await _dialogService.SaveFileAsAsync(CurrentEditor.FileName);
         if (path is null)
             return;
         try

@@ -1,8 +1,6 @@
-using System.Globalization;
 using CommandLine;
 using ConstanceSaveEditor.Core.Codec;
 using ConstanceSaveEditor.Core.Documents;
-using ConstanceSaveEditor.Core.Models;
 using ConstanceSaveEditor.Core.Services;
 
 namespace ConstanceSaveEditor.Cli.Commands;
@@ -46,8 +44,8 @@ internal static class ShowCommand
             return 1;
         }
 
-        SaveData save = document.Save;
-        PlayerData player = save.Player;
+        var save = document.Save;
+        var player = save.Player;
 
         Console.WriteLine($"File:    {Path.GetFullPath(opts.SaveFile)}");
         Console.WriteLine($"Format:  {archiveData.Format}");
@@ -70,7 +68,7 @@ internal static class ShowCommand
         Console.WriteLine();
 
         Console.WriteLine("--- Modifiers ---");
-        string gameMode = save.Modifiers.GameMode == 0 ? "Normal" : $"Custom ({save.Modifiers.GameMode})";
+        var gameMode = save.Modifiers.GameMode == 0 ? "Normal" : $"Custom ({save.Modifiers.GameMode})";
         Console.WriteLine($"Game mode:  {gameMode}");
         Console.WriteLine($"Permadeath: {save.Modifiers.Permadeath}");
         Console.WriteLine();
@@ -84,7 +82,7 @@ internal static class ShowCommand
 
     private static string FormatPlayedTime(long milliseconds)
     {
-        TimeSpan ts = TimeSpan.FromMilliseconds(milliseconds);
+        var ts = TimeSpan.FromMilliseconds(milliseconds);
         return ts.TotalHours >= 1
             ? $"{(int)ts.TotalHours}h {ts.Minutes:D2}m {ts.Seconds:D2}s"
             : $"{ts.Minutes}m {ts.Seconds:D2}s";

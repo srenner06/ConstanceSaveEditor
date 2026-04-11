@@ -23,7 +23,7 @@ public partial class App : Application
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             var settingsService = new SettingsService();
-            AppSettings settings = settingsService.Load();
+            var settings = settingsService.Load();
 
             ApplyTheme(settings.Theme);
             ApplyLanguage(settings.Language);
@@ -57,7 +57,7 @@ public partial class App : Application
 
     internal void ApplyLanguage(string language)
     {
-        string uri = language == "de"
+        var uri = language == "de"
             ? "avares://ConstanceSaveEditor.UI/Assets/Strings/de.axaml"
             : "avares://ConstanceSaveEditor.UI/Assets/Strings/en.axaml";
         var dicts = Resources.MergedDictionaries;

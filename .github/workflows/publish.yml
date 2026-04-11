@@ -1,0 +1,112 @@
+name: Constance Save Editor — Release
+
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Derive version and tag
+        id: vars
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+            RAW_TAG="${GITHUB_REF_NAME}"
+            VERSION="${RAW_TAG#v}"
+          else
+            RAW_TAG="manual-${GITHUB_RUN_NUMBER}"
+            VERSION="0.0.0-build.${GITHUB_RUN_NUMBER}"
+          fi
+          echo "raw_tag=${RAW_TAG}" >> $GITHUB_OUTPUT
+          echo "version=${VERSION}"  >> $GITHUB_OUTPUT
+
+      - name: Generate changelog (git-cliff)
+        if: github.ref_type == 'tag'
+        id: cliff
+        uses: orhun/git-cliff-action@v4
+        with:
+          config: .github/cliff.toml
+          args: --current --strip header
+        env:
+          GITHUB_REPO: ${{ github.repository }}
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="${{ steps.vars.outputs.raw_tag }}"
+          TITLE="Constance Save Editor ${TAG}"
+          NOTES="${{ steps.cliff.outputs.content }}"
+
+          if gh release view "$TAG" &>/dev/null; then
+            if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+              gh release edit "$TAG" --title "$TITLE" --notes-file - <<< "$NOTES"
+            else
+              gh release edit "$TAG" --title "$TITLE"
+            fi
+          else
+            if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+              gh release create "$TAG" --title "$TITLE" --notes-file - <<< "$NOTES"
+            else
+              gh release create "$TAG" --title "$TITLE" --notes "Manual build ${TAG}"
+            fi
+          fi
+
+      - name: Build and upload all targets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="${{ steps.vars.outputs.raw_tag }}"
+          VERSION="${{ steps.vars.outputs.version }}"
+          PUBLISH_FLAGS="-c Release --self-contained -p:PublishSingleFile=true -p:Version=${VERSION}"
+
+          publish() {
+            local PROJ="$1" RID="$2" ARCHIVE="$3"
+            local OUT="out/${PROJ}-${RID}"
+
+            echo "::group::${ARCHIVE}"
+            dotnet publish "src/${PROJ}/" ${PUBLISH_FLAGS} -r "${RID}" -o "${OUT}"
+
+            case "${ARCHIVE}" in
+              *.zip)    (cd "${OUT}" && zip -r "../../${ARCHIVE}" .) ;;
+              *.tar.gz) tar -czf "${ARCHIVE}" -C "${OUT}" .          ;;
+            esac
+
+            gh release upload "$TAG" "${ARCHIVE}" --clobber
+            rm -rf "${OUT}" "${ARCHIVE}"
+            echo "::endgroup::"
+          }
+
+          # ---- UI ----
+          publish ConstanceSaveEditor.UI win-x64   "ConstanceSaveEditor-UI-win-x64-${TAG}.zip"
+          publish ConstanceSaveEditor.UI linux-x64 "ConstanceSaveEditor-UI-linux-x64-${TAG}.tar.gz"
+          publish ConstanceSaveEditor.UI osx-x64   "ConstanceSaveEditor-UI-osx-x64-${TAG}.zip"
+          publish ConstanceSaveEditor.UI osx-arm64 "ConstanceSaveEditor-UI-osx-arm64-${TAG}.zip"
+
+          # ---- CLI ----
+          publish ConstanceSaveEditor.Cli win-x64   "ConstanceSaveEditor-CLI-win-x64-${TAG}.zip"
+          publish ConstanceSaveEditor.Cli linux-x64 "ConstanceSaveEditor-CLI-linux-x64-${TAG}.tar.gz"
+          publish ConstanceSaveEditor.Cli osx-x64   "ConstanceSaveEditor-CLI-osx-x64-${TAG}.zip"
+          publish ConstanceSaveEditor.Cli osx-arm64 "ConstanceSaveEditor-CLI-osx-arm64-${TAG}.zip"

@@ -9,7 +9,7 @@ public sealed class RecentFilesService
 
     public RecentFilesService()
     {
-        string dir = Path.Combine(
+        var dir = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "ConstanceSaveEditor");
         Directory.CreateDirectory(dir);
@@ -32,7 +32,7 @@ public sealed class RecentFilesService
 
     public void Add(string path)
     {
-        List<string> current = Load().ToList();
+        var current = Load().ToList();
         current.Remove(path);
         current.Insert(0, path);
         if (current.Count > MaxCount)
@@ -42,7 +42,7 @@ public sealed class RecentFilesService
 
     public void Remove(string path)
     {
-        List<string> current = Load().ToList();
+        var current = Load().ToList();
         if (current.Remove(path))
             File.WriteAllText(_filePath, JsonSerializer.Serialize(current));
     }

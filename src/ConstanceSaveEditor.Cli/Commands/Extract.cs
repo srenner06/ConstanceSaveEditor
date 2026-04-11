@@ -43,7 +43,7 @@ internal static class ExtractCommand
         {
             Directory.CreateDirectory(opts.OutputDir);
 
-            string prettyJson = JsonNode.Parse(archiveData.SaveJsonText)
+            var prettyJson = JsonNode.Parse(archiveData.SaveJsonText)
                 ?.ToJsonString(PrettyOptions) ?? archiveData.SaveJsonText;
             await File.WriteAllTextAsync(Path.Combine(opts.OutputDir, "save.json"), prettyJson);
 

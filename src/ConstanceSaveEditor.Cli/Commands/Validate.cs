@@ -63,7 +63,7 @@ internal static class ValidateCommand
             return 0;
         }
 
-        foreach (string error in errors)
+        foreach (var error in errors)
             Console.Error.WriteLine($"  - {error}");
         Console.Error.WriteLine($"Validation failed ({errors.Count} error{(errors.Count == 1 ? string.Empty : "s")}).");
         return 1;

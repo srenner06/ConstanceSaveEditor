@@ -36,7 +36,7 @@ public sealed partial class PlayerEditorViewModel : ObservableObject
     {
         get
         {
-            TimeSpan ts = TimeSpan.FromMilliseconds(_session.Document.Save.Player.PlayedTime);
+            var ts = TimeSpan.FromMilliseconds(_session.Document.Save.Player.PlayedTime);
             return ts.TotalHours >= 1
                 ? $"{(int)ts.TotalHours}h {ts.Minutes:D2}m {ts.Seconds:D2}s"
                 : $"{ts.Minutes}m {ts.Seconds:D2}s";
@@ -69,12 +69,12 @@ public sealed partial class PlayerEditorViewModel : ObservableObject
     [RelayCommand]
     private void ApplyChanges()
     {
-        long balance = (long)(Balance ?? 0);
-        long totalCollected = (long)(TotalCollected ?? 0);
-        long allTimeGlimmer = (long)(AllTimeGlimmer ?? 0);
+        var balance = (long)(Balance ?? 0);
+        var totalCollected = (long)(TotalCollected ?? 0);
+        var allTimeGlimmer = (long)(AllTimeGlimmer ?? 0);
 
         var data = new CurrencyData(_session.Document.Save.World.Data);
-        bool adjusted = data.Apply(balance, totalCollected, allTimeGlimmer);
+        var adjusted = data.Apply(balance, totalCollected, allTimeGlimmer);
 
         Balance = data.Balance;
         TotalCollected = data.TotalCollected;

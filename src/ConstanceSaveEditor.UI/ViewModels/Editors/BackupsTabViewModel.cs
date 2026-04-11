@@ -35,7 +35,7 @@ public sealed partial class BackupsTabViewModel : ObservableObject
 
     public async Task LoadAsync()
     {
-        string? sourcePath = _session.Document.SourcePath;
+        var sourcePath = _session.Document.SourcePath;
         if (sourcePath is null)
         {
             Entries = [];
@@ -46,8 +46,8 @@ public sealed partial class BackupsTabViewModel : ObservableObject
         try
         {
             var service = new BackupService();
-            IReadOnlyList<BackupEntry> backups = await service.ListBackupsAsync(sourcePath);
-            Entries = new ObservableCollection<BackupEntryViewModel>(backups.Select(CreateEntryVm));
+            var backups = await service.ListBackupsAsync(sourcePath);
+            Entries = [.. backups.Select(CreateEntryVm)];
         }
         finally
         {

@@ -1,5 +1,4 @@
 using ConstanceSaveEditor.Core.Abstractions;
-using ConstanceSaveEditor.Core.Documents;
 
 namespace ConstanceSaveEditor.Core.Services;
 
@@ -19,14 +18,14 @@ public sealed class SaveFileService : ISaveFileService
     public async Task<SaveEditorSession> OpenAsync(string path, CancellationToken cancellationToken = default)
     {
         await using var stream = OpenForRead(path);
-        SaveArchiveData archiveData = await _codec.DecodeAsync(stream, cancellationToken);
-        SaveDocument document = await _documentService.LoadAsync(archiveData, sourcePath: path, cancellationToken);
+        var archiveData = await _codec.DecodeAsync(stream, cancellationToken);
+        var document = await _documentService.LoadAsync(archiveData, sourcePath: path, cancellationToken);
         return _documentService.CreateSession(document);
     }
 
     public async Task SaveAsync(SaveEditorSession session, CancellationToken cancellationToken = default)
     {
-        string path = session.Document.SourcePath
+        var path = session.Document.SourcePath
             ?? throw new InvalidOperationException("Document has no source path. Use SaveAsAsync for new files.");
         await WriteToPathAsync(session, path, cancellationToken);
     }
@@ -39,12 +38,12 @@ public sealed class SaveFileService : ISaveFileService
 
     private async Task WriteToPathAsync(SaveEditorSession session, string path, CancellationToken ct)
     {
-        SaveArchiveData archiveData = _documentService.ToArchiveData(session.Document);
+        var archiveData = _documentService.ToArchiveData(session.Document);
 
         if (File.Exists(path))
             await _backupService.CreateBackupAsync(path, ct);
 
-        string tempPath = path + ".cse-tmp";
+        var tempPath = path + ".cse-tmp";
         try
         {
             await using (var stream = OpenForWrite(tempPath))

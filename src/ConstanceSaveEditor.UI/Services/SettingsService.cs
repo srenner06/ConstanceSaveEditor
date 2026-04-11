@@ -8,7 +8,7 @@ public sealed class SettingsService
 
     public SettingsService()
     {
-        string dir = Path.Combine(
+        var dir = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "ConstanceSaveEditor");
         Directory.CreateDirectory(dir);

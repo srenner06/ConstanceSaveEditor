@@ -11,15 +11,15 @@ public sealed class BackupService : IBackupService
 
     public async Task<BackupEntry> CreateBackupAsync(string sourcePath, CancellationToken cancellationToken = default)
     {
-        string backupDir = GetBackupDirectory(sourcePath);
+        var backupDir = GetBackupDirectory(sourcePath);
         Directory.CreateDirectory(backupDir);
 
-        string timestamp = DateTimeOffset.Now.ToString(TimestampFormat, CultureInfo.InvariantCulture);
-        string nameWithoutExt = Path.GetFileNameWithoutExtension(sourcePath);
-        string ext = Path.GetExtension(sourcePath);
-        string backupPath = Path.Combine(backupDir, $"{nameWithoutExt}_{timestamp}{ext}");
+        var timestamp = DateTimeOffset.Now.ToString(TimestampFormat, CultureInfo.InvariantCulture);
+        var nameWithoutExt = Path.GetFileNameWithoutExtension(sourcePath);
+        var ext = Path.GetExtension(sourcePath);
+        var backupPath = Path.Combine(backupDir, $"{nameWithoutExt}_{timestamp}{ext}");
 
-        byte[] bytes = await File.ReadAllBytesAsync(sourcePath, cancellationToken);
+        var bytes = await File.ReadAllBytesAsync(sourcePath, cancellationToken);
         await File.WriteAllBytesAsync(backupPath, bytes, cancellationToken);
 
         return new BackupEntry
@@ -33,15 +33,15 @@ public sealed class BackupService : IBackupService
 
     public Task<IReadOnlyList<BackupEntry>> ListBackupsAsync(string sourcePath, CancellationToken cancellationToken = default)
     {
-        string backupDir = GetBackupDirectory(sourcePath);
+        var backupDir = GetBackupDirectory(sourcePath);
         if (!Directory.Exists(backupDir))
             return Task.FromResult<IReadOnlyList<BackupEntry>>([]);
 
-        string originalFileName = Path.GetFileName(sourcePath);
-        string nameWithoutExt = Path.GetFileNameWithoutExtension(sourcePath);
-        string ext = Path.GetExtension(sourcePath);
+        var originalFileName = Path.GetFileName(sourcePath);
+        var nameWithoutExt = Path.GetFileNameWithoutExtension(sourcePath);
+        var ext = Path.GetExtension(sourcePath);
 
-        List<BackupEntry> entries = Directory
+        var entries = Directory
             .GetFiles(backupDir, $"{nameWithoutExt}_*{ext}")
             .Select(path => ParseBackupEntry(path, originalFileName))
             .OfType<BackupEntry>()
@@ -63,14 +63,14 @@ public sealed class BackupService : IBackupService
 
     private static BackupEntry? ParseBackupEntry(string backupPath, string originalFileName)
     {
-        string nameWithoutExt = Path.GetFileNameWithoutExtension(backupPath);
+        var nameWithoutExt = Path.GetFileNameWithoutExtension(backupPath);
 
         // Expected tail: _{yyyy-MM-dd_HH-mm-ss}
         // The underscore separator sits at position [^(TimestampLength + 1)].
         if (nameWithoutExt.Length < TimestampLength + 1 || nameWithoutExt[^(TimestampLength + 1)] != '_')
             return null;
 
-        string timestampPart = nameWithoutExt[^TimestampLength..];
+        var timestampPart = nameWithoutExt[^TimestampLength..];
         if (!DateTimeOffset.TryParseExact(
                 timestampPart,
                 TimestampFormat,

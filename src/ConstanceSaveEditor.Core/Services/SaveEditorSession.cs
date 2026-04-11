@@ -50,8 +50,8 @@ public sealed class SaveEditorSession
     private static SaveDocument Clone(SaveDocument source)
     {
         // Round-trip through JSON for a simple, reliable deep clone of SaveData.
-        string json = JsonSerializer.Serialize(source.Save, WriteOptions);
-        SaveData clonedSave = JsonSerializer.Deserialize<SaveData>(json, ReadOptions) ?? new SaveData();
+        var json = JsonSerializer.Serialize(source.Save, WriteOptions);
+        var clonedSave = JsonSerializer.Deserialize<SaveData>(json, ReadOptions) ?? new SaveData();
 
         return new SaveDocument
         {

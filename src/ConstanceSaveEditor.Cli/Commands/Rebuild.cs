@@ -21,16 +21,16 @@ internal static class RebuildCommand
         SaveArchiveData archiveData;
         try
         {
-            string jsonPath = Path.Combine(opts.InputDir, "save.json");
+            var jsonPath = Path.Combine(opts.InputDir, "save.json");
             if (!File.Exists(jsonPath))
             {
                 Console.Error.WriteLine($"save.json not found in: {opts.InputDir}");
                 return 1;
             }
 
-            string saveJsonText = await File.ReadAllTextAsync(jsonPath);
-            byte[]? eventLog = ReadOptionalBinary(Path.Combine(opts.InputDir, "eventlog.bin"));
-            byte[]? mapFog = ReadOptionalBinary(Path.Combine(opts.InputDir, "mapfog.bin"));
+            var saveJsonText = await File.ReadAllTextAsync(jsonPath);
+            var eventLog = ReadOptionalBinary(Path.Combine(opts.InputDir, "eventlog.bin"));
+            var mapFog = ReadOptionalBinary(Path.Combine(opts.InputDir, "mapfog.bin"));
 
             archiveData = new SaveArchiveData
             {
@@ -53,7 +53,7 @@ internal static class RebuildCommand
 
         try
         {
-            string? dir = Path.GetDirectoryName(opts.OutputFile);
+            var dir = Path.GetDirectoryName(opts.OutputFile);
             if (!string.IsNullOrEmpty(dir))
                 Directory.CreateDirectory(dir);
 

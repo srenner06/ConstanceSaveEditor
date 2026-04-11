@@ -45,8 +45,8 @@ public sealed class CurrencyData
     /// </summary>
     public bool Apply(long balance, long totalCollected, long allTimeGlimmer)
     {
-        long safeTotal = Math.Max(totalCollected, balance);
-        long safeGlimmer = Math.Max(allTimeGlimmer, safeTotal);
+        var safeTotal = Math.Max(totalCollected, balance);
+        var safeGlimmer = Math.Max(allTimeGlimmer, safeTotal);
 
         Balance = balance;
         TotalCollected = safeTotal;
@@ -57,21 +57,21 @@ public sealed class CurrencyData
 
     private long GetValue(string id)
     {
-        WorldDataEntry? entry = _data.FirstOrDefault(e => e.Id == id);
+        var entry = _data.FirstOrDefault(e => e.Id == id);
         if (entry is null)
             return 0;
-        WorldDataValue wv = entry.GetValue();
+        var wv = entry.GetValue();
         return wv.IsInt ? wv.AsInt() : wv.IsLong ? wv.AsLong() : 0;
     }
 
     private void SetValue(string id, long value)
     {
-        WorldDataEntry? entry = _data.FirstOrDefault(e => e.Id == id);
+        var entry = _data.FirstOrDefault(e => e.Id == id);
         if (entry is null)
             return;
-        WorldDataValue current = entry.GetValue();
+        var current = entry.GetValue();
         // Preserve the original type code when re-encoding.
-        WorldDataValue updated = current.TypeCode switch
+        var updated = current.TypeCode switch
         {
             'L' => WorldDataValue.FromLong(value),
             _ => WorldDataValue.FromInt((int)Math.Clamp(value, int.MinValue, int.MaxValue)),

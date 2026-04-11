@@ -14,11 +14,11 @@ public sealed class SaveFileCodec : ISaveFileCodec
     {
         using var buffer = new MemoryStream();
         await source.CopyToAsync(buffer, cancellationToken);
-        byte[] allBytes = buffer.ToArray();
+        var allBytes = buffer.ToArray();
 
         if (allBytes.AsSpan().StartsWith(Header.AsSpan()))
         {
-            byte[] zipBytes = XorObfuscation.Apply(allBytes.AsSpan(Header.Length), Header);
+            var zipBytes = XorObfuscation.Apply(allBytes.AsSpan(Header.Length), Header);
             return await ReadZipArchiveAsync(zipBytes, cancellationToken);
         }
 
@@ -34,13 +34,13 @@ public sealed class SaveFileCodec : ISaveFileCodec
     {
         if (archiveData.Format == SaveContainerFormat.PlainJson)
         {
-            byte[] jsonBytes = Encoding.UTF8.GetBytes(archiveData.SaveJsonText);
+            var jsonBytes = Encoding.UTF8.GetBytes(archiveData.SaveJsonText);
             await destination.WriteAsync(jsonBytes, cancellationToken);
             return;
         }
 
-        byte[] zipBytes = await WriteZipArchiveAsync(archiveData, cancellationToken);
-        byte[] encodedPayload = XorObfuscation.Apply(zipBytes, Header);
+        var zipBytes = await WriteZipArchiveAsync(archiveData, cancellationToken);
+        var encodedPayload = XorObfuscation.Apply(zipBytes, Header);
 
         await destination.WriteAsync(Header, cancellationToken);
         await destination.WriteAsync(encodedPayload, cancellationToken);
@@ -51,7 +51,7 @@ public sealed class SaveFileCodec : ISaveFileCodec
         using var ms = new MemoryStream(zipBytes, writable: false);
         using var zip = new ZipArchive(ms, ZipArchiveMode.Read);
 
-        string saveJsonText = await ReadTextEntryAsync(zip, "save.json", ct)
+        var saveJsonText = await ReadTextEntryAsync(zip, "save.json", ct)
             ?? throw new InvalidDataException("save.json not found in save archive.");
 
         return new SaveArchiveData

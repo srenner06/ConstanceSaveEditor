@@ -37,7 +37,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     [ObservableProperty]
     private int _jsonSelectionEnd;
 
-    private List<int> _matchPositions = [];
+    private readonly List<int> _matchPositions = [];
 
     public string SearchResultText => SearchMatchCount == 0
         ? (string.IsNullOrEmpty(JsonSearch) ? string.Empty : "No results")
@@ -94,14 +94,14 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     private void RefreshSearch()
     {
         _matchPositions.Clear();
-        string term = JsonSearch;
+        var term = JsonSearch;
         if (!string.IsNullOrEmpty(term))
         {
-            string text = JsonText;
-            int idx = 0;
+            var text = JsonText;
+            var idx = 0;
             while (true)
             {
-                int pos = text.IndexOf(term, idx, StringComparison.OrdinalIgnoreCase);
+                var pos = text.IndexOf(term, idx, StringComparison.OrdinalIgnoreCase);
                 if (pos < 0)
                     break;
                 _matchPositions.Add(pos);
@@ -122,7 +122,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
             JsonSelectionEnd = 0;
             return;
         }
-        int pos = _matchPositions[SearchMatchIndex];
+        var pos = _matchPositions[SearchMatchIndex];
         JsonSelectionStart = pos;
         JsonSelectionEnd = pos + JsonSearch.Length;
     }
@@ -170,7 +170,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     {
         try
         {
-            SaveData? parsed = JsonSerializer.Deserialize<SaveData>(JsonText, ParseOptions);
+            var parsed = JsonSerializer.Deserialize<SaveData>(JsonText, ParseOptions);
             if (parsed is null)
             {
                 error = "Parsed to null.";
