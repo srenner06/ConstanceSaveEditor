@@ -22,26 +22,47 @@
 
         <!-- Menu bar -->
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="_Open..."
+            <MenuItem Header="{DynamicResource Menu.File}">
+                <MenuItem Header="{DynamicResource Menu.Open}"
                           Command="{Binding OpenCommand}"
                           InputGesture="Ctrl+O" />
-                <MenuItem Header="_Save"
+                <MenuItem Header="{DynamicResource Menu.Save}"
                           Command="{Binding SaveCommand}"
                           InputGesture="Ctrl+S" />
-                <MenuItem Header="Save _As..."
+                <MenuItem Header="{DynamicResource Menu.SaveAs}"
                           Command="{Binding SaveAsCommand}"
                           InputGesture="Ctrl+Shift+S" />
                 <Separator />
-                <MenuItem Header="Recent _Files"
+                <MenuItem Header="{DynamicResource Menu.RecentFiles}"
                           IsEnabled="{Binding HasRecentFiles}"
                           ItemsSource="{Binding RecentFiles}" />
                 <Separator />
-                <MenuItem Header="_Close"
+                <MenuItem Header="{DynamicResource Menu.Close}"
                           Command="{Binding CloseCommand}" />
                 <Separator />
-                <MenuItem Header="E_xit"
+                <MenuItem Header="{DynamicResource Menu.Exit}"
                           Command="{Binding ExitCommand}" />
+            </MenuItem>
+            <MenuItem Header="{DynamicResource Menu.View}">
+                <MenuItem Header="{DynamicResource Menu.Theme}">
+                    <MenuItem Header="{DynamicResource Menu.Theme.System}"
+                              Command="{Binding SetThemeCommand}"
+                              CommandParameter="System" />
+                    <MenuItem Header="{DynamicResource Menu.Theme.Light}"
+                              Command="{Binding SetThemeCommand}"
+                              CommandParameter="Light" />
+                    <MenuItem Header="{DynamicResource Menu.Theme.Dark}"
+                              Command="{Binding SetThemeCommand}"
+                              CommandParameter="Dark" />
+                </MenuItem>
+                <MenuItem Header="{DynamicResource Menu.Language}">
+                    <MenuItem Header="{DynamicResource Menu.Language.English}"
+                              Command="{Binding SetLanguageCommand}"
+                              CommandParameter="en" />
+                    <MenuItem Header="{DynamicResource Menu.Language.German}"
+                              Command="{Binding SetLanguageCommand}"
+                              CommandParameter="de" />
+                </MenuItem>
             </MenuItem>
         </Menu>
 
@@ -68,11 +89,11 @@
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Spacing="8">
-                <TextBlock Text="No save file open"
+                <TextBlock Text="{DynamicResource NoFile.Prompt}"
                            FontSize="20"
                            Opacity="0.5"
                            HorizontalAlignment="Center" />
-                <TextBlock Text="File &#x2192; Open  or  Ctrl+O"
+                <TextBlock Text="{DynamicResource NoFile.Hint}"
                            FontSize="14"
                            Opacity="0.35"
                            HorizontalAlignment="Center" />
@@ -107,7 +128,7 @@
                                         </StackPanel>
                                     </StackPanel>
                                     <Button Grid.Column="1"
-                                            Content="Revert"
+                                            Content="{DynamicResource Button.Revert}"
                                             Command="{Binding RevertCommand}"
                                             IsEnabled="{Binding IsDirty}"
                                             VerticalAlignment="Center" />
@@ -118,12 +139,12 @@
                             <TabControl>
 
                                 <!-- Player tab -->
-                                <TabItem Header="Player">
+                                <TabItem Header="{DynamicResource Tab.Player}">
                                     <ScrollViewer Padding="16">
                                         <StackPanel Spacing="20" MaxWidth="480" HorizontalAlignment="Left">
 
                                             <!-- Currency section -->
-                                            <TextBlock Text="Currency (Glimmer)"
+                                            <TextBlock Text="{DynamicResource Player.Currency.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold" />
 
@@ -132,7 +153,7 @@
                                                   RowSpacing="10">
 
                                                 <TextBlock Grid.Row="0" Grid.Column="0"
-                                                           Text="Balance"
+                                                           Text="{DynamicResource Player.Currency.Balance}"
                                                            VerticalAlignment="Center" />
                                                 <NumericUpDown Grid.Row="0" Grid.Column="1"
                                                                Value="{Binding PlayerEditor.Balance}"
@@ -141,7 +162,7 @@
                                                                FormatString="0" />
 
                                                 <TextBlock Grid.Row="1" Grid.Column="0"
-                                                           Text="Total Collected"
+                                                           Text="{DynamicResource Player.Currency.TotalCollected}"
                                                            VerticalAlignment="Center" />
                                                 <NumericUpDown Grid.Row="1" Grid.Column="1"
                                                                Value="{Binding PlayerEditor.TotalCollected}"
@@ -150,7 +171,7 @@
                                                                FormatString="0" />
 
                                                 <TextBlock Grid.Row="2" Grid.Column="0"
-                                                           Text="All-Time Glimmer"
+                                                           Text="{DynamicResource Player.Currency.AllTimeGlimmer}"
                                                            VerticalAlignment="Center" />
                                                 <NumericUpDown Grid.Row="2" Grid.Column="1"
                                                                Value="{Binding PlayerEditor.AllTimeGlimmer}"
@@ -159,12 +180,12 @@
                                                                FormatString="0" />
                                             </Grid>
 
-                                            <TextBlock Text="Total Collected must be ≥ Balance. Both are raised automatically if needed."
+                                            <TextBlock Text="{DynamicResource Player.Currency.Warning}"
                                                        FontSize="11"
                                                        Opacity="0.5"
                                                        TextWrapping="Wrap" />
 
-                                            <Button Content="Apply Changes"
+                                            <Button Content="{DynamicResource Player.Currency.Apply}"
                                                     Command="{Binding PlayerEditor.ApplyChangesCommand}" />
 
                                             <TextBlock Text="{Binding PlayerEditor.ValidationMessage}"
@@ -179,7 +200,7 @@
                                                     Margin="0,4" />
 
                                             <!-- Player stats section -->
-                                            <TextBlock Text="Player Stats"
+                                            <TextBlock Text="{DynamicResource Player.Stats.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold" />
 
@@ -188,7 +209,7 @@
                                                   RowSpacing="10">
 
                                                 <TextBlock Grid.Row="0" Grid.Column="0"
-                                                           Text="Health"
+                                                           Text="{DynamicResource Player.Stats.Health}"
                                                            VerticalAlignment="Center" />
                                                 <NumericUpDown Grid.Row="0" Grid.Column="1"
                                                                Value="{Binding PlayerEditor.Health}"
@@ -197,7 +218,7 @@
                                                                FormatString="0" />
 
                                                 <TextBlock Grid.Row="1" Grid.Column="0"
-                                                           Text="Potion Fill"
+                                                           Text="{DynamicResource Player.Stats.PotionFill}"
                                                            VerticalAlignment="Center" />
                                                 <NumericUpDown Grid.Row="1" Grid.Column="1"
                                                                Value="{Binding PlayerEditor.PotionFill}"
@@ -206,7 +227,7 @@
                                                                FormatString="0.0" />
                                             </Grid>
 
-                                            <Button Content="Apply Player Stats"
+                                            <Button Content="{DynamicResource Player.Stats.Apply}"
                                                     Command="{Binding PlayerEditor.ApplyPlayerStatsCommand}" />
 
                                             <!-- Separator -->
@@ -215,7 +236,7 @@
                                                     Margin="0,4" />
 
                                             <!-- Info section -->
-                                            <TextBlock Text="Session Info"
+                                            <TextBlock Text="{DynamicResource Player.Session.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold" />
 
@@ -224,7 +245,7 @@
                                                   RowSpacing="10">
 
                                                 <TextBlock Grid.Row="0" Grid.Column="0"
-                                                           Text="Checkpoint"
+                                                           Text="{DynamicResource Player.Session.Checkpoint}"
                                                            VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="0" Grid.Column="1"
                                                            Text="{Binding PlayerEditor.CheckpointDisplay}"
@@ -235,7 +256,7 @@
                                                            ToolTip.Tip="{Binding PlayerEditor.CheckpointDisplay}" />
 
                                                 <TextBlock Grid.Row="1" Grid.Column="0"
-                                                           Text="Played Time"
+                                                           Text="{DynamicResource Player.Session.PlayedTime}"
                                                            VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="1" Grid.Column="1"
                                                            Text="{Binding PlayerEditor.PlayedTimeDisplay}"
@@ -247,7 +268,7 @@
                                 </TabItem>
 
                                 <!-- JSON tab -->
-                                <TabItem Header="JSON">
+                                <TabItem Header="{DynamicResource Tab.JSON}">
                                     <DockPanel>
 
                                         <!-- Search bar -->
@@ -259,7 +280,7 @@
                                                   ColumnSpacing="4">
                                                 <TextBox Grid.Column="0"
                                                          Text="{Binding JsonSearch}"
-                                                         PlaceholderText="Search JSON…"
+                                                         PlaceholderText="{DynamicResource JSON.Search.Placeholder}"
                                                          FontSize="13" />
                                                 <TextBlock Grid.Column="1"
                                                            Text="{Binding SearchResultText}"
@@ -269,13 +290,13 @@
                                                            MinWidth="64"
                                                            TextAlignment="Center" />
                                                 <Button Grid.Column="2"
-                                                        Content="↑"
+                                                        Content="&#x2191;"
                                                         Command="{Binding FindPreviousCommand}"
-                                                        ToolTip.Tip="Previous match (Shift+Enter)" />
+                                                        ToolTip.Tip="{DynamicResource JSON.Search.Previous}" />
                                                 <Button Grid.Column="3"
-                                                        Content="↓"
+                                                        Content="&#x2193;"
                                                         Command="{Binding FindNextCommand}"
-                                                        ToolTip.Tip="Next match (Enter)" />
+                                                        ToolTip.Tip="{DynamicResource JSON.Search.Next}" />
                                             </Grid>
                                         </Border>
 
@@ -291,24 +312,24 @@
                                 </TabItem>
 
                                 <!-- Overview tab -->
-                                <TabItem Header="Overview">
+                                <TabItem Header="{DynamicResource Tab.Overview}">
                                     <ScrollViewer Padding="16">
                                         <StackPanel Spacing="20" MaxWidth="480" HorizontalAlignment="Left">
 
-                                            <TextBlock Text="Document"
+                                            <TextBlock Text="{DynamicResource Overview.Document.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold" />
 
                                             <Grid RowDefinitions="Auto,Auto,Auto"
                                                   ColumnDefinitions="160,*"
                                                   RowSpacing="10">
-                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Version" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource Overview.Document.Version}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding SaveVersion}" VerticalAlignment="Center" />
 
-                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Format" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource Overview.Document.Format}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding FormatDisplay}" VerticalAlignment="Center" />
 
-                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Save ID" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{DynamicResource Overview.Document.SaveId}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="2" Grid.Column="1"
                                                            Text="{Binding SaveId}"
                                                            VerticalAlignment="Center"
@@ -322,20 +343,20 @@
                                                     Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
                                                     Margin="0,4" />
 
-                                            <TextBlock Text="World"
+                                            <TextBlock Text="{DynamicResource Overview.World.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold" />
 
                                             <Grid RowDefinitions="Auto,Auto,Auto"
                                                   ColumnDefinitions="160,*"
                                                   RowSpacing="10">
-                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Data Entries" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource Overview.World.DataEntries}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding WorldDataEntryCount}" VerticalAlignment="Center" />
 
-                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Game Mode" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource Overview.World.GameMode}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding GameModeDisplay}" VerticalAlignment="Center" />
 
-                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Permadeath" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{DynamicResource Overview.World.Permadeath}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Permadeath}" VerticalAlignment="Center" />
                                             </Grid>
 
@@ -343,19 +364,19 @@
                                                     Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
                                                     Margin="0,4" />
 
-                                            <TextBlock Text="Binary Data"
+                                            <TextBlock Text="{DynamicResource Overview.Binary.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold" />
 
                                             <Grid RowDefinitions="Auto,Auto"
                                                   ColumnDefinitions="160,*"
                                                   RowSpacing="10">
-                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Event Log" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource Overview.Binary.EventLog}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="0" Grid.Column="1"
                                                            Text="{Binding HasEventLog}"
                                                            VerticalAlignment="Center" />
 
-                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Map Fog" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource Overview.Binary.MapFog}" VerticalAlignment="Center" />
                                                 <TextBlock Grid.Row="1" Grid.Column="1"
                                                            Text="{Binding HasMapFog}"
                                                            VerticalAlignment="Center" />
@@ -366,7 +387,7 @@
                                 </TabItem>
 
                                 <!-- Backups tab -->
-                                <TabItem Header="Backups">
+                                <TabItem Header="{DynamicResource Tab.Backups}">
                                     <DockPanel Margin="16,8">
 
                                         <!-- Header -->
@@ -374,12 +395,12 @@
                                               ColumnDefinitions="*,Auto"
                                               Margin="0,0,0,12">
                                             <TextBlock Grid.Column="0"
-                                                       Text="Backup History"
+                                                       Text="{DynamicResource Backups.Title}"
                                                        FontSize="15"
                                                        FontWeight="SemiBold"
                                                        VerticalAlignment="Center" />
                                             <Button Grid.Column="1"
-                                                    Content="Refresh"
+                                                    Content="{DynamicResource Backups.Refresh}"
                                                     Command="{Binding BackupsTab.RefreshCommand}" />
                                         </Grid>
 
@@ -412,7 +433,7 @@
                                                                                Opacity="0.55" />
                                                                 </StackPanel>
                                                                 <Button Grid.Column="1"
-                                                                        Content="Restore"
+                                                                        Content="{DynamicResource Backups.Restore}"
                                                                         Command="{Binding RestoreCommand}"
                                                                         VerticalAlignment="Center" />
                                                             </Grid>

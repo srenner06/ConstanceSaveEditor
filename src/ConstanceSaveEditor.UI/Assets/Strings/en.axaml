@@ -1,0 +1,82 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Menu: File -->
+    <x:String x:Key="Menu.File">File</x:String>
+    <x:String x:Key="Menu.Open">Open...</x:String>
+    <x:String x:Key="Menu.Save">Save</x:String>
+    <x:String x:Key="Menu.SaveAs">Save As...</x:String>
+    <x:String x:Key="Menu.RecentFiles">Recent Files</x:String>
+    <x:String x:Key="Menu.Close">Close</x:String>
+    <x:String x:Key="Menu.Exit">Exit</x:String>
+
+    <!-- Menu: View -->
+    <x:String x:Key="Menu.View">View</x:String>
+    <x:String x:Key="Menu.Theme">Theme</x:String>
+    <x:String x:Key="Menu.Theme.System">System</x:String>
+    <x:String x:Key="Menu.Theme.Light">Light</x:String>
+    <x:String x:Key="Menu.Theme.Dark">Dark</x:String>
+    <x:String x:Key="Menu.Language">Language</x:String>
+    <x:String x:Key="Menu.Language.English">English</x:String>
+    <x:String x:Key="Menu.Language.German">Deutsch</x:String>
+
+    <!-- No file open -->
+    <x:String x:Key="NoFile.Prompt">No save file open</x:String>
+    <x:String x:Key="NoFile.Hint">File → Open  or  Ctrl+O</x:String>
+
+    <!-- Info strip -->
+    <x:String x:Key="Button.Revert">Revert</x:String>
+
+    <!-- Tabs -->
+    <x:String x:Key="Tab.Player">Player</x:String>
+    <x:String x:Key="Tab.JSON">JSON</x:String>
+    <x:String x:Key="Tab.Overview">Overview</x:String>
+    <x:String x:Key="Tab.Backups">Backups</x:String>
+
+    <!-- Player tab: Currency -->
+    <x:String x:Key="Player.Currency.Title">Currency (Glimmer)</x:String>
+    <x:String x:Key="Player.Currency.Balance">Balance</x:String>
+    <x:String x:Key="Player.Currency.TotalCollected">Total Collected</x:String>
+    <x:String x:Key="Player.Currency.AllTimeGlimmer">All-Time Glimmer</x:String>
+    <x:String x:Key="Player.Currency.Warning">Total Collected must be ≥ Balance. Both are raised automatically if needed.</x:String>
+    <x:String x:Key="Player.Currency.Apply">Apply Changes</x:String>
+
+    <!-- Player tab: Stats -->
+    <x:String x:Key="Player.Stats.Title">Player Stats</x:String>
+    <x:String x:Key="Player.Stats.Health">Health</x:String>
+    <x:String x:Key="Player.Stats.PotionFill">Potion Fill</x:String>
+    <x:String x:Key="Player.Stats.Apply">Apply Player Stats</x:String>
+
+    <!-- Player tab: Session -->
+    <x:String x:Key="Player.Session.Title">Session Info</x:String>
+    <x:String x:Key="Player.Session.Checkpoint">Checkpoint</x:String>
+    <x:String x:Key="Player.Session.PlayedTime">Played Time</x:String>
+
+    <!-- JSON tab -->
+    <x:String x:Key="JSON.Search.Placeholder">Search JSON…</x:String>
+    <x:String x:Key="JSON.Search.Previous">Previous match (Shift+Enter)</x:String>
+    <x:String x:Key="JSON.Search.Next">Next match (Enter)</x:String>
+
+    <!-- Overview tab: Document -->
+    <x:String x:Key="Overview.Document.Title">Document</x:String>
+    <x:String x:Key="Overview.Document.Version">Version</x:String>
+    <x:String x:Key="Overview.Document.Format">Format</x:String>
+    <x:String x:Key="Overview.Document.SaveId">Save ID</x:String>
+
+    <!-- Overview tab: World -->
+    <x:String x:Key="Overview.World.Title">World</x:String>
+    <x:String x:Key="Overview.World.DataEntries">Data Entries</x:String>
+    <x:String x:Key="Overview.World.GameMode">Game Mode</x:String>
+    <x:String x:Key="Overview.World.Permadeath">Permadeath</x:String>
+
+    <!-- Overview tab: Binary -->
+    <x:String x:Key="Overview.Binary.Title">Binary Data</x:String>
+    <x:String x:Key="Overview.Binary.EventLog">Event Log</x:String>
+    <x:String x:Key="Overview.Binary.MapFog">Map Fog</x:String>
+
+    <!-- Backups tab -->
+    <x:String x:Key="Backups.Title">Backup History</x:String>
+    <x:String x:Key="Backups.Refresh">Refresh</x:String>
+    <x:String x:Key="Backups.Restore">Restore</x:String>
+
+</ResourceDictionary>

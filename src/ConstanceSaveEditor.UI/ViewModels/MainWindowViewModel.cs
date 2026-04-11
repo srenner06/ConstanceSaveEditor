@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using Avalonia;
 using Avalonia.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -15,6 +16,8 @@ public sealed partial class MainWindowViewModel : ObservableObject
     private readonly ISaveFileService _fileService;
     private readonly IDialogService _dialogService;
     private readonly RecentFilesService _recentFilesService;
+    private readonly SettingsService _settingsService;
+    private AppSettings _settings;
 
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(HasOpenFile), nameof(NoFileOpen), nameof(WindowTitle), nameof(FileStatusText))]
@@ -44,11 +47,18 @@ public sealed partial class MainWindowViewModel : ObservableObject
     public string FileStatusText =>
         CurrentEditor?.SourcePath ?? "No file open";
 
-    public MainWindowViewModel(ISaveFileService fileService, IDialogService dialogService, RecentFilesService recentFilesService)
+    public MainWindowViewModel(
+        ISaveFileService fileService,
+        IDialogService dialogService,
+        RecentFilesService recentFilesService,
+        SettingsService settingsService,
+        AppSettings initialSettings)
     {
         _fileService = fileService;
         _dialogService = dialogService;
         _recentFilesService = recentFilesService;
+        _settingsService = settingsService;
+        _settings = initialSettings;
         LoadRecentFiles();
     }
 
@@ -202,4 +212,20 @@ public sealed partial class MainWindowViewModel : ObservableObject
 
     [RelayCommand]
     private static void Exit() => Environment.Exit(0);
+
+    [RelayCommand]
+    private void SetTheme(string theme)
+    {
+        ((App)Application.Current!).ApplyTheme(theme);
+        _settings = _settings with { Theme = theme };
+        _settingsService.Save(_settings);
+    }
+
+    [RelayCommand]
+    private void SetLanguage(string language)
+    {
+        ((App)Application.Current!).ApplyLanguage(language);
+        _settings = _settings with { Language = language };
+        _settingsService.Save(_settings);
+    }
 }

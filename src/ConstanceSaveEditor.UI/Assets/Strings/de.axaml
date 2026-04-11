@@ -1,0 +1,82 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Menu: Datei -->
+    <x:String x:Key="Menu.File">Datei</x:String>
+    <x:String x:Key="Menu.Open">Öffnen...</x:String>
+    <x:String x:Key="Menu.Save">Speichern</x:String>
+    <x:String x:Key="Menu.SaveAs">Speichern unter...</x:String>
+    <x:String x:Key="Menu.RecentFiles">Zuletzt geöffnet</x:String>
+    <x:String x:Key="Menu.Close">Schließen</x:String>
+    <x:String x:Key="Menu.Exit">Beenden</x:String>
+
+    <!-- Menu: Ansicht -->
+    <x:String x:Key="Menu.View">Ansicht</x:String>
+    <x:String x:Key="Menu.Theme">Design</x:String>
+    <x:String x:Key="Menu.Theme.System">System</x:String>
+    <x:String x:Key="Menu.Theme.Light">Hell</x:String>
+    <x:String x:Key="Menu.Theme.Dark">Dunkel</x:String>
+    <x:String x:Key="Menu.Language">Sprache</x:String>
+    <x:String x:Key="Menu.Language.English">English</x:String>
+    <x:String x:Key="Menu.Language.German">Deutsch</x:String>
+
+    <!-- Keine Datei geöffnet -->
+    <x:String x:Key="NoFile.Prompt">Keine Speicherdatei geöffnet</x:String>
+    <x:String x:Key="NoFile.Hint">Datei &#x2192; Öffnen  oder  Ctrl+O</x:String>
+
+    <!-- Info-Leiste -->
+    <x:String x:Key="Button.Revert">Zurücksetzen</x:String>
+
+    <!-- Tabs -->
+    <x:String x:Key="Tab.Player">Spieler</x:String>
+    <x:String x:Key="Tab.JSON">JSON</x:String>
+    <x:String x:Key="Tab.Overview">Übersicht</x:String>
+    <x:String x:Key="Tab.Backups">Sicherungen</x:String>
+
+    <!-- Spieler-Tab: Währung -->
+    <x:String x:Key="Player.Currency.Title">Währung (Glimmer)</x:String>
+    <x:String x:Key="Player.Currency.Balance">Guthaben</x:String>
+    <x:String x:Key="Player.Currency.TotalCollected">Insgesamt gesammelt</x:String>
+    <x:String x:Key="Player.Currency.AllTimeGlimmer">Gesamter Glimmer</x:String>
+    <x:String x:Key="Player.Currency.Warning">Insgesamt gesammelt muss &#x2265; Guthaben sein. Beide werden bei Bedarf automatisch erhöht.</x:String>
+    <x:String x:Key="Player.Currency.Apply">Änderungen übernehmen</x:String>
+
+    <!-- Spieler-Tab: Werte -->
+    <x:String x:Key="Player.Stats.Title">Spielerwerte</x:String>
+    <x:String x:Key="Player.Stats.Health">Gesundheit</x:String>
+    <x:String x:Key="Player.Stats.PotionFill">Trankfüllung</x:String>
+    <x:String x:Key="Player.Stats.Apply">Spielerwerte übernehmen</x:String>
+
+    <!-- Spieler-Tab: Sitzung -->
+    <x:String x:Key="Player.Session.Title">Sitzungsinfos</x:String>
+    <x:String x:Key="Player.Session.Checkpoint">Kontrollpunkt</x:String>
+    <x:String x:Key="Player.Session.PlayedTime">Spielzeit</x:String>
+
+    <!-- JSON-Tab -->
+    <x:String x:Key="JSON.Search.Placeholder">JSON durchsuchen&#x2026;</x:String>
+    <x:String x:Key="JSON.Search.Previous">Vorheriger Treffer (Shift+Enter)</x:String>
+    <x:String x:Key="JSON.Search.Next">Nächster Treffer (Enter)</x:String>
+
+    <!-- Übersicht-Tab: Dokument -->
+    <x:String x:Key="Overview.Document.Title">Dokument</x:String>
+    <x:String x:Key="Overview.Document.Version">Version</x:String>
+    <x:String x:Key="Overview.Document.Format">Format</x:String>
+    <x:String x:Key="Overview.Document.SaveId">Speicher-ID</x:String>
+
+    <!-- Übersicht-Tab: Welt -->
+    <x:String x:Key="Overview.World.Title">Welt</x:String>
+    <x:String x:Key="Overview.World.DataEntries">Dateneinträge</x:String>
+    <x:String x:Key="Overview.World.GameMode">Spielmodus</x:String>
+    <x:String x:Key="Overview.World.Permadeath">Dauertod</x:String>
+
+    <!-- Übersicht-Tab: Binär -->
+    <x:String x:Key="Overview.Binary.Title">Binärdaten</x:String>
+    <x:String x:Key="Overview.Binary.EventLog">Ereignisprotokoll</x:String>
+    <x:String x:Key="Overview.Binary.MapFog">Kartennebel</x:String>
+
+    <!-- Sicherungen-Tab -->
+    <x:String x:Key="Backups.Title">Sicherungsverlauf</x:String>
+    <x:String x:Key="Backups.Refresh">Aktualisieren</x:String>
+    <x:String x:Key="Backups.Restore">Wiederherstellen</x:String>
+
+</ResourceDictionary>
