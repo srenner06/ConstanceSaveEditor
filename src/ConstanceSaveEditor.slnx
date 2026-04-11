@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Docs/">
+    <File Path="../docs/ROADMAP.md" />
+    <File Path="../docs/CURRENT_TASK.md" />
+    <File Path="../docs/TECHNICAL-OVERVIEW.md" />
+    <File Path="../docs/save-format.md" />
+    <File Path="../README.md" />
+    <File Path="../CLAUDE.md" />
+  </Folder>
+  <Project Path="ConstanceSaveEditor.Cli/ConstanceSaveEditor.Cli.csproj" Id="11a4c7ac-ee46-45a8-87a7-00cfeb6061c3" />
+  <Project Path="ConstanceSaveEditor.Core/ConstanceSaveEditor.Core.csproj" />
+  <Project Path="ConstanceSaveEditor.UI/ConstanceSaveEditor.UI.csproj" Id="4d845bec-6334-4f41-ad2f-3298fe153990" />
+</Solution>

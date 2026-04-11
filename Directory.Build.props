@@ -1,0 +1,22 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!--
+      NU1903: known high-severity vulnerability in Tmds.DBus.Protocol 0.90.3
+      (transitive via Avalonia.Desktop). Remove this suppression once Avalonia
+      ships a version that pulls in a fixed Tmds.DBus.Protocol.
+      Advisory: https://github.com/advisories/GHSA-xrw6-gwf8-vvr9
+    -->
+    <!--
+      CS1591: missing XML doc comment. GenerateDocumentationFile is required by EnforceCodeStyleInBuild
+      for IDE0005 analysis — this suppresses the "must document every public member" enforcement.
+    -->
+    <NoWarn>$(NoWarn);CS1591;NU1903</NoWarn>
+  </PropertyGroup>
+</Project>

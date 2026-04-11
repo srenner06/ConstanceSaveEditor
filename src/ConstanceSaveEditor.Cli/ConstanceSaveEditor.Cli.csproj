@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" />
+    <ProjectReference Include="..\ConstanceSaveEditor.Core\ConstanceSaveEditor.Core.csproj" />
+  </ItemGroup>
+
+</Project>

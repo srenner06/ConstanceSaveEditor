@@ -1,0 +1,10 @@
+#!/bin/sh
+# Runs on every commit. Blocks the commit if formatting or build fails.
+# Install once per clone: git config core.hooksPath .githooks
+set -e
+
+echo "Checking formatting..."
+dotnet format src/ConstanceSaveEditor.slnx --verify-no-changes
+
+echo "Building..."
+dotnet build src/ConstanceSaveEditor.slnx --no-restore -c Debug
