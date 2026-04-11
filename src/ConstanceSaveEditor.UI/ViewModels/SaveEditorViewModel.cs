@@ -1,6 +1,7 @@
 using System.Text.Json;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using ConstanceSaveEditor.Core.Backup;
 using ConstanceSaveEditor.Core.Models;
 using ConstanceSaveEditor.Core.Services;
 using ConstanceSaveEditor.UI.ViewModels.Editors;
@@ -51,12 +52,18 @@ public sealed partial class SaveEditorViewModel : ObservableObject
 
     public SaveEditorSession Session => _session;
     public PlayerEditorViewModel PlayerEditor { get; }
+    public BackupsTabViewModel BackupsTab { get; }
+
+    /// <summary>Raised when the user restores a backup and the editor should be replaced.</summary>
+    public event Action<BackupEntry>? RestoreRequested;
 
     public SaveEditorViewModel(SaveEditorSession session)
     {
         _session = session;
         PlayerEditor = new PlayerEditorViewModel(session);
         PlayerEditor.DataModified += OnPlayerDataModified;
+        BackupsTab = new BackupsTabViewModel(session);
+        BackupsTab.RestoreRequested += entry => RestoreRequested?.Invoke(entry);
         RefreshFromSession();
     }
 
@@ -137,6 +144,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
         JsonText = JsonSerializer.Serialize(_session.Document.Save, PrettyOptions);
         _isRefreshing = false;
         PlayerEditor.LoadFromSession();
+        _ = BackupsTab.LoadAsync();
         OnPropertyChanged(nameof(IsDirty));
         OnPropertyChanged(nameof(SourcePath));
         OnPropertyChanged(nameof(FileName));

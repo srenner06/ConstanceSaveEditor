@@ -27,6 +27,7 @@ public sealed class BackupService : IBackupService
             BackupPath = backupPath,
             OriginalFileName = Path.GetFileName(sourcePath),
             CreatedAt = DateTimeOffset.Now,
+            FileSizeBytes = bytes.Length,
         };
     }
 
@@ -83,6 +84,7 @@ public sealed class BackupService : IBackupService
             BackupPath = backupPath,
             OriginalFileName = originalFileName,
             CreatedAt = createdAt,
+            FileSizeBytes = new FileInfo(backupPath).Length,
         };
     }
 }

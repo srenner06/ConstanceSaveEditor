@@ -2,6 +2,8 @@ using System.ComponentModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ConstanceSaveEditor.Core.Abstractions;
+using ConstanceSaveEditor.Core.Backup;
+using ConstanceSaveEditor.Core.Services;
 
 namespace ConstanceSaveEditor.UI.ViewModels;
 
@@ -44,9 +46,15 @@ public sealed partial class MainWindowViewModel : ObservableObject
     partial void OnCurrentEditorChanged(SaveEditorViewModel? oldValue, SaveEditorViewModel? newValue)
     {
         if (oldValue is not null)
+        {
             oldValue.PropertyChanged -= OnEditorPropertyChanged;
+            oldValue.RestoreRequested -= OnRestoreRequested;
+        }
         if (newValue is not null)
+        {
             newValue.PropertyChanged += OnEditorPropertyChanged;
+            newValue.RestoreRequested += OnRestoreRequested;
+        }
     }
 
     private void OnEditorPropertyChanged(object? sender, PropertyChangedEventArgs e)
@@ -55,6 +63,29 @@ public sealed partial class MainWindowViewModel : ObservableObject
         {
             OnPropertyChanged(nameof(WindowTitle));
             OnPropertyChanged(nameof(FileStatusText));
+        }
+    }
+
+    private async void OnRestoreRequested(BackupEntry entry)
+    {
+        string? originalPath = CurrentEditor?.SourcePath;
+        if (originalPath is null)
+            return;
+        try
+        {
+            SaveEditorSession session = await _fileService.OpenAsync(entry.BackupPath);
+            session.Document.SourcePath = originalPath;
+            session.MarkDirty();
+            CurrentEditor = new SaveEditorViewModel(session);
+            StatusMessage = $"Backup from {entry.CreatedAt:yyyy-MM-dd HH:mm:ss} loaded \u2014 save to write to disk.";
+        }
+        catch (IOException ex)
+        {
+            StatusMessage = $"Restore failed: {ex.Message}";
+        }
+        catch (InvalidDataException ex)
+        {
+            StatusMessage = $"Restore failed: {ex.Message}";
         }
     }
 

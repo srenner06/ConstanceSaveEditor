@@ -8,8 +8,8 @@
 - [x] Phase 3 — Safe save and backups
 - [x] Phase 4 — CLI
 - [x] Phase 5 — Basic UI
-- [ ] Phase 6 — Structured editors (in progress)
-- [ ] Phase 7 — Backup and history UI
+- [x] Phase 6 — Structured editors
+- [x] Phase 7 — Backup and history UI
 - [ ] Phase 8 — Polish and release
 
 ---
