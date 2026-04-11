@@ -1,20 +1,30 @@
-# Save Format Notes
-
-Game-specific observations from reverse engineering real save files.
-
----
+# Save Format
 
 ## File container
 
-See `TECHNICAL-OVERVIEW.md` for the full container format (Xornstance header, XOR codec, ZIP layout).
+```
+.save file
+├─ header: "Xornstance!" (11 bytes, ASCII)
+└─ payload: ZIP bytes XOR'd with repeating key "Xornstance!"
+```
 
----
+To decode: strip the 11-byte header, XOR the rest with the repeating key, then open as a ZIP archive.
+
+Inside the ZIP:
+
+```
+├─ save.json       required
+├─ eventlog.bin    optional
+└─ mapfog.bin      optional
+```
+
+Plain JSON files (no header, no XOR) are also supported as a fallback for debug saves.
 
 ## Known JSON fields
 
 ### Currency (Glimmer)
 
-Three fields change together when the player receives currency:
+These three fields change together when the player receives currency:
 
 | Field | Description |
 |---|---|
@@ -22,8 +32,7 @@ Three fields change together when the player receives currency:
 | `ps_TotalCollectCount_Currency` | Total ever collected |
 | `ps_StatId_AllTimeCollectedGlimmer` | Lifetime stat tracker |
 
-**Possible constraint:** the game may enforce `ps_item_Currency <= ps_TotalCollectCount_Currency`.
-Do not set the current amount above the total collected until this is confirmed safe.
+The game may enforce `ps_item_Currency <= ps_TotalCollectCount_Currency`. The editor raises both automatically when needed.
 
 ---
 
