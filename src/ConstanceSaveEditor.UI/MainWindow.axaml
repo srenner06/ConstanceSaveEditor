@@ -33,6 +33,10 @@
                           Command="{Binding SaveAsCommand}"
                           InputGesture="Ctrl+Shift+S" />
                 <Separator />
+                <MenuItem Header="Recent _Files"
+                          IsEnabled="{Binding HasRecentFiles}"
+                          ItemsSource="{Binding RecentFiles}" />
+                <Separator />
                 <MenuItem Header="_Close"
                           Command="{Binding CloseCommand}" />
                 <Separator />
@@ -286,12 +290,79 @@
                                     </DockPanel>
                                 </TabItem>
 
-                                <!-- Validation tab -->
-                                <TabItem Header="Validation">
-                                    <TextBlock Text="Validation not yet implemented."
-                                               HorizontalAlignment="Center"
-                                               VerticalAlignment="Center"
-                                               Opacity="0.5" />
+                                <!-- Overview tab -->
+                                <TabItem Header="Overview">
+                                    <ScrollViewer Padding="16">
+                                        <StackPanel Spacing="20" MaxWidth="480" HorizontalAlignment="Left">
+
+                                            <TextBlock Text="Document"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Version" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding SaveVersion}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Format" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding FormatDisplay}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Save ID" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="2" Grid.Column="1"
+                                                           Text="{Binding SaveId}"
+                                                           VerticalAlignment="Center"
+                                                           FontFamily="Cascadia Code,Consolas,Courier New"
+                                                           FontSize="12"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding SaveId}" />
+                                            </Grid>
+
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
+                                            <TextBlock Text="World"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Data Entries" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding WorldDataEntryCount}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Game Mode" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding GameModeDisplay}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Permadeath" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Permadeath}" VerticalAlignment="Center" />
+                                            </Grid>
+
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
+                                            <TextBlock Text="Binary Data"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Event Log" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="1"
+                                                           Text="{Binding HasEventLog}"
+                                                           VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Map Fog" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="1"
+                                                           Text="{Binding HasMapFog}"
+                                                           VerticalAlignment="Center" />
+                                            </Grid>
+
+                                        </StackPanel>
+                                    </ScrollViewer>
                                 </TabItem>
 
                                 <!-- Backups tab -->

@@ -10,7 +10,7 @@
 - [x] Phase 5 — Basic UI
 - [x] Phase 6 — Structured editors
 - [x] Phase 7 — Backup and history UI
-- [ ] Phase 8 — Polish and release
+- [x] Phase 8 — Polish and release
 
 ---
 

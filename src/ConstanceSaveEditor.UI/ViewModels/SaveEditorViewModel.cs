@@ -50,6 +50,15 @@ public sealed partial class SaveEditorViewModel : ObservableObject
     public string FormatDisplay => _session.Document.Format.ToString();
     public string LoadedAtDisplay => $"Loaded {_session.Document.LoadedAt:HH:mm:ss}";
 
+    // --- Overview ---
+    public string SaveId => _session.Document.Save.Id;
+    public int SaveVersion => _session.Document.Save.Version;
+    public int WorldDataEntryCount => _session.Document.Save.World.Data.Count;
+    public string GameModeDisplay => _session.Document.Save.Modifiers.GameMode == 0 ? "Normal" : $"Custom ({_session.Document.Save.Modifiers.GameMode})";
+    public bool Permadeath => _session.Document.Save.Modifiers.Permadeath;
+    public bool HasEventLog => _session.Document.EventLog is not null;
+    public bool HasMapFog => _session.Document.MapFog is not null;
+
     public SaveEditorSession Session => _session;
     public PlayerEditorViewModel PlayerEditor { get; }
     public BackupsTabViewModel BackupsTab { get; }
@@ -148,6 +157,13 @@ public sealed partial class SaveEditorViewModel : ObservableObject
         OnPropertyChanged(nameof(IsDirty));
         OnPropertyChanged(nameof(SourcePath));
         OnPropertyChanged(nameof(FileName));
+        OnPropertyChanged(nameof(SaveId));
+        OnPropertyChanged(nameof(SaveVersion));
+        OnPropertyChanged(nameof(WorldDataEntryCount));
+        OnPropertyChanged(nameof(GameModeDisplay));
+        OnPropertyChanged(nameof(Permadeath));
+        OnPropertyChanged(nameof(HasEventLog));
+        OnPropertyChanged(nameof(HasMapFog));
     }
 
     public bool TryApplyJsonText(out string? error)

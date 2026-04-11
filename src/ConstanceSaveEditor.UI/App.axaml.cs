@@ -25,7 +25,7 @@ public partial class App : Application
                 new SaveFileCodec(),
                 new SaveDocumentService(),
                 new BackupService());
-            window.DataContext = new MainWindowViewModel(fileService, new DialogService(window));
+            window.DataContext = new MainWindowViewModel(fileService, new DialogService(window), new RecentFilesService());
             desktop.MainWindow = window;
         }
 

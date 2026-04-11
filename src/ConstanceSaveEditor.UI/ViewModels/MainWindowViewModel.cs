@@ -1,16 +1,20 @@
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using Avalonia.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ConstanceSaveEditor.Core.Abstractions;
 using ConstanceSaveEditor.Core.Backup;
 using ConstanceSaveEditor.Core.Services;
+using ConstanceSaveEditor.UI.Services;
 
 namespace ConstanceSaveEditor.UI.ViewModels;
 
 public sealed partial class MainWindowViewModel : ObservableObject
 {
     private readonly ISaveFileService _fileService;
-    private readonly Services.IDialogService _dialogService;
+    private readonly IDialogService _dialogService;
+    private readonly RecentFilesService _recentFilesService;
 
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(HasOpenFile), nameof(NoFileOpen), nameof(WindowTitle), nameof(FileStatusText))]
@@ -22,6 +26,9 @@ public sealed partial class MainWindowViewModel : ObservableObject
 
     public bool HasOpenFile => CurrentEditor is not null;
     public bool NoFileOpen => CurrentEditor is null;
+    public bool HasRecentFiles => RecentFiles.Count > 0;
+
+    public ObservableCollection<MenuItem> RecentFiles { get; } = [];
 
     public string WindowTitle
     {
@@ -37,10 +44,27 @@ public sealed partial class MainWindowViewModel : ObservableObject
     public string FileStatusText =>
         CurrentEditor?.SourcePath ?? "No file open";
 
-    public MainWindowViewModel(ISaveFileService fileService, Services.IDialogService dialogService)
+    public MainWindowViewModel(ISaveFileService fileService, IDialogService dialogService, RecentFilesService recentFilesService)
     {
         _fileService = fileService;
         _dialogService = dialogService;
+        _recentFilesService = recentFilesService;
+        LoadRecentFiles();
+    }
+
+    private void LoadRecentFiles()
+    {
+        RecentFiles.Clear();
+        foreach (string path in _recentFilesService.Load())
+        {
+            string capturedPath = path;
+            RecentFiles.Add(new MenuItem
+            {
+                Header = Path.GetFileName(path),
+                Command = new AsyncRelayCommand(() => OpenFileAsync(capturedPath)),
+            });
+        }
+        OnPropertyChanged(nameof(HasRecentFiles));
     }
 
     partial void OnCurrentEditorChanged(SaveEditorViewModel? oldValue, SaveEditorViewModel? newValue)
@@ -95,15 +119,24 @@ public sealed partial class MainWindowViewModel : ObservableObject
         string? path = await _dialogService.OpenSaveFileAsync();
         if (path is null)
             return;
+        await OpenFileAsync(path);
+    }
+
+    private async Task OpenFileAsync(string path)
+    {
         try
         {
-            var session = await _fileService.OpenAsync(path);
+            SaveEditorSession session = await _fileService.OpenAsync(path);
             CurrentEditor = new SaveEditorViewModel(session);
+            _recentFilesService.Add(path);
+            LoadRecentFiles();
             StatusMessage = string.Empty;
         }
         catch (IOException ex)
         {
             StatusMessage = $"Cannot open file: {ex.Message}";
+            _recentFilesService.Remove(path);
+            LoadRecentFiles();
         }
         catch (InvalidDataException ex)
         {
