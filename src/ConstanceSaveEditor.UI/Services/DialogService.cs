@@ -6,7 +6,7 @@ namespace ConstanceSaveEditor.UI.Services;
 public sealed class DialogService : IDialogService
 {
     private static readonly FilePickerFileType SaveFileType =
-        new("Constance Save Files") { Patterns = new[] { "*.save" } };
+        new("Constance Save Files") { Patterns = ["*.save"] };
 
     private readonly Window _owner;
 
@@ -18,7 +18,7 @@ public sealed class DialogService : IDialogService
         {
             Title = "Open Save File",
             AllowMultiple = false,
-            FileTypeFilter = new[] { SaveFileType },
+            FileTypeFilter = [SaveFileType],
         });
         return files.Count > 0 ? files[0].TryGetLocalPath() : null;
     }
@@ -29,7 +29,7 @@ public sealed class DialogService : IDialogService
         {
             Title = "Save As",
             SuggestedFileName = suggestedName,
-            FileTypeChoices = new[] { SaveFileType },
+            FileTypeChoices = [SaveFileType],
         });
         return file?.TryGetLocalPath();
     }

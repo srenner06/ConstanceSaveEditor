@@ -5,6 +5,7 @@
         xmlns:vm="using:ConstanceSaveEditor.UI.ViewModels"
         xmlns:editors="using:ConstanceSaveEditor.UI.ViewModels.Editors"
         xmlns:b="using:ConstanceSaveEditor.UI.Behaviors"
+        xmlns:core="using:ConstanceSaveEditor.Core.Editing"
         mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
         x:Class="ConstanceSaveEditor.UI.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -261,6 +262,187 @@
                                                 <TextBlock Grid.Row="1" Grid.Column="1"
                                                            Text="{Binding PlayerEditor.PlayedTimeDisplay}"
                                                            VerticalAlignment="Center" />
+                                            </Grid>
+
+                                        </StackPanel>
+                                    </ScrollViewer>
+                                </TabItem>
+
+                                <!-- Progress tab -->
+                                <TabItem Header="{DynamicResource Tab.Progress}">
+                                    <ScrollViewer Padding="16">
+                                        <StackPanel Spacing="20" MaxWidth="560" HorizontalAlignment="Left">
+
+                                            <!-- Collectibles -->
+                                            <TextBlock Text="{DynamicResource Progress.Collectibles.Title}"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                                                  ColumnDefinitions="160,*"
+                                                  RowSpacing="10">
+
+                                                <TextBlock Grid.Row="0" Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Collectibles.HeartPieces}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="1"
+                                                           Text="{Binding ProgressTab.HeartPiecesDisplay}"
+                                                           VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Collectibles.PaintFlasks}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="1"
+                                                           Text="{Binding ProgressTab.PaintFlasksDisplay}"
+                                                           VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="2" Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Collectibles.Polaroids}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="2" Grid.Column="1"
+                                                           Text="{Binding ProgressTab.PolaroidsDisplay}"
+                                                           VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="3" Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Collectibles.Erasers}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="3" Grid.Column="1"
+                                                           Text="{Binding ProgressTab.Erasers}"
+                                                           VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="4" Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Collectibles.LightStones}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="4" Grid.Column="1"
+                                                           Text="{Binding ProgressTab.LightStones}"
+                                                           VerticalAlignment="Center" />
+                                            </Grid>
+
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
+                                            <!-- Inspirations -->
+                                            <TextBlock Text="{DynamicResource Progress.Inspirations.Title}"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid ColumnDefinitions="160,*"
+                                                  RowDefinitions="Auto">
+                                                <TextBlock Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Inspirations.Summary.Label}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="1"
+                                                           Text="{Binding ProgressTab.InspirationsSummary}"
+                                                           VerticalAlignment="Center" />
+                                            </Grid>
+
+                                            <!-- Inspiration list header -->
+                                            <Grid ColumnDefinitions="*,80,80">
+                                                <TextBlock Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Inspirations.Name}"
+                                                           FontSize="12"
+                                                           FontWeight="SemiBold"
+                                                           Opacity="0.6" />
+                                                <TextBlock Grid.Column="1"
+                                                           Text="{DynamicResource Progress.Inspirations.Collected}"
+                                                           FontSize="12"
+                                                           FontWeight="SemiBold"
+                                                           Opacity="0.6"
+                                                           HorizontalAlignment="Center" />
+                                                <TextBlock Grid.Column="2"
+                                                           Text="{DynamicResource Progress.Inspirations.Upgraded}"
+                                                           FontSize="12"
+                                                           FontWeight="SemiBold"
+                                                           Opacity="0.6"
+                                                           HorizontalAlignment="Center" />
+                                            </Grid>
+
+                                            <ItemsControl ItemsSource="{Binding ProgressTab.Inspirations}">
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate x:DataType="core:InspirationEntry">
+                                                        <Grid ColumnDefinitions="*,80,80"
+                                                              Margin="0,2">
+                                                            <TextBlock Grid.Column="0"
+                                                                       Text="{Binding Name}"
+                                                                       VerticalAlignment="Center" />
+
+                                                            <TextBlock Grid.Column="1"
+                                                                       Text="&#x2713;"
+                                                                       IsVisible="{Binding IsCollected}"
+                                                                       HorizontalAlignment="Center"
+                                                                       Foreground="{DynamicResource SystemAccentColor}"
+                                                                       FontWeight="SemiBold" />
+                                                            <TextBlock Grid.Column="1"
+                                                                       Text="&#x2013;"
+                                                                       IsVisible="{Binding !IsCollected}"
+                                                                       HorizontalAlignment="Center"
+                                                                       Opacity="0.3" />
+
+                                                            <TextBlock Grid.Column="2"
+                                                                       Text="&#x2713;"
+                                                                       IsVisible="{Binding IsUpgraded}"
+                                                                       HorizontalAlignment="Center"
+                                                                       Foreground="{DynamicResource SystemAccentColor}"
+                                                                       FontWeight="SemiBold" />
+                                                            <TextBlock Grid.Column="2"
+                                                                       Text="&#x2013;"
+                                                                       IsVisible="{Binding !IsUpgraded}"
+                                                                       HorizontalAlignment="Center"
+                                                                       Opacity="0.3" />
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
+                                            <!-- Stats -->
+                                            <TextBlock Text="{DynamicResource Progress.Stats.Title}"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                                                  ColumnDefinitions="200,*"
+                                                  RowSpacing="10">
+
+                                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource Progress.Stats.EnemiesKilled}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding ProgressTab.EnemiesKilled}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource Progress.Stats.Dashes}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding ProgressTab.DashCount}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{DynamicResource Progress.Stats.BrushHits}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ProgressTab.BrushHits}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="3" Grid.Column="0" Text="{DynamicResource Progress.Stats.PaintThrown}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding ProgressTab.SplooshCount}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="4" Grid.Column="0" Text="{DynamicResource Progress.Stats.DamageReceived}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding ProgressTab.ReceivedDamage}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="5" Grid.Column="0" Text="{DynamicResource Progress.Stats.Electrocuted}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding ProgressTab.TimesElectrocuted}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="6" Grid.Column="0" Text="{DynamicResource Progress.Stats.Persevered}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding ProgressTab.TimesPersevered}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="7" Grid.Column="0" Text="{DynamicResource Progress.Stats.GameOvers}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding ProgressTab.GameOversByCorruption}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="8" Grid.Column="0" Text="{DynamicResource Progress.Stats.Snapshots}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding ProgressTab.SnapshotsTaken}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="9" Grid.Column="0" Text="{DynamicResource Progress.Stats.Clones}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding ProgressTab.ClonesUsed}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="10" Grid.Column="0" Text="{DynamicResource Progress.Stats.ShrineVisits}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding ProgressTab.ShrineVisits}" VerticalAlignment="Center" />
+
+                                                <TextBlock Grid.Row="11" Grid.Column="0" Text="{DynamicResource Progress.Stats.PetCat}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Row="11" Grid.Column="1" Text="{Binding ProgressTab.TimesPetCat}" VerticalAlignment="Center" />
                                             </Grid>
 
                                         </StackPanel>

@@ -1,3 +1,5 @@
+using Avalonia;
+using Avalonia.Styling;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ConstanceSaveEditor.Core.Editing;
@@ -66,6 +68,13 @@ public sealed partial class PlayerEditorViewModel : ObservableObject
         OnPropertyChanged(nameof(PlayedTimeDisplay));
     }
 
+    private static string Loc(string key)
+    {
+        if (Application.Current?.TryGetResource(key, ThemeVariant.Default, out var value) == true && value is string str)
+            return str;
+        return string.Empty;
+    }
+
     [RelayCommand]
     private void ApplyChanges()
     {
@@ -81,7 +90,7 @@ public sealed partial class PlayerEditorViewModel : ObservableObject
         AllTimeGlimmer = data.AllTimeGlimmer;
 
         ValidationMessage = adjusted
-            ? "Lifetime totals were raised to satisfy game constraints."
+            ? Loc("Player.Currency.Adjusted")
             : string.Empty;
 
         DataModified?.Invoke();

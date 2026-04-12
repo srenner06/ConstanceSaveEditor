@@ -29,6 +29,7 @@
 
     <!-- Tabs -->
     <x:String x:Key="Tab.Player">Player</x:String>
+    <x:String x:Key="Tab.Progress">Progress</x:String>
     <x:String x:Key="Tab.JSON">JSON</x:String>
     <x:String x:Key="Tab.Overview">Overview</x:String>
     <x:String x:Key="Tab.Backups">Backups</x:String>
@@ -39,6 +40,7 @@
     <x:String x:Key="Player.Currency.TotalCollected">Total Collected</x:String>
     <x:String x:Key="Player.Currency.AllTimeGlimmer">All-Time Glimmer</x:String>
     <x:String x:Key="Player.Currency.Warning">Total Collected must be ≥ Balance. Both are raised automatically if needed.</x:String>
+    <x:String x:Key="Player.Currency.Adjusted">Lifetime totals were raised to satisfy game constraints.</x:String>
     <x:String x:Key="Player.Currency.Apply">Apply Changes</x:String>
 
     <!-- Player tab: Stats -->
@@ -51,6 +53,36 @@
     <x:String x:Key="Player.Session.Title">Session Info</x:String>
     <x:String x:Key="Player.Session.Checkpoint">Checkpoint</x:String>
     <x:String x:Key="Player.Session.PlayedTime">Played Time</x:String>
+
+    <!-- Progress tab: Collectibles -->
+    <x:String x:Key="Progress.Collectibles.Title">Collectibles</x:String>
+    <x:String x:Key="Progress.Collectibles.HeartPieces">Heart Pieces</x:String>
+    <x:String x:Key="Progress.Collectibles.PaintFlasks">Paint Flasks</x:String>
+    <x:String x:Key="Progress.Collectibles.Polaroids">Polaroids</x:String>
+    <x:String x:Key="Progress.Collectibles.Erasers">Erasers</x:String>
+    <x:String x:Key="Progress.Collectibles.LightStones">Light Stones</x:String>
+
+    <!-- Progress tab: Inspirations -->
+    <x:String x:Key="Progress.Inspirations.Title">Inspirations</x:String>
+    <x:String x:Key="Progress.Inspirations.Summary.Label">Summary</x:String>
+    <x:String x:Key="Progress.Inspirations.Name">Name</x:String>
+    <x:String x:Key="Progress.Inspirations.Collected">Collected</x:String>
+    <x:String x:Key="Progress.Inspirations.Upgraded">Upgraded</x:String>
+
+    <!-- Progress tab: Stats -->
+    <x:String x:Key="Progress.Stats.Title">Combat Stats</x:String>
+    <x:String x:Key="Progress.Stats.EnemiesKilled">Enemies Killed</x:String>
+    <x:String x:Key="Progress.Stats.Dashes">Dashes</x:String>
+    <x:String x:Key="Progress.Stats.BrushHits">Brush Hits</x:String>
+    <x:String x:Key="Progress.Stats.PaintThrown">Paint Thrown</x:String>
+    <x:String x:Key="Progress.Stats.DamageReceived">Damage Received</x:String>
+    <x:String x:Key="Progress.Stats.Electrocuted">Times Electrocuted</x:String>
+    <x:String x:Key="Progress.Stats.Persevered">Times Persevered</x:String>
+    <x:String x:Key="Progress.Stats.GameOvers">Game Overs (Corruption)</x:String>
+    <x:String x:Key="Progress.Stats.Snapshots">Snapshots Taken</x:String>
+    <x:String x:Key="Progress.Stats.Clones">Clones Used</x:String>
+    <x:String x:Key="Progress.Stats.ShrineVisits">Shrine Visits</x:String>
+    <x:String x:Key="Progress.Stats.PetCat">Times Pet the Cat</x:String>
 
     <!-- JSON tab -->
     <x:String x:Key="JSON.Search.Placeholder">Search JSON…</x:String>

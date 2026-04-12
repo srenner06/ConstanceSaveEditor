@@ -61,6 +61,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
 
     public SaveEditorSession Session => _session;
     public PlayerEditorViewModel PlayerEditor { get; }
+    public ProgressTabViewModel ProgressTab { get; }
     public BackupsTabViewModel BackupsTab { get; }
 
     /// <summary>Raised when the user restores a backup and the editor should be replaced.</summary>
@@ -71,6 +72,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
         _session = session;
         PlayerEditor = new PlayerEditorViewModel(session);
         PlayerEditor.DataModified += OnPlayerDataModified;
+        ProgressTab = new ProgressTabViewModel();
         BackupsTab = new BackupsTabViewModel(session);
         BackupsTab.RestoreRequested += entry => RestoreRequested?.Invoke(entry);
         RefreshFromSession();
@@ -153,6 +155,7 @@ public sealed partial class SaveEditorViewModel : ObservableObject
         JsonText = JsonSerializer.Serialize(_session.Document.Save, PrettyOptions);
         _isRefreshing = false;
         PlayerEditor.LoadFromSession();
+        ProgressTab.LoadFromSession(_session);
         _ = BackupsTab.LoadAsync();
         OnPropertyChanged(nameof(IsDirty));
         OnPropertyChanged(nameof(SourcePath));

@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/.github/">
+    <File Path="../.github/cliff.toml" />
+    <File Path="../.github/workflows/publish.yml" />
+  </Folder>
   <Folder Name="/Docs/">
     <File Path="../docs/ROADMAP.md" />
     <File Path="../docs/CURRENT_TASK.md" />

@@ -43,7 +43,7 @@ internal static class ValidateCommand
             try
             {
                 Console.Write("Parsing JSON...  ");
-                JsonNode? node = JsonNode.Parse(archiveData.SaveJsonText);
+                var node = JsonNode.Parse(archiveData.SaveJsonText);
                 if (node is null)
                     errors.Add("save.json parsed to null.");
                 else if (node is not JsonObject)

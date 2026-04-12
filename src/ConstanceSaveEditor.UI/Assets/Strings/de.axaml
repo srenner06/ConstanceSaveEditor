@@ -29,6 +29,7 @@
 
     <!-- Tabs -->
     <x:String x:Key="Tab.Player">Spieler</x:String>
+    <x:String x:Key="Tab.Progress">Fortschritt</x:String>
     <x:String x:Key="Tab.JSON">JSON</x:String>
     <x:String x:Key="Tab.Overview">Übersicht</x:String>
     <x:String x:Key="Tab.Backups">Sicherungen</x:String>
@@ -39,6 +40,7 @@
     <x:String x:Key="Player.Currency.TotalCollected">Insgesamt gesammelt</x:String>
     <x:String x:Key="Player.Currency.AllTimeGlimmer">Gesamter Glimmer</x:String>
     <x:String x:Key="Player.Currency.Warning">Insgesamt gesammelt muss &#x2265; Guthaben sein. Beide werden bei Bedarf automatisch erhöht.</x:String>
+    <x:String x:Key="Player.Currency.Adjusted">Lifetime-Gesamtwerte wurden erhöht, um Spielbedingungen zu erfüllen.</x:String>
     <x:String x:Key="Player.Currency.Apply">Änderungen übernehmen</x:String>
 
     <!-- Spieler-Tab: Werte -->
@@ -51,6 +53,36 @@
     <x:String x:Key="Player.Session.Title">Sitzungsinfos</x:String>
     <x:String x:Key="Player.Session.Checkpoint">Kontrollpunkt</x:String>
     <x:String x:Key="Player.Session.PlayedTime">Spielzeit</x:String>
+
+    <!-- Fortschritt-Tab: Sammelgegenstände -->
+    <x:String x:Key="Progress.Collectibles.Title">Sammelgegenstände</x:String>
+    <x:String x:Key="Progress.Collectibles.HeartPieces">Herzstücke</x:String>
+    <x:String x:Key="Progress.Collectibles.PaintFlasks">Farbflaschen</x:String>
+    <x:String x:Key="Progress.Collectibles.Polaroids">Polaroids</x:String>
+    <x:String x:Key="Progress.Collectibles.Erasers">Radierer</x:String>
+    <x:String x:Key="Progress.Collectibles.LightStones">Lichtsteine</x:String>
+
+    <!-- Fortschritt-Tab: Inspirationen -->
+    <x:String x:Key="Progress.Inspirations.Title">Inspirationen</x:String>
+    <x:String x:Key="Progress.Inspirations.Summary.Label">Zusammenfassung</x:String>
+    <x:String x:Key="Progress.Inspirations.Name">Name</x:String>
+    <x:String x:Key="Progress.Inspirations.Collected">Gesammelt</x:String>
+    <x:String x:Key="Progress.Inspirations.Upgraded">Verbessert</x:String>
+
+    <!-- Fortschritt-Tab: Statistiken -->
+    <x:String x:Key="Progress.Stats.Title">Kampfstatistiken</x:String>
+    <x:String x:Key="Progress.Stats.EnemiesKilled">Besiegt Feinde</x:String>
+    <x:String x:Key="Progress.Stats.Dashes">Ausweichrollen</x:String>
+    <x:String x:Key="Progress.Stats.BrushHits">Pinseltreffern</x:String>
+    <x:String x:Key="Progress.Stats.PaintThrown">Farbe geworfen</x:String>
+    <x:String x:Key="Progress.Stats.DamageReceived">Schaden erhalten</x:String>
+    <x:String x:Key="Progress.Stats.Electrocuted">Mal elektrisiert</x:String>
+    <x:String x:Key="Progress.Stats.Persevered">Mal durchgehalten</x:String>
+    <x:String x:Key="Progress.Stats.GameOvers">Game Overs (Korruption)</x:String>
+    <x:String x:Key="Progress.Stats.Snapshots">Fotos gemacht</x:String>
+    <x:String x:Key="Progress.Stats.Clones">Klone eingesetzt</x:String>
+    <x:String x:Key="Progress.Stats.ShrineVisits">Schreinbesuche</x:String>
+    <x:String x:Key="Progress.Stats.PetCat">Mal Katze gestreichelt</x:String>
 
     <!-- JSON-Tab -->
     <x:String x:Key="JSON.Search.Placeholder">JSON durchsuchen&#x2026;</x:String>
