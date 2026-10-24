@@ -1,8 +1,13 @@
+using Avalonia;
 using CommunityToolkit.Mvvm.ComponentModel;
 using ConstanceSaveEditor.Core.Editing;
 using ConstanceSaveEditor.Core.Services;
 
 namespace ConstanceSaveEditor.UI.ViewModels.Editors;
+
+public sealed record RegionRow(string Name, string Counts, int Percent);
+
+public sealed record MissingItem(string Category, string Region, string Room);
 
 public sealed partial class ProgressTabViewModel : ObservableObject
 {
@@ -24,6 +29,15 @@ public sealed partial class ProgressTabViewModel : ObservableObject
 
     [ObservableProperty]
     private int _lightStones;
+
+    [ObservableProperty]
+    private IReadOnlyList<RegionRow> _regions = [];
+
+    [ObservableProperty]
+    private IReadOnlyList<MissingItem> _missingItems = [];
+
+    [ObservableProperty]
+    private string _completionSummary = string.Empty;
 
     // --- Inspirations ---
     [ObservableProperty]
@@ -91,6 +105,18 @@ public sealed partial class ProgressTabViewModel : ObservableObject
         Erasers = progress.Erasers;
         LightStones = progress.LightStones;
 
+        var report = CompletionCatalog.Evaluate(session.Document.Save.World.Data);
+        Regions = report.Regions
+            .Select(r => new RegionRow(Localized("Region", r.Region), r.Counts, r.Percent))
+            .ToList();
+        CompletionSummary = $"{report.Done} / {report.Total}  ({report.Percent}%)";
+        MissingItems = report.Missing
+            .OrderBy(e => e.Region, StringComparer.Ordinal)
+            .ThenBy(e => e.Level, StringComparer.Ordinal)
+            .ThenBy(e => e.Category, StringComparer.Ordinal)
+            .Select(e => new MissingItem(Localized("Category", e.Category), Localized("Region", e.Region), ShortRoom(e.Level)))
+            .ToList();
+
         Inspirations = progress.Inspirations;
         InspirationsCollected = progress.Inspirations.Count(e => e.IsCollected);
         InspirationsUpgraded = progress.Inspirations.Count(e => e.IsUpgraded);
@@ -108,4 +134,15 @@ public sealed partial class ProgressTabViewModel : ObservableObject
         ShrineVisits = progress.ShrineVisits;
         TimesPetCat = progress.TimespetCat;
     }
+
+    private static string ShortRoom(string level) =>
+        level.StartsWith("Prod_", StringComparison.Ordinal) ? level[5..] : level;
+
+    // shortcut: labels are resolved once per load, so a language switch only shows through
+    // after the save is reopened. Make them DynamicResource bindings if that bites.
+    private static string Localized(string group, string key) =>
+        Application.Current?.TryGetResource($"Progress.Missing.{group}.{key}", null, out var label) == true
+            && label is string text
+            ? text
+            : key;
 }

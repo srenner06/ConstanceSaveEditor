@@ -1,2 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <EmbeddedResource Include="Editing/completion.json" LogicalName="completion.json" />
+  </ItemGroup>
+
 </Project>

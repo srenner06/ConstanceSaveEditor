@@ -62,6 +62,30 @@
     <x:String x:Key="Progress.Collectibles.Erasers">Erasers</x:String>
     <x:String x:Key="Progress.Collectibles.LightStones">Light Stones</x:String>
 
+
+    <!-- Progress tab: Completion -->
+    <x:String x:Key="Progress.Missing.Title">Completion</x:String>
+    <x:String x:Key="Progress.Missing.Summary.Label">Overall</x:String>
+    <x:String x:Key="Progress.Missing.ListTitle">Still missing</x:String>
+    <x:String x:Key="Progress.Missing.Empty">Nothing missing — 100% complete.</x:String>
+    <x:String x:Key="Progress.Missing.Region.Academy">Astral Academy</x:String>
+    <x:String x:Key="Progress.Missing.Region.Vaults">Vanishing Vaults</x:String>
+    <x:String x:Key="Progress.Missing.Region.Carnival">Chaotic Carnival</x:String>
+    <x:String x:Key="Progress.Missing.Region.Foundry">Floral Foundry</x:String>
+    <x:String x:Key="Progress.Missing.Region.Junction">Janky Junction</x:String>
+    <x:String x:Key="Progress.Missing.Region.Peak">Painterly Peak</x:String>
+    <x:String x:Key="Progress.Missing.Region.Voids">Voids</x:String>
+    <x:String x:Key="Progress.Missing.Region.Undefined">Other</x:String>
+    <x:String x:Key="Progress.Missing.Category.Chest">Chest</x:String>
+    <x:String x:Key="Progress.Missing.Category.Milkshake">Milkshake Challenge</x:String>
+    <x:String x:Key="Progress.Missing.Category.Collectable">Collectible</x:String>
+    <x:String x:Key="Progress.Missing.Category.SecretWall">Secret Wall</x:String>
+    <x:String x:Key="Progress.Missing.Category.ManualTrigger">Special</x:String>
+    <x:String x:Key="Progress.Missing.Category.VisitedLevel">Unvisited Room</x:String>
+    <x:String x:Key="Progress.Missing.Category.ShopItem">Shop item</x:String>
+    <x:String x:Key="Progress.Missing.Category.Upgrade">Inspiration upgrade</x:String>
+    <x:String x:Key="Progress.Missing.Category.Quest">Quest</x:String>
+
     <!-- Progress tab: Inspirations -->
     <x:String x:Key="Progress.Inspirations.Title">Inspirations</x:String>
     <x:String x:Key="Progress.Inspirations.Summary.Label">Summary</x:String>

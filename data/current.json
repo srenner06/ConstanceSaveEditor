@@ -1,0 +1,4705 @@
+{
+  "Version": 2,
+  "Id": "6e6568f1-3c71-47aa-93bc-1638059d93f1",
+  "Player": {
+    "Health": 48,
+    "PotionFill": 0,
+    "CheckpointId": "cp_Prod_V23_48f5c62d-b3ff-4321-9c19-583c43185186",
+    "PersevereId": "cp_Prod_V23_48f5c62d-b3ff-4321-9c19-583c43185186",
+    "ShrineId": "cp_Prod_V23_48f5c62d-b3ff-4321-9c19-583c43185186",
+    "PlayedTime": 57298913,
+    "AfkTime": 18861883,
+    "SaveTime": 1792702251182
+  },
+  "World": {
+    "Data": [
+      {
+        "id": "ps_Achievement_GameFinishedSpeedrun1",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_GameFinishedSpeedrun2",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_AllHeartPieces",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_AllPaintFlasks",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_CollectGlimmer3",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_CollectLightstone3",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_UpgradeAllInspirations",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_PlaceInspirations2",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_AllMilkshakes",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_FullCompletion",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_FullCompletionSpeedrun",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_BertramNoodleStand",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_VincentNoodleStand",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_AllAchievements",
+        "value": "B0",
+        "timestamp": 0
+      },
+      {
+        "id": "VisitedLevel-Prod_Flashback_IntroCutscene",
+        "value": "B1",
+        "timestamp": 28
+      },
+      {
+        "id": "VisitedLevel-Prod_P01",
+        "value": "B1",
+        "timestamp": 64317
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_P01_57ec2170-4ce0-11ef-aa40-53fe06264c48-cp_Prod_P02_c9c8ac80-25d0-11ef-9929-c1ad7f40a04e",
+        "value": "I3",
+        "timestamp": 167053
+      },
+      {
+        "id": "VisitedLevel-Prod_P02",
+        "value": "B1",
+        "timestamp": 167650
+      },
+      {
+        "id": "ps_Prod_P02_3a7832a3-785d-41ce-ae8a-cc1995cf802e",
+        "value": "B1",
+        "timestamp": 193356
+      },
+      {
+        "id": "ps_Prod_P02_0f1c1e1f-72cc-45dc-a16d-c81af671905f",
+        "value": "B1",
+        "timestamp": 223853
+      },
+      {
+        "id": "ps_Prod_P02_f95e2876-4144-4bfb-9735-28ef17019d8b",
+        "value": "B1",
+        "timestamp": 224204
+      },
+      {
+        "id": "ps_Prod_P02_f630c2ab-90d8-476b-a8ee-0858d08bfd97",
+        "value": "B1",
+        "timestamp": 237682
+      },
+      {
+        "id": "VisitedLevel-Prod_V01",
+        "value": "B1",
+        "timestamp": 246218
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_P02_7c925e30-4ce0-11ef-a7cf-0d4ca85fd37f-cp_Prod_V01_7d6bf550-4ce0-11ef-a7cf-35ea7ade9f40",
+        "value": "I3",
+        "timestamp": 246296
+      },
+      {
+        "id": "ps_Prod_V01_78bc50ba-4bd5-4ab5-8436-05eb41a1ac57",
+        "value": "B1",
+        "timestamp": 253639
+      },
+      {
+        "id": "ps_unlock_Ability_Brush",
+        "value": "I1",
+        "timestamp": 285083
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Frida_V01_FirstEncounter",
+        "value": "I1",
+        "timestamp": 287658
+      },
+      {
+        "id": "ps_Prod_V01_8b5b6b40-3f79-458d-bdda-039204805f99",
+        "value": "I0",
+        "timestamp": 298969
+      },
+      {
+        "id": "ps_Prod_V01_3de048a6-1f7c-417b-9913-0ac4b5260598",
+        "value": "I0",
+        "timestamp": 302385
+      },
+      {
+        "id": "ps_Prod_V01_1617678a-ed9b-4945-8a99-90e6a26215cc",
+        "value": "B1",
+        "timestamp": 305287
+      },
+      {
+        "id": "ps_Prod_V01_f2baa7d1-8dde-43cc-84fb-abec4f165ff0",
+        "value": "B1",
+        "timestamp": 307728
+      },
+      {
+        "id": "ps_Prod_V01_ac4ef57d-77b6-46ff-a77f-76f4645d6cc9",
+        "value": "B1",
+        "timestamp": 309962
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V01_5f70fb10-25d0-11ef-a552-8b25a1965a63-cp_Prod_V02_3902d340-e920-11ef-8f40-3b1a50ea1782",
+        "value": "I3",
+        "timestamp": 312779
+      },
+      {
+        "id": "VisitedLevel-Prod_V02",
+        "value": "B1",
+        "timestamp": 313380
+      },
+      {
+        "id": "ps_Prod_V02_def63608-4825-4d9d-930a-d907f763b168",
+        "value": "B1",
+        "timestamp": 341223
+      },
+      {
+        "id": "ps_Prod_V02_d20ebc9f-e6c2-448d-a81c-573affe43074",
+        "value": "B1",
+        "timestamp": 341224
+      },
+      {
+        "id": "ps_Prod_V02_276f4a0e-4f9c-4589-810c-effa458576af",
+        "value": "B1",
+        "timestamp": 345159
+      },
+      {
+        "id": "ps_Prod_V02_800ffa0d-e4b7-44d2-a160-b8fda3a35864",
+        "value": "I0",
+        "timestamp": 349332
+      },
+      {
+        "id": "ps_Prod_V02_0781c204-545b-4cd6-93c4-114b20907f13",
+        "value": "I0",
+        "timestamp": 349333
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V02_108fc200-c640-11ed-bdab-53a97678cca5-cp_Prod_V04_11dfe8b0-c640-11ed-bdab-215e286e7f05",
+        "value": "I3",
+        "timestamp": 355042
+      },
+      {
+        "id": "VisitedLevel-Prod_V04",
+        "value": "B1",
+        "timestamp": 355648
+      },
+      {
+        "id": "ps_Prod_V04_fb2a6521-511b-4701-9c10-9e95110f920b",
+        "value": "B1",
+        "timestamp": 408940
+      },
+      {
+        "id": "ps_Prod_V04_1323ea94-0f95-dc12-c4ce-691e45cfd61c",
+        "value": "B1",
+        "timestamp": 410544
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V04_d98ea0a0-4ce0-11ef-9b9d-bdfb2e4afffa-cp_Prod_V05_db2fa670-4ce0-11ef-9b9d-e3dbfd0f032e",
+        "value": "I3",
+        "timestamp": 413936
+      },
+      {
+        "id": "VisitedLevel-Prod_V05",
+        "value": "B1",
+        "timestamp": 414533
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V05_eb2681a0-25d0-11ef-8653-81138f6418d8-cp_Prod_V06_ede5c8b0-25d0-11ef-8653-9572ae290629",
+        "value": "I3",
+        "timestamp": 439390
+      },
+      {
+        "id": "VisitedLevel-Prod_V06",
+        "value": "B1",
+        "timestamp": 439985
+      },
+      {
+        "id": "ps_Prod_V06_c60617f0-133c-48a6-b34d-549a00d93b18",
+        "value": "I0",
+        "timestamp": 472517
+      },
+      {
+        "id": "ps_Prod_V06_f85d4556-cbfa-4cf8-8c4c-74a1a584a22f",
+        "value": "I0",
+        "timestamp": 472833
+      },
+      {
+        "id": "ps_unlock_Persevere",
+        "value": "I1",
+        "timestamp": 513640
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V06_3da8ff20-25d0-11ef-8653-8b8b34c2a330-cp_Prod_V07_4b324f10-25d0-11ef-8653-2718fbe6cc1a",
+        "value": "I3",
+        "timestamp": 531379
+      },
+      {
+        "id": "VisitedLevel-Prod_V07",
+        "value": "B1",
+        "timestamp": 531982
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V07_1ca36ac0-25d0-11ef-b593-093995793263-cp_Prod_V08_c57e7830-25d0-11ef-b593-49f865fbb385",
+        "value": "I3",
+        "timestamp": 569756
+      },
+      {
+        "id": "VisitedLevel-Prod_V08",
+        "value": "B1",
+        "timestamp": 570356
+      },
+      {
+        "id": "ps_unlock_Ability_Dash",
+        "value": "I1",
+        "timestamp": 580233
+      },
+      {
+        "id": "ps_Prod_V08_cf9f4266-a082-4c53-b28e-5631cf4107a6",
+        "value": "B1",
+        "timestamp": 633031
+      },
+      {
+        "id": "ps_Prod_V08_8614565c-fe2b-4172-a9af-b15388c7c578",
+        "value": "I0",
+        "timestamp": 635799
+      },
+      {
+        "id": "ps_Prod_V08_f95af21d-691e-4f18-9d83-b5458a7abcc2",
+        "value": "I0",
+        "timestamp": 637883
+      },
+      {
+        "id": "ps_Prod_V08_47add804-cdd9-43b4-8d80-eabcfc5787b8",
+        "value": "B1",
+        "timestamp": 643050
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V07_1b9e56d0-25d0-11ef-b593-0367e3258714-cp_Prod_V08_bb938f40-25d0-11ef-b593-37d8a3473c84",
+        "value": "I3",
+        "timestamp": 661357
+      },
+      {
+        "id": "ps_unlock_CorruptedTutorialSeen",
+        "value": "I1",
+        "timestamp": 686464
+      },
+      {
+        "id": "ps_unlock_Map",
+        "value": "I1",
+        "timestamp": 754956
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_V06_FirstEncounter",
+        "value": "I1",
+        "timestamp": 780027
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J01_26437e10-73f0-11ef-a470-e9c3dbe16de8-cp_Prod_V05_29d30d70-73f0-11ef-a470-f519c0b383cb",
+        "value": "I3",
+        "timestamp": 801748
+      },
+      {
+        "id": "VisitedLevel-Prod_J01",
+        "value": "B1",
+        "timestamp": 802361
+      },
+      {
+        "id": "ps_Prod_J01_89ec5c86-30c9-4397-a349-a892af9b4c9e",
+        "value": "I0",
+        "timestamp": 832806
+      },
+      {
+        "id": "ps_Prod_J01_114e3e19-1392-445a-aa56-a4b1a89a053a",
+        "value": "I0",
+        "timestamp": 832807
+      },
+      {
+        "id": "ps_inspDrawing_NaturalTwenty",
+        "value": "I1",
+        "timestamp": 843525
+      },
+      {
+        "id": "ps_Achievement_CollectInspirationFirst",
+        "value": "B1",
+        "timestamp": 843525
+      },
+      {
+        "id": "ps_collected_first_inspiration",
+        "value": "B1",
+        "timestamp": 851344
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J01_e5e26220-25d0-11ef-b117-d9600be83e3e-cp_Prod_J02_0fe226b0-25d0-11ef-9929-6da86ed5d48d",
+        "value": "I3",
+        "timestamp": 862388
+      },
+      {
+        "id": "VisitedLevel-Prod_J02",
+        "value": "B1",
+        "timestamp": 862986
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J01_e4dfbf30-25d0-11ef-b117-010eb1a3db3a-cp_Prod_J02_0d67d7e0-25d0-11ef-9929-f527806488bb",
+        "value": "I3",
+        "timestamp": 882402
+      },
+      {
+        "id": "ps_Prod_J02_d685403c-66de-48a5-b7e4-472bca022687",
+        "value": "I0",
+        "timestamp": 889271
+      },
+      {
+        "id": "ps_Prod_J02_cd62a0f5-a3d4-460d-8039-76ad4ca13be3",
+        "value": "I0",
+        "timestamp": 892671
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J02_f81748a0-4ce0-11ef-bf1d-731a91c594f5-cp_Prod_J03_f9cf7ff0-4ce0-11ef-bf1d-cf27c2621ed9",
+        "value": "I3",
+        "timestamp": 950982
+      },
+      {
+        "id": "VisitedLevel-Prod_J03",
+        "value": "B1",
+        "timestamp": 951576
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J03_0f49cd80-4ce0-11ef-bf1d-79ee51ee916f-cp_Prod_J04_10d24240-4ce0-11ef-bf1d-c91618171484",
+        "value": "I3",
+        "timestamp": 977404
+      },
+      {
+        "id": "VisitedLevel-Prod_J04",
+        "value": "B1",
+        "timestamp": 978001
+      },
+      {
+        "id": "ps_Prod_J04_VaultsValve",
+        "value": "B1",
+        "timestamp": 978001
+      },
+      {
+        "id": "ps_Prod_J04_ArenaBeaten",
+        "value": "B1",
+        "timestamp": 1035427
+      },
+      {
+        "id": "ps_unlock_Tear_Foundry_MapIconRevealed",
+        "value": "B1",
+        "timestamp": 1066998
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J04_358ca030-4ce0-11ef-bf1d-b32f9d9aa64e-cp_Prod_J06_38ff7fd0-4ce0-11ef-bf1d-650f0947a5cc",
+        "value": "I3",
+        "timestamp": 1143074
+      },
+      {
+        "id": "VisitedLevel-Prod_J06",
+        "value": "B1",
+        "timestamp": 1143670
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F01_38151c80-73f0-11ef-a470-addc122062eb-cp_Prod_J06_369a6360-73f0-11ef-a470-9fe3799e8290",
+        "value": "I3",
+        "timestamp": 1157109
+      },
+      {
+        "id": "VisitedLevel-Prod_F01",
+        "value": "B1",
+        "timestamp": 1157732
+      },
+      {
+        "id": "ps_Prod_F01_1f369d0d-64a7-4bb6-95dc-684fe92da0d1",
+        "value": "I0",
+        "timestamp": 1162560
+      },
+      {
+        "id": "ps_Prod_F01_a36798f4-edb6-48f6-8657-23b569a21e8f",
+        "value": "I0",
+        "timestamp": 1162561
+      },
+      {
+        "id": "ps_unlock_Camera",
+        "value": "I1",
+        "timestamp": 1186566
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Robert_Tutorial",
+        "value": "I1",
+        "timestamp": 1189907
+      },
+      {
+        "id": "ps_Snapshot_0_Texture",
+        "value": "X3b70d826-6a01-4ea5-a28a-5af53e815359.jpg",
+        "timestamp": 1199054
+      },
+      {
+        "id": "ps_Snapshot_0_Level",
+        "value": "SProd_F01",
+        "timestamp": 1199054
+      },
+      {
+        "id": "ps_Snapshot_0_Position",
+        "value": "V0.9159795;0.08180081",
+        "timestamp": 1199054
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F01_11e5e990-8990-11ee-a847-61cc490d27b1-cp_Prod_F02_12784f20-8990-11ee-a284-45c411d8703d",
+        "value": "I3",
+        "timestamp": 1215792
+      },
+      {
+        "id": "VisitedLevel-Prod_F02",
+        "value": "B1",
+        "timestamp": 1216391
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F02_14b56de0-8990-11ee-a284-1da54b399375-cp_Prod_F03_a099bac0-8990-11ee-b91e-6587cc680574",
+        "value": "I3",
+        "timestamp": 1268520
+      },
+      {
+        "id": "VisitedLevel-Prod_F03",
+        "value": "B1",
+        "timestamp": 1269118
+      },
+      {
+        "id": "ps_unlock_Ability_Stab",
+        "value": "I1",
+        "timestamp": 1287009
+      },
+      {
+        "id": "ps_Prod_F03_3df4d690-d81d-41a6-ad1a-684539e3d6d0",
+        "value": "I0",
+        "timestamp": 1333729
+      },
+      {
+        "id": "ps_Prod_F03_500d6adc-fe1d-48f1-80ab-e5e4ae599888",
+        "value": "I0",
+        "timestamp": 1334579
+      },
+      {
+        "id": "ps_Prod_F03_6ba10d96-15b5-436f-b0f2-851767b313bc",
+        "value": "B1",
+        "timestamp": 1340702
+      },
+      {
+        "id": "ps_Prod_F02_cc06e08a-23b9-4cc9-ab1e-e4795e51419e",
+        "value": "B1",
+        "timestamp": 1348013
+      },
+      {
+        "id": "ps_Prod_F02_286af876-0b5b-48dd-8ee7-f8f5e52948f0",
+        "value": "B1",
+        "timestamp": 1363575
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F02_137f5ee0-8990-11ee-a284-6731c45e63fb-cp_Prod_F04_f05b65e0-b0a0-11ee-8e7b-bb6a6e161c52",
+        "value": "I3",
+        "timestamp": 1366127
+      },
+      {
+        "id": "VisitedLevel-Prod_F04",
+        "value": "B1",
+        "timestamp": 1366724
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F04_ed53cb30-b0a0-11ee-8e7b-85a370bd7247-cp_Prod_F05_ee675e10-b0a0-11ee-8e7b-8beb56cc6981",
+        "value": "I3",
+        "timestamp": 1378341
+      },
+      {
+        "id": "VisitedLevel-Prod_F05",
+        "value": "B1",
+        "timestamp": 1378938
+      },
+      {
+        "id": "ps_ElevatorUnlocked_Foundry",
+        "value": "B1",
+        "timestamp": 1386576
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Earl_Foundry_Paint_0",
+        "value": "I1",
+        "timestamp": 1391640
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F05_1229a400-b0a0-11ee-806a-05e0d2af68ee-cp_Prod_F14_a7376020-b0a0-11ee-a922-0b3a692171f6",
+        "value": "I3",
+        "timestamp": 1405606
+      },
+      {
+        "id": "VisitedLevel-Prod_F14",
+        "value": "B1",
+        "timestamp": 1406204
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F14_ab1b9f30-b0a0-11ee-a922-c9df930f0c46-cp_Prod_F15_8ca05180-b0a0-11ee-a922-c59cd544063c",
+        "value": "I3",
+        "timestamp": 1439383
+      },
+      {
+        "id": "VisitedLevel-Prod_F15",
+        "value": "B1",
+        "timestamp": 1439981
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F15_8b564550-b0a0-11ee-a922-33c30daf3994-cp_Prod_F16_67c95c20-b0a0-11ee-a922-bd3f9b59ce99",
+        "value": "I3",
+        "timestamp": 1490598
+      },
+      {
+        "id": "VisitedLevel-Prod_F16",
+        "value": "B1",
+        "timestamp": 1491193
+      },
+      {
+        "id": "ps_Prod_F16_89ee4b58-e0d8-43bc-9392-9ce475d3962b",
+        "value": "B1",
+        "timestamp": 1505083
+      },
+      {
+        "id": "ps_Prod_F16_a046b9c0-14bd-4053-b0ad-cef476f54daa",
+        "value": "B1",
+        "timestamp": 1507342
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F16_37ccc050-25d0-11ef-a648-2d06202d1265-cp_Prod_F29_351e1b10-25d0-11ef-a648-e31f8a45b32f",
+        "value": "I3",
+        "timestamp": 1527602
+      },
+      {
+        "id": "VisitedLevel-Prod_F29",
+        "value": "B1",
+        "timestamp": 1528199
+      },
+      {
+        "id": "ps_Prod_F16_1238a879-c1b4-4c32-b5ff-cdf7a9a15f2d",
+        "value": "B1",
+        "timestamp": 1604935
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F16_68e07170-b0a0-11ee-a922-6b80da7f6409-cp_Prod_F17_97b61e80-b0a0-11ee-a922-512e9d3e06cd",
+        "value": "I3",
+        "timestamp": 1607827
+      },
+      {
+        "id": "VisitedLevel-Prod_F17",
+        "value": "B1",
+        "timestamp": 1608432
+      },
+      {
+        "id": "ps_inspDrawing_TaxRefund",
+        "value": "I1",
+        "timestamp": 1637577
+      },
+      {
+        "id": "Prod_F17_door",
+        "value": "B1",
+        "timestamp": 1670805
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F17_1ea41100-b0a0-11ee-a99c-65938edfe279-cp_Prod_F18_22898890-b0a0-11ee-a99c-ffd26bbd592d",
+        "value": "I3",
+        "timestamp": 1672087
+      },
+      {
+        "id": "VisitedLevel-Prod_F18",
+        "value": "B1",
+        "timestamp": 1672690
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F18_2e2025b0-b0a0-11ee-a99c-098a69ae124e-cp_Prod_F19_e234edb0-b0a0-11ee-99e7-a3ed21480842",
+        "value": "I3",
+        "timestamp": 1743966
+      },
+      {
+        "id": "VisitedLevel-Prod_F19",
+        "value": "B1",
+        "timestamp": 1744570
+      },
+      {
+        "id": "ps_Prod_F19_9fba6846-5254-4912-81f8-c123da6df4ec",
+        "value": "I0",
+        "timestamp": 1792307
+      },
+      {
+        "id": "ps_Prod_F19_92434f57-e4a9-432c-8cba-53fbb807d4f6",
+        "value": "I0",
+        "timestamp": 1792531
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F19_5cf5b780-e920-11ef-a34f-4fcfc19e4d82-cp_Prod_F21_dda7c470-b0a0-11ee-99e7-99fedf5af7b1",
+        "value": "I3",
+        "timestamp": 1866616
+      },
+      {
+        "id": "VisitedLevel-Prod_F21",
+        "value": "B1",
+        "timestamp": 1867219
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F15_75cecd00-e920-11ef-a34f-474afbd9ef25-cp_Prod_F21_de98b420-b0a0-11ee-99e7-35a9731e25d3",
+        "value": "I3",
+        "timestamp": 1867292
+      },
+      {
+        "id": "Prod_F21_Smasher",
+        "value": "B1",
+        "timestamp": 1869559
+      },
+      {
+        "id": "ps_Boss_Smasher_Attempts",
+        "value": "I1",
+        "timestamp": 1885085
+      },
+      {
+        "id": "ps_Boss_Smasher_Beaten",
+        "value": "B1",
+        "timestamp": 2068385
+      },
+      {
+        "id": "ps_Prod_F21_6a1b3f09-be2b-4645-a74f-75174bace78d",
+        "value": "B1",
+        "timestamp": 2077736
+      },
+      {
+        "id": "ps_Achievement_CollectLightstone1",
+        "value": "B1",
+        "timestamp": 2079003
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F21_db6dda00-b0a0-11ee-99e7-0d5b9e839be1-cp_Prod_F22_daa99fa0-b0a0-11ee-99e7-31e6f08f391c",
+        "value": "I3",
+        "timestamp": 2081495
+      },
+      {
+        "id": "VisitedLevel-Prod_F22",
+        "value": "B1",
+        "timestamp": 2082093
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F14_a899af40-b0a0-11ee-a922-05d3d2a0e3b0-cp_Prod_F22_d8c6fcf0-b0a0-11ee-99e7-d3069ce48d68",
+        "value": "I3",
+        "timestamp": 2082154
+      },
+      {
+        "id": "ps_Foundry_Paint_Rectangle",
+        "value": "B1",
+        "timestamp": 2089730
+      },
+      {
+        "id": "ps_Prod_F05_6c7d0733-6830-4b23-a44d-3616b22dc154",
+        "value": "B1",
+        "timestamp": 2120913
+      },
+      {
+        "id": "ps_Prod_F05_c73b67be-b1eb-c0f5-3d58-4d7361915486",
+        "value": "I0",
+        "timestamp": 2122531
+      },
+      {
+        "id": "ps_Prod_F05_45cceead-3e2f-4ce9-8df5-af4f9c2593ba",
+        "value": "I0",
+        "timestamp": 2122997
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Earl_Foundry_Paint_1",
+        "value": "I1",
+        "timestamp": 2146725
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F05_9a1fef10-b0a0-11ee-979c-cf04a9e9ddd9-cp_Prod_F06_9c29efe0-b0a0-11ee-979c-7330ec36f67a",
+        "value": "I3",
+        "timestamp": 2244091
+      },
+      {
+        "id": "VisitedLevel-Prod_F06",
+        "value": "B1",
+        "timestamp": 2244691
+      },
+      {
+        "id": "ps_Prod_F06_ccee5bd6-fc4b-4b1e-ab1d-c1da6345fb45",
+        "value": "B1",
+        "timestamp": 2267437
+      },
+      {
+        "id": "ps_Prod_F06_bbe983fb-de44-4cbb-ad01-7789d118de24",
+        "value": "I0",
+        "timestamp": 2269729
+      },
+      {
+        "id": "ps_Prod_F06_a10d58ce-2eda-427f-9511-6c2ead380943",
+        "value": "I0",
+        "timestamp": 2270829
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F06_d99dbfe0-b0a0-11ee-a771-5174bb6c381f-cp_Prod_F07_1781cc70-b0a0-11ee-979c-f7839d1d5842",
+        "value": "I3",
+        "timestamp": 2277013
+      },
+      {
+        "id": "VisitedLevel-Prod_F07",
+        "value": "B1",
+        "timestamp": 2277610
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F07_19afd000-b0a0-11ee-979c-0197eb84c5f6-cp_Prod_F08_ac2b5b90-b0a0-11ee-9322-399a776367bb",
+        "value": "I3",
+        "timestamp": 2315173
+      },
+      {
+        "id": "VisitedLevel-Prod_F08",
+        "value": "B1",
+        "timestamp": 2315769
+      },
+      {
+        "id": "ps_Prod_F08_dce2b09a-bf8a-40f9-aa2a-dd58f6b73e64",
+        "value": "B1",
+        "timestamp": 2335978
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F08_1561aa70-b0a0-11ee-a1dd-f1ac8d6d28d8-cp_Prod_F09_132a3100-b0a0-11ee-a1dd-2da33a3b20de",
+        "value": "I3",
+        "timestamp": 2341354
+      },
+      {
+        "id": "VisitedLevel-Prod_F09",
+        "value": "B1",
+        "timestamp": 2341953
+      },
+      {
+        "id": "ps_Prod_F09_ce6f8b75-d99b-4749-98b4-d8fd3fa2ed83",
+        "value": "B1",
+        "timestamp": 2407069
+      },
+      {
+        "id": "ps_Prod_F09_SC",
+        "value": "B1",
+        "timestamp": 2410069
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F09_1cfde890-b0a0-11ee-9e53-f3ad57fd8935-cp_Prod_F10_47294bd0-b0a0-11ee-b78d-95d27e5fbf4e",
+        "value": "I3",
+        "timestamp": 2411136
+      },
+      {
+        "id": "VisitedLevel-Prod_F10",
+        "value": "B1",
+        "timestamp": 2411733
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F08_ebbb3e70-b0a0-11ee-9322-754938bbb871-cp_Prod_F10_ed0a53b0-b0a0-11ee-9322-374426212450",
+        "value": "I3",
+        "timestamp": 2411807
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F10_a5417680-b0a0-11ee-9e53-b545913098b0-cp_Prod_F11_631a4a10-b0a0-11ee-9322-df3d90ef7e92",
+        "value": "I3",
+        "timestamp": 2459606
+      },
+      {
+        "id": "VisitedLevel-Prod_F11",
+        "value": "B1",
+        "timestamp": 2460201
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F11_645ba3b0-b0a0-11ee-9322-d3b488c47bb3-cp_Prod_F12_18fb9c40-b0a0-11ee-8a68-8f215c88ea44",
+        "value": "I3",
+        "timestamp": 2497462
+      },
+      {
+        "id": "VisitedLevel-Prod_F12",
+        "value": "B1",
+        "timestamp": 2498056
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F07_1eb3b0f0-b0a0-11ee-8a68-53a2854a68c5-cp_Prod_F12_1cf62270-b0a0-11ee-8a68-9b39df8df174",
+        "value": "I3",
+        "timestamp": 2561341
+      },
+      {
+        "id": "ps_Prod_F12_SC",
+        "value": "B1",
+        "timestamp": 2569426
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F12_6fe427e0-e920-11ef-a34f-2543251540d4-cp_Prod_F13_b043b950-b0a0-11ee-b4a3-253c95fc6541",
+        "value": "I3",
+        "timestamp": 2590904
+      },
+      {
+        "id": "VisitedLevel-Prod_F13",
+        "value": "B1",
+        "timestamp": 2591501
+      },
+      {
+        "id": "ps_Prod_F13_39fa660d-e675-4ba4-a5fe-4ce288861ae1",
+        "value": "B1",
+        "timestamp": 2647378
+      },
+      {
+        "id": "ps_Prod_F13_c5e9a808-8a12-5dbe-943b-9e50cadf6f18",
+        "value": "B1",
+        "timestamp": 2649036
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F06_88ccf4d0-e920-11ef-a34f-7d825bc2a98c-cp_Prod_F13_aedd99a0-b0a0-11ee-b4a3-e59800e26741",
+        "value": "I3",
+        "timestamp": 2652807
+      },
+      {
+        "id": "ps_Foundry_Paint_Triangle",
+        "value": "B1",
+        "timestamp": 2656407
+      },
+      {
+        "id": "ps_ElevatorRepaired",
+        "value": "B1",
+        "timestamp": 2686453
+      },
+      {
+        "id": "ps_shopItem_PaintPiece1",
+        "value": "I1",
+        "timestamp": 2887971
+      },
+      {
+        "id": "ps_shopItem_Potion1",
+        "value": "I1",
+        "timestamp": 2895180
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J04_146b6e90-4ce0-11ef-bf1d-d3e141fa4b6a-cp_Prod_J05_32531250-4ce0-11ef-bf1d-ebaa181a1e87",
+        "value": "I3",
+        "timestamp": 2903399
+      },
+      {
+        "id": "VisitedLevel-Prod_J05",
+        "value": "B1",
+        "timestamp": 2903999
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.TrainConductor_J05_TrainStuck",
+        "value": "I1",
+        "timestamp": 2920407
+      },
+      {
+        "id": "ps_Prod_F01_b6546dcf-a120-45da-ac75-c7735ab7eea0",
+        "value": "I0",
+        "timestamp": 2998999
+      },
+      {
+        "id": "ps_ShopKeeperFound_Prod_F29",
+        "value": "B1",
+        "timestamp": 3229532
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_F29",
+        "value": "I1",
+        "timestamp": 3230532
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F18_14c10a80-25d0-11ef-a648-d5bdd927aa12-cp_Prod_F29_19cf4aa0-25d0-11ef-a648-a398249e7a40",
+        "value": "I3",
+        "timestamp": 3268338
+      },
+      {
+        "id": "ps_Prod_F16_9bb0bb03-6b97-4a38-be77-5a2472d6e5e7",
+        "value": "I0",
+        "timestamp": 3400398
+      },
+      {
+        "id": "ps_Prod_F16_0643e396-be0b-44b4-a747-97e9044d6819",
+        "value": "I0",
+        "timestamp": 3400715
+      },
+      {
+        "id": "ps_Prod_F16_73ad0ace-f757-4b73-b085-c428be368c01",
+        "value": "I0",
+        "timestamp": 3400790
+      },
+      {
+        "id": "ps_shopItem_MapIcons",
+        "value": "I1",
+        "timestamp": 3528268
+      },
+      {
+        "id": "ps_unlock_MapIcons",
+        "value": "I1",
+        "timestamp": 3528268
+      },
+      {
+        "id": "ps_Achievement_CollectGlimmer1",
+        "value": "B1",
+        "timestamp": 3964823
+      },
+      {
+        "id": "ps_shopItem_HeartPiece1",
+        "value": "I1",
+        "timestamp": 3964824
+      },
+      {
+        "id": "ps_shopItem_Snapshot1",
+        "value": "I1",
+        "timestamp": 3969805
+      },
+      {
+        "id": "ps_shopItem_Snapshot2",
+        "value": "I1",
+        "timestamp": 3972806
+      },
+      {
+        "id": "ps_shopItem_Snapshot3",
+        "value": "I1",
+        "timestamp": 3976790
+      },
+      {
+        "id": "ps_shopItem_SnapshotPack1",
+        "value": "I1",
+        "timestamp": 3979689
+      },
+      {
+        "id": "VisitedLevel-Prod_F28",
+        "value": "B1",
+        "timestamp": 4752345
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Elevator_BrainStoker_FirstArrival",
+        "value": "I1",
+        "timestamp": 4781729
+      },
+      {
+        "id": "ps_Boss_BrainStoker_Attempts",
+        "value": "I3",
+        "timestamp": 5135881
+      },
+      {
+        "id": "ps_Boss_BrainStoker_Beaten",
+        "value": "B1",
+        "timestamp": 5317558
+      },
+      {
+        "id": "VisitedLevel-Prod_Flashback_Photoshop",
+        "value": "B1",
+        "timestamp": 5333604
+      },
+      {
+        "id": "ps_unlock_Tear_Foundry",
+        "value": "I1",
+        "timestamp": 5585864
+      },
+      {
+        "id": "ps_Achievement_TearFoundry",
+        "value": "B1",
+        "timestamp": 5585865
+      },
+      {
+        "id": "ps_unlock_Tear_Academy_MapIconRevealed",
+        "value": "B1",
+        "timestamp": 5663492
+      },
+      {
+        "id": "ps_unlock_Tear_Vaults_MapIconRevealed",
+        "value": "B1",
+        "timestamp": 5663492
+      },
+      {
+        "id": "ps_unlock_Tear_Carnival_MapIconRevealed",
+        "value": "B1",
+        "timestamp": 5663492
+      },
+      {
+        "id": "ps_quest_Foundry_intel",
+        "value": "SABCD",
+        "timestamp": 5682719
+      },
+      {
+        "id": "ps_quest_Foundry_status",
+        "value": "I2",
+        "timestamp": 5682720
+      },
+      {
+        "id": "ps_Prod_F28_3d85e942-2fe9-46ca-9f5f-c9a2890d9d4f",
+        "value": "B1",
+        "timestamp": 5682727
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Elevator_BrainStoker_BrianDead",
+        "value": "I1",
+        "timestamp": 5702396
+      },
+      {
+        "id": "ps_inspDrawing_StabLifesteal",
+        "value": "I1",
+        "timestamp": 5704137
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F28_4b32fce0-73f0-11ef-91d7-19be52b24d81-cp_Prod_VD01_522feda0-73f0-11ef-91d7-1d5ddf16a67a",
+        "value": "I3",
+        "timestamp": 5722621
+      },
+      {
+        "id": "VisitedLevel-Prod_VD01",
+        "value": "B1",
+        "timestamp": 5723218
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J03_0097a510-4ce0-11ef-bf1d-f15168010ec0-cp_Prod_J07_24326c60-73f0-11ef-91d7-7941a41c9300",
+        "value": "I3",
+        "timestamp": 10632511
+      },
+      {
+        "id": "VisitedLevel-Prod_J07",
+        "value": "B1",
+        "timestamp": 10633114
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J07_22c65940-73f0-11ef-91d7-0d1328e93a9b-cp_Prod_V05_acd821a0-4ce0-11ef-8177-21a590347d42",
+        "value": "I3",
+        "timestamp": 10657266
+      },
+      {
+        "id": "ps_Prod_J07_a115468a-2a96-4b67-9ebd-37e0be846c63",
+        "value": "B1",
+        "timestamp": 10658357
+      },
+      {
+        "id": "ps_Prod_J02_3a916616-3894-45ef-a63a-2012dd80ac3a",
+        "value": "B1",
+        "timestamp": 10875704
+      },
+      {
+        "id": "ps_Prod_J02_b55fa884-877e-489d-be7e-b6c69c3ee432",
+        "value": "I0",
+        "timestamp": 10879752
+      },
+      {
+        "id": "ps_Prod_J02_fd29a6b0-2776-4203-a0f0-ad6acf60e79a",
+        "value": "I0",
+        "timestamp": 10879753
+      },
+      {
+        "id": "ps_Prod_J02_6cc9f6b0-0e70-4a6c-93a0-bef112bb7893",
+        "value": "I0",
+        "timestamp": 10880436
+      },
+      {
+        "id": "ps_Prod_J02_598d4843-2315-4dec-be8d-d8dc354a28a1",
+        "value": "I0",
+        "timestamp": 10881361
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J03_ffc253b0-4ce0-11ef-bf1d-bf8a2fe14787-cp_Prod_J08_02d17100-e920-11ef-8e68-fd2d0fbaff7b",
+        "value": "I3",
+        "timestamp": 10902370
+      },
+      {
+        "id": "VisitedLevel-Prod_J08",
+        "value": "B1",
+        "timestamp": 10902972
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J08_03cf0ae0-e920-11ef-8e68-1d25e0366acc-cp_Prod_J09_9c257b00-e920-11ef-8e68-8d2bca420f4a",
+        "value": "I3",
+        "timestamp": 10966901
+      },
+      {
+        "id": "VisitedLevel-Prod_J09",
+        "value": "B1",
+        "timestamp": 10967506
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J09_9d353d50-e920-11ef-8e68-973f6b8f7f0a-cp_Prod_J10_3a2e56e0-e920-11ef-a371-99c93e393c7f",
+        "value": "I3",
+        "timestamp": 10975934
+      },
+      {
+        "id": "VisitedLevel-Prod_J10",
+        "value": "B1",
+        "timestamp": 10976539
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J10_3d0fcbf0-e920-11ef-a371-83f248431fad-cp_Prod_J11_7384b560-e920-11ef-bce1-7fbbb977f33a",
+        "value": "I3",
+        "timestamp": 11038299
+      },
+      {
+        "id": "VisitedLevel-Prod_J11",
+        "value": "B1",
+        "timestamp": 11038893
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J11_64c44f90-e920-11ef-bce1-e1520a524406-cp_Prod_J15_f589a4f0-e920-11ef-8b9e-99673e5dc772",
+        "value": "I3",
+        "timestamp": 11047573
+      },
+      {
+        "id": "VisitedLevel-Prod_J15",
+        "value": "B1",
+        "timestamp": 11048178
+      },
+      {
+        "id": "ps_Prod_J15_2c94d74d-9e3b-4086-8613-38ffb45c3ed0",
+        "value": "I0",
+        "timestamp": 11051024
+      },
+      {
+        "id": "ps_Prod_J15_1431b5cb-142a-4cb3-abeb-49eb1a66525d",
+        "value": "I0",
+        "timestamp": 11051456
+      },
+      {
+        "id": "ps_Prod_J11_cb0023dd-ae7a-4ead-a9d8-d2ba2ecf9cca",
+        "value": "I0",
+        "timestamp": 11083680
+      },
+      {
+        "id": "ps_Prod_J11_c7976a4d-8036-4c76-8184-9798be055b07",
+        "value": "I0",
+        "timestamp": 11083996
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J11_66228000-e920-11ef-bce1-1d4ea3480648-cp_Prod_J12_5083de40-e920-11ef-bda8-5fa12eeff07f",
+        "value": "I3",
+        "timestamp": 11095539
+      },
+      {
+        "id": "VisitedLevel-Prod_J12",
+        "value": "B1",
+        "timestamp": 11096144
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J12_51b13ab0-e920-11ef-bda8-9d425dd97530-cp_Prod_J13_14dbcdd0-e920-11ef-bda8-85d83bf0c16f",
+        "value": "I3",
+        "timestamp": 11118185
+      },
+      {
+        "id": "VisitedLevel-Prod_J13",
+        "value": "B1",
+        "timestamp": 11118779
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J11_713c24f0-e920-11ef-bce1-3158783c09f6-cp_Prod_J13_14003ae0-e920-11ef-bda8-132ff5e74d84",
+        "value": "I3",
+        "timestamp": 11127800
+      },
+      {
+        "id": "ps_Prod_J13_bffdb0da-6840-4a0b-a813-a6f5c827ee24",
+        "value": "B1",
+        "timestamp": 11183735
+      },
+      {
+        "id": "ps_Prod_J13_2176d0ba-6fff-4407-417a-ecbe13c97576",
+        "value": "B1",
+        "timestamp": 11185536
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J13_1669c0d0-e920-11ef-bda8-2dca7d0d7478-cp_Prod_J14_5bc9f4f0-e920-11ef-bda8-b1cb87c2b282",
+        "value": "I3",
+        "timestamp": 11188605
+      },
+      {
+        "id": "VisitedLevel-Prod_J14",
+        "value": "B1",
+        "timestamp": 11189208
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J13_15aadda0-e920-11ef-bda8-85c95d73cdc6-cp_Prod_J14_5ae5d680-e920-11ef-bda8-93f070f89f53",
+        "value": "I3",
+        "timestamp": 11206981
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A32_ead890b0-1030-11f0-8fef-216f9ae33b68-cp_Prod_J14_ec16dd10-1030-11f0-8fef-c9729884805d",
+        "value": "I3",
+        "timestamp": 11268464
+      },
+      {
+        "id": "VisitedLevel-Prod_A32",
+        "value": "B1",
+        "timestamp": 11269065
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A32_5493a3d0-c210-11ef-9877-c7b102ccb7b1-cp_Prod_C01_8f618540-e920-11ef-acce-fd66fbcb15b0",
+        "value": "I3",
+        "timestamp": 11323791
+      },
+      {
+        "id": "VisitedLevel-Prod_C01",
+        "value": "B1",
+        "timestamp": 11324394
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A31_3e20cad0-c210-11ef-9877-870cb98e2707-cp_Prod_A32_a76f73a0-c210-11ef-9877-4bb1505b7eb0",
+        "value": "I3",
+        "timestamp": 11331889
+      },
+      {
+        "id": "VisitedLevel-Prod_A31",
+        "value": "B1",
+        "timestamp": 11332491
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A30_c344d600-c210-11ef-9877-e5d9194db706-cp_Prod_A31_dd514cd0-e920-11ef-93c8-0d2ebf29efb6",
+        "value": "I3",
+        "timestamp": 11375572
+      },
+      {
+        "id": "VisitedLevel-Prod_A30",
+        "value": "B1",
+        "timestamp": 11376178
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A29_c663a230-c210-11ef-9877-1bd94d207c4e-cp_Prod_A30_c4876820-c210-11ef-9877-c5cb0ba19103",
+        "value": "I3",
+        "timestamp": 11812630
+      },
+      {
+        "id": "VisitedLevel-Prod_A29",
+        "value": "B1",
+        "timestamp": 11813225
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A28_9a296f40-c210-11ef-9877-e70090054be8-cp_Prod_A29_4f416f20-c210-11ef-9877-dd4c49c4602e",
+        "value": "I3",
+        "timestamp": 11840034
+      },
+      {
+        "id": "VisitedLevel-Prod_A28",
+        "value": "B1",
+        "timestamp": 11840636
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A05_6a4522e0-9b00-11ef-99eb-c147ce706c26-cp_Prod_A28_98db6b70-c210-11ef-9877-1d48921200ee",
+        "value": "I3",
+        "timestamp": 11923498
+      },
+      {
+        "id": "VisitedLevel-Prod_A05",
+        "value": "B1",
+        "timestamp": 11924095
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A05_6b66bf80-9b00-11ef-99eb-f51a4707f121-cp_Prod_A06_aa53c1c0-9b00-11ef-99eb-052961bdb0b9",
+        "value": "I3",
+        "timestamp": 11944287
+      },
+      {
+        "id": "VisitedLevel-Prod_A06",
+        "value": "B1",
+        "timestamp": 11944884
+      },
+      {
+        "id": "ps_unlock_Ability_Slice",
+        "value": "I1",
+        "timestamp": 11959596
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A05_2dbe2940-9b00-11ef-bd03-a3aab7e6f57b-cp_Prod_A06_567a2b90-9b00-11ef-bd03-67b14b90727e",
+        "value": "I3",
+        "timestamp": 11973386
+      },
+      {
+        "id": "Academy_SliceUnlockDoor",
+        "value": "B1",
+        "timestamp": 11974403
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A05_69543330-9b00-11ef-99eb-058713c121fd-cp_Prod_A07_1f8e99f0-9b00-11ef-841a-bd0c36925266",
+        "value": "I3",
+        "timestamp": 11982105
+      },
+      {
+        "id": "VisitedLevel-Prod_A07",
+        "value": "B1",
+        "timestamp": 11982709
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A07_abe3d040-9b00-11ef-99eb-07b409db33aa-cp_Prod_A08_099f2cc0-9b00-11ef-b44d-a954897f37a0",
+        "value": "I3",
+        "timestamp": 12037105
+      },
+      {
+        "id": "VisitedLevel-Prod_A08",
+        "value": "B1",
+        "timestamp": 12037710
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A08_0b08f5f0-9b00-11ef-b44d-d568bf5cb5d4-cp_Prod_A09_a49128f0-9b00-11ef-b44d-2fe803fde0b4",
+        "value": "I3",
+        "timestamp": 12097845
+      },
+      {
+        "id": "VisitedLevel-Prod_A09",
+        "value": "B1",
+        "timestamp": 12098440
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A09_a6f64210-9b00-11ef-b44d-d9f6045255fd-cp_Prod_A12_57bdf670-9b00-11ef-b44d-6194fcb0e1b6",
+        "value": "I3",
+        "timestamp": 12144778
+      },
+      {
+        "id": "VisitedLevel-Prod_A12",
+        "value": "B1",
+        "timestamp": 12145381
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A09_a8a551a0-9b00-11ef-b44d-bf58d9827bcf-cp_Prod_A10_640a3050-9b00-11ef-b44d-239afbf94d51",
+        "value": "I3",
+        "timestamp": 12152814
+      },
+      {
+        "id": "VisitedLevel-Prod_A10",
+        "value": "B1",
+        "timestamp": 12153420
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A10_7ee32b80-e920-11ef-bce1-e77b5514ddf7-cp_Prod_J10_802d10a0-e920-11ef-bce1-d948aed8f217",
+        "value": "I3",
+        "timestamp": 12197553
+      },
+      {
+        "id": "A10_RobertDoorUp",
+        "value": "B1",
+        "timestamp": 12199153
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A10_61a0aa60-9b00-11ef-b44d-b35b22e2c66e-cp_Prod_A11_330491a0-9b00-11ef-b44d-33e5db469f44",
+        "value": "I3",
+        "timestamp": 12228315
+      },
+      {
+        "id": "VisitedLevel-Prod_A11",
+        "value": "B1",
+        "timestamp": 12228919
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A11_343b63f0-9b00-11ef-b44d-0384dbffcc9a-cp_Prod_A14_48963bf0-9b00-11ef-b44d-21af5fccbe40",
+        "value": "I3",
+        "timestamp": 12301060
+      },
+      {
+        "id": "VisitedLevel-Prod_A14",
+        "value": "B1",
+        "timestamp": 12301663
+      },
+      {
+        "id": "ps_Snapshot_2_Texture",
+        "value": "Xf1b807eb-07ee-45d6-8e16-72cf0f66d140.jpg",
+        "timestamp": 12309133
+      },
+      {
+        "id": "ps_Snapshot_2_Level",
+        "value": "SProd_A14",
+        "timestamp": 12309133
+      },
+      {
+        "id": "ps_Snapshot_2_Position",
+        "value": "V0.2368131;0.799306",
+        "timestamp": 12309133
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A13_ffa3aec0-9b00-11ef-b44d-21a0fc97585a-cp_Prod_A14_49809bf0-9b00-11ef-b44d-85f5e4f72c74",
+        "value": "I3",
+        "timestamp": 12346818
+      },
+      {
+        "id": "VisitedLevel-Prod_A13",
+        "value": "B1",
+        "timestamp": 12347414
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A12_58afd080-9b00-11ef-b44d-6bccb7b89fc2-cp_Prod_A13_fe36b140-9b00-11ef-b44d-135d39efae8a",
+        "value": "I3",
+        "timestamp": 12361519
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Vincent_Academy_Notes_0",
+        "value": "I2",
+        "timestamp": 12484520
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A07_ac971ab0-9b00-11ef-99eb-1514fb1e9d39-cp_Prod_A17_4471f240-1460-11ee-bfae-715a0e33562b",
+        "value": "I3",
+        "timestamp": 12498158
+      },
+      {
+        "id": "VisitedLevel-Prod_A17",
+        "value": "B1",
+        "timestamp": 12498754
+      },
+      {
+        "id": "ps_SnapshotGhost_Prod_A14",
+        "value": "I2",
+        "timestamp": 12625250
+      },
+      {
+        "id": "ps_ElevatorUnlocked_Academy",
+        "value": "B1",
+        "timestamp": 13425824
+      },
+      {
+        "id": "ps_Prod_A13_4069dd52-844f-41ff-9464-38f3bd2871c5",
+        "value": "I0",
+        "timestamp": 13713499
+      },
+      {
+        "id": "ps_Prod_A13_1bf1e154-a5c6-4921-827f-83558af115e9",
+        "value": "I0",
+        "timestamp": 13713500
+      },
+      {
+        "id": "ps_Prod_A13_88023acd-49e4-4c63-a55d-2b1d8773488d",
+        "value": "I0",
+        "timestamp": 13714565
+      },
+      {
+        "id": "ps_Prod_A13_2209f0ad-72cd-4bcf-b3be-6ef33d5abc7a",
+        "value": "I0",
+        "timestamp": 13715573
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A14_503ab750-9b00-11ef-b44d-85f6dd21bce7-cp_Prod_A15_ff31abb0-9b00-11ef-b44d-6945a1ef58ee",
+        "value": "I3",
+        "timestamp": 13959982
+      },
+      {
+        "id": "VisitedLevel-Prod_A15",
+        "value": "B1",
+        "timestamp": 13960578
+      },
+      {
+        "id": "ps_Prod_A15_4a456141-eca8-461c-9796-d32ef3c0bca9",
+        "value": "I0",
+        "timestamp": 13969413
+      },
+      {
+        "id": "ps_Prod_A15_0195e808-3a00-4e45-b2d8-b8ba845b5e06",
+        "value": "I0",
+        "timestamp": 13970172
+      },
+      {
+        "id": "Academy_Safepoint_Aweking_Backtrack",
+        "value": "B1",
+        "timestamp": 13979373
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A03_03930a00-9b00-11ef-b44d-118a9ee97d7e-cp_Prod_A15_0492c6c0-9b00-11ef-b44d-6b3cd1fb56b6",
+        "value": "I3",
+        "timestamp": 13981865
+      },
+      {
+        "id": "VisitedLevel-Prod_A03",
+        "value": "B1",
+        "timestamp": 13982470
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A03_8e18f590-9b00-11ef-99eb-9db7e81843c5-cp_Prod_A04_393c9ad0-9b00-11ef-99eb-df3a1247272e",
+        "value": "I3",
+        "timestamp": 14180716
+      },
+      {
+        "id": "VisitedLevel-Prod_A04",
+        "value": "B1",
+        "timestamp": 14181311
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A04_3a3811d0-9b00-11ef-99eb-d30af465f9a8-cp_Prod_A05_68876d50-9b00-11ef-99eb-895d26d118ad",
+        "value": "I3",
+        "timestamp": 14194455
+      },
+      {
+        "id": "ps_Prod_A04_cfd673c8-f0be-4a90-9cc5-854deab05d53",
+        "value": "I0",
+        "timestamp": 14195630
+      },
+      {
+        "id": "ps_Prod_A04_4f78995a-fdce-48f2-906b-ef8a0a203c50",
+        "value": "I0",
+        "timestamp": 14196464
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A03_8ee4aa00-9b00-11ef-99eb-654740a14fd1-cp_Prod_A33_5afd3300-c210-11ef-8852-677696ceb9a9",
+        "value": "I3",
+        "timestamp": 14284031
+      },
+      {
+        "id": "VisitedLevel-Prod_A33",
+        "value": "B1",
+        "timestamp": 14284628
+      },
+      {
+        "id": "ps_Prod_A15_64176d84-fce0-47b7-85ff-3d71e9bc9324",
+        "value": "I0",
+        "timestamp": 14418028
+      },
+      {
+        "id": "ps_Prod_A15_5f58e1b8-9a17-4475-9a43-511d64c738f7",
+        "value": "I0",
+        "timestamp": 14418029
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A15_078ec8b0-9b00-11ef-b44d-b9e00e747aab-cp_Prod_A16_08a800e0-9b00-11ef-b44d-37183fa010d2",
+        "value": "I3",
+        "timestamp": 14427479
+      },
+      {
+        "id": "VisitedLevel-Prod_A16",
+        "value": "B1",
+        "timestamp": 14428083
+      },
+      {
+        "id": "ps_Snapshot_1_Texture",
+        "value": "X4d6c3de8-b551-4120-adab-ee1ec02b6699.jpg",
+        "timestamp": 14450729
+      },
+      {
+        "id": "ps_Snapshot_1_Level",
+        "value": "SProd_A16",
+        "timestamp": 14450729
+      },
+      {
+        "id": "ps_Snapshot_1_Position",
+        "value": "V0.4568278;0.2006212",
+        "timestamp": 14450729
+      },
+      {
+        "id": "ps_Boss_AweKing_Attempts",
+        "value": "I2",
+        "timestamp": 14535531
+      },
+      {
+        "id": "ps_Boss_AweKing_Beaten",
+        "value": "B1",
+        "timestamp": 14661032
+      },
+      {
+        "id": "ps_inspDrawing_DarkLightning",
+        "value": "I1",
+        "timestamp": 14671579
+      },
+      {
+        "id": "ps_Prod_A16_a8a6a17b-df53-495e-9c7a-8b9b828ccdc7",
+        "value": "B1",
+        "timestamp": 14696755
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A07_f201ff50-e920-11ef-a34f-5d0d039b77bd-cp_Prod_A16_0bdcf4b0-1460-11ee-b716-0f51132ef7f3",
+        "value": "I3",
+        "timestamp": 14704880
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Vincent_Academy_Notes_1",
+        "value": "I2",
+        "timestamp": 14736499
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A17_b59802c0-1460-11ee-bfae-d13ebbfebc97-cp_Prod_A18_ac56cd40-9b00-11ef-b3df-b39c8738424d",
+        "value": "I3",
+        "timestamp": 14961698
+      },
+      {
+        "id": "VisitedLevel-Prod_A18",
+        "value": "B1",
+        "timestamp": 14962292
+      },
+      {
+        "id": "ps_Prod_A18_109876d1-3ee4-4311-b5aa-cf811cebe462",
+        "value": "I0",
+        "timestamp": 15002384
+      },
+      {
+        "id": "ps_Prod_A18_e68d84e0-6fa7-46ea-9051-3940d1704f20",
+        "value": "I0",
+        "timestamp": 15002385
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A18_d6bc39d0-9b00-11ef-b3df-4911bb0c2fd9-cp_Prod_A21_278e1520-9b00-11ef-841a-15e7fc091028",
+        "value": "I3",
+        "timestamp": 15013959
+      },
+      {
+        "id": "VisitedLevel-Prod_A21",
+        "value": "B1",
+        "timestamp": 15014562
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A21_28ed5700-9b00-11ef-841a-0f3be6570fdb-cp_Prod_A22_dcacda80-9b00-11ef-841a-89c0511bdae1",
+        "value": "I3",
+        "timestamp": 15036428
+      },
+      {
+        "id": "VisitedLevel-Prod_A22",
+        "value": "B1",
+        "timestamp": 15037023
+      },
+      {
+        "id": "ps_Prod_A22_5f95d1d4-2caf-4ba3-86dc-cad49a35eb65",
+        "value": "I0",
+        "timestamp": 15070471
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A22_ddf279e0-9b00-11ef-841a-c9788f070ba3-cp_Prod_A23_daa0a4e0-9b00-11ef-841a-7390a32878da",
+        "value": "I3",
+        "timestamp": 15100326
+      },
+      {
+        "id": "VisitedLevel-Prod_A23",
+        "value": "B1",
+        "timestamp": 15100923
+      },
+      {
+        "id": "ps_Prod_A23_67067a63-3d47-4e0c-89be-e7afe8784a0c",
+        "value": "I0",
+        "timestamp": 15123899
+      },
+      {
+        "id": "ps_Prod_A23_c46062e6-0135-4689-b733-20ea853d2ae4",
+        "value": "I0",
+        "timestamp": 15123900
+      },
+      {
+        "id": "ps_Snapshot_3_Texture",
+        "value": "X219ff368-2d13-42e3-8fa2-519e930ab775.jpg",
+        "timestamp": 15140604
+      },
+      {
+        "id": "ps_Snapshot_3_Level",
+        "value": "SProd_A23",
+        "timestamp": 15140604
+      },
+      {
+        "id": "ps_Snapshot_3_Position",
+        "value": "V0.711717;0.3974732",
+        "timestamp": 15140604
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A23_eada8e80-9b00-11ef-841a-25e5559ba002-cp_Prod_A25_ec850a30-9b00-11ef-841a-67ed6087bc2f",
+        "value": "I3",
+        "timestamp": 15152658
+      },
+      {
+        "id": "VisitedLevel-Prod_A25",
+        "value": "B1",
+        "timestamp": 15153251
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A25_f409efa0-9b00-11ef-841a-215261a0d9c7-cp_Prod_A26_a276ec20-9b00-11ef-841a-7de59348a7cf",
+        "value": "I3",
+        "timestamp": 15187836
+      },
+      {
+        "id": "VisitedLevel-Prod_A26",
+        "value": "B1",
+        "timestamp": 15188431
+      },
+      {
+        "id": "ps_Prod_A26_51d787ae-2f4d-471a-b006-2741f3460326",
+        "value": "I0",
+        "timestamp": 15201242
+      },
+      {
+        "id": "ps_Prod_A26_bcf3a19f-15c3-4d44-a008-8fded35fb6dc",
+        "value": "I0",
+        "timestamp": 15201243
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A26_a375be80-9b00-11ef-841a-f3e236baed9a-cp_Prod_A30_ceb107c0-c210-11ef-9877-e502ddfa51a1",
+        "value": "I3",
+        "timestamp": 15212218
+      },
+      {
+        "id": "Academy_Safepoint_MothQueen_Backtrack",
+        "value": "B1",
+        "timestamp": 15215127
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A26_9906ff90-9b00-11ef-841a-1d5f08630e0f-cp_Prod_A27_9a4524e0-9b00-11ef-841a-6162922d3474",
+        "value": "I3",
+        "timestamp": 15237132
+      },
+      {
+        "id": "VisitedLevel-Prod_A27",
+        "value": "B1",
+        "timestamp": 15237728
+      },
+      {
+        "id": "ps_Prod_A30_41a6ca9c-3b1a-4f8f-9ec3-4f81544ab911",
+        "value": "I0",
+        "timestamp": 15368133
+      },
+      {
+        "id": "ps_Prod_A30_1f854415-33a7-405f-abac-36ec464bd4bc",
+        "value": "I0",
+        "timestamp": 15368134
+      },
+      {
+        "id": "ps_Boss_MothQueen_Attempts",
+        "value": "I3",
+        "timestamp": 16340882
+      },
+      {
+        "id": "ps_Boss_MothQueen_Beaten",
+        "value": "B1",
+        "timestamp": 16472255
+      },
+      {
+        "id": "ps_Prod_A27_2d28c2b8-aeea-4fd1-b695-0faae8b91057",
+        "value": "B1",
+        "timestamp": 16688187
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A17_430b1d50-9b00-11ef-841a-49f4f85bffb0-cp_Prod_A27_44a25f20-9b00-11ef-841a-678f46210815",
+        "value": "I3",
+        "timestamp": 16691677
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Vincent_Academy_Notes_2",
+        "value": "I2",
+        "timestamp": 16737274
+      },
+      {
+        "id": "ps_AcademyNemesis_PortalOpened",
+        "value": "B1",
+        "timestamp": 16777265
+      },
+      {
+        "id": "VisitedLevel-Prod_A_NemesisChase",
+        "value": "B1",
+        "timestamp": 16777680
+      },
+      {
+        "id": "ps_Boss_ChaseNemesis_Attempts",
+        "value": "I7",
+        "timestamp": 17253935
+      },
+      {
+        "id": "ps_Boss_ChaseNemesis_Beaten",
+        "value": "B1",
+        "timestamp": 17350653
+      },
+      {
+        "id": "VisitedLevel-Prod_Flashback_Photoalbum",
+        "value": "B1",
+        "timestamp": 17356709
+      },
+      {
+        "id": "ps_unlock_Tear_Academy",
+        "value": "I1",
+        "timestamp": 17570448
+      },
+      {
+        "id": "ps_Achievement_TearAcademy",
+        "value": "B1",
+        "timestamp": 17570448
+      },
+      {
+        "id": "ps_quest_Academy_intel",
+        "value": "SABCD",
+        "timestamp": 17774147
+      },
+      {
+        "id": "ps_quest_Academy_status",
+        "value": "I2",
+        "timestamp": 17774147
+      },
+      {
+        "id": "ps_Prod_A07_a391e9a0-473a-4de7-af98-fab06199f0d5",
+        "value": "B1",
+        "timestamp": 17774155
+      },
+      {
+        "id": "ps_inspDrawing_StabLifesteal_Upgraded",
+        "value": "B1",
+        "timestamp": 17935785
+      },
+      {
+        "id": "ps_Prod_V05_e920382f-1447-4e07-9354-ee30dde782f1",
+        "value": "B1",
+        "timestamp": 18164814
+      },
+      {
+        "id": "ps_Prod_V05_740e6714-95ae-4574-ba7e-79ac2edd3e6c",
+        "value": "I0",
+        "timestamp": 18168143
+      },
+      {
+        "id": "ps_Prod_V05_623fa65f-9e04-4d44-822a-01ae6c8a794d",
+        "value": "I0",
+        "timestamp": 18168385
+      },
+      {
+        "id": "ps_Prod_V05_7fa5ccf8-76b5-40ba-afda-9aeabf7aa9fb",
+        "value": "I0",
+        "timestamp": 18169485
+      },
+      {
+        "id": "ps_Prod_V05_200a0291-6ca6-4056-9370-8d228c104773",
+        "value": "I0",
+        "timestamp": 18170243
+      },
+      {
+        "id": "V07_ElectricDoor_BottomRight",
+        "value": "B1",
+        "timestamp": 18223630
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V07_1df5db60-25d0-11ef-b593-3f6d3b81036b-cp_Prod_V09_0b3af760-73f0-11ef-9fcd-51b4e4f9baeb",
+        "value": "I3",
+        "timestamp": 18226071
+      },
+      {
+        "id": "VisitedLevel-Prod_V09",
+        "value": "B1",
+        "timestamp": 18226675
+      },
+      {
+        "id": "ps_Prod_V09_5588e64d-524b-4ce5-8077-58702ad261f4",
+        "value": "I0",
+        "timestamp": 18288150
+      },
+      {
+        "id": "ps_Prod_V09_36e9f360-54d7-4921-9a50-35734dd2887a",
+        "value": "I0",
+        "timestamp": 18288151
+      },
+      {
+        "id": "ps_Prod_V09_363f0206-18b1-4c1a-93fa-50ddeedceba5",
+        "value": "I0",
+        "timestamp": 18293134
+      },
+      {
+        "id": "ps_Prod_V09_daec64d1-9a63-440c-9364-a2c2dabea87e",
+        "value": "I0",
+        "timestamp": 18293135
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A01_5d9219a0-1460-11ee-adf8-675284f829a8-cp_Prod_V09_0aa600e0-73f0-11ef-a1e8-5b052ba7736a",
+        "value": "I3",
+        "timestamp": 18315695
+      },
+      {
+        "id": "VisitedLevel-Prod_A01",
+        "value": "B1",
+        "timestamp": 18316297
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A01_9d1118c0-9b00-11ef-99eb-13e7abc24917-cp_Prod_A02_9d761190-9b00-11ef-99eb-0dee77703cea",
+        "value": "I3",
+        "timestamp": 18334369
+      },
+      {
+        "id": "VisitedLevel-Prod_A02",
+        "value": "B1",
+        "timestamp": 18334973
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A02_9ba65aa0-9b00-11ef-99eb-9baf6aeac026-cp_Prod_A03_8c5a55a0-9b00-11ef-99eb-5557b03bd6fc",
+        "value": "I3",
+        "timestamp": 18359352
+      },
+      {
+        "id": "ps_Prod_V09_9188bb45-01ab-4596-a21a-88860c0d41fa",
+        "value": "I0",
+        "timestamp": 18409293
+      },
+      {
+        "id": "ps_Prod_V07_fab7be2d-ee03-098b-46bb-cf604f33acce",
+        "value": "B1",
+        "timestamp": 18747804
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V09_07a6caa0-73f0-11ef-a1e8-2169de768ac0-cp_Prod_V11_79f4cb30-c640-11ed-b01a-83494e5c95d1",
+        "value": "I3",
+        "timestamp": 18782369
+      },
+      {
+        "id": "VisitedLevel-Prod_V11",
+        "value": "B1",
+        "timestamp": 18782970
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Emilie_V11_FirstArrival",
+        "value": "I1",
+        "timestamp": 18807528
+      },
+      {
+        "id": "ps_ConCutscene_V11_SearchThroughTrash",
+        "value": "B1",
+        "timestamp": 18843313
+      },
+      {
+        "id": "VisitedLevel-Prod_V12",
+        "value": "B1",
+        "timestamp": 18843909
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V11_8becbce0-ac70-11f0-a86c-81e32cff050d-cp_Prod_V12_a8428360-e920-11ef-ab56-1bb8b3e2c120",
+        "value": "I3",
+        "timestamp": 18843993
+      },
+      {
+        "id": "VisitedLevel-Prod_V13",
+        "value": "B1",
+        "timestamp": 18853765
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V12_aaf76a30-e920-11ef-ab56-ab0c968c1e4e-cp_Prod_V13_04320410-e920-11ef-ab56-1b55d98cf5dc",
+        "value": "I3",
+        "timestamp": 18853834
+      },
+      {
+        "id": "ps_unlock_Ability_WallDive",
+        "value": "I1",
+        "timestamp": 18883819
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V13_05053290-e920-11ef-ab56-dffbce370978-cp_Prod_V14_3be39080-e920-11ef-ab56-d96bd3690a7e",
+        "value": "I3",
+        "timestamp": 18896546
+      },
+      {
+        "id": "VisitedLevel-Prod_V14",
+        "value": "B1",
+        "timestamp": 18897151
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V14_3b03b7d0-e920-11ef-ab56-f971d497d590-cp_Prod_V16_3c80cbd0-e920-11ef-9240-a1906c2a5510",
+        "value": "I3",
+        "timestamp": 18973341
+      },
+      {
+        "id": "VisitedLevel-Prod_V16",
+        "value": "B1",
+        "timestamp": 18973936
+      },
+      {
+        "id": "ps_Prod_V16_c53a0b8e-b431-4f3d-a902-9d132736153c",
+        "value": "B1",
+        "timestamp": 19020647
+      },
+      {
+        "id": "ps_Prod_V16_c636cf63-31da-4b6a-b064-553a546ec7b0",
+        "value": "I0",
+        "timestamp": 19021605
+      },
+      {
+        "id": "ps_Prod_V16_bfe42c71-ce0b-4f80-921b-8c1fd931dd38",
+        "value": "I0",
+        "timestamp": 19021606
+      },
+      {
+        "id": "ps_Prod_V16_d43422d1-1c4f-43fe-8ba0-7e2050899888",
+        "value": "I0",
+        "timestamp": 19022163
+      },
+      {
+        "id": "ps_Prod_V16_a57a5e6b-11d2-4334-a6bc-d6d397b7999c",
+        "value": "I0",
+        "timestamp": 19022705
+      },
+      {
+        "id": "ps_Prod_V16_63d82fcc-21d2-4ee6-ad3c-394e144a0da3",
+        "value": "I0",
+        "timestamp": 19024530
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V16_3eacac80-e920-11ef-9240-75a1f8f3d4b1-cp_Prod_V17_949eeea0-e920-11ef-9240-cf594433361e",
+        "value": "I3",
+        "timestamp": 19028864
+      },
+      {
+        "id": "VisitedLevel-Prod_V17",
+        "value": "B1",
+        "timestamp": 19029461
+      },
+      {
+        "id": "ps_ElevatorUnlocked_Vaults",
+        "value": "B1",
+        "timestamp": 19041614
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V12_4eed4ab0-e920-11ef-ab56-9367a3fd1950-cp_Prod_V17_95cc7220-e920-11ef-9240-4bbfaea0a1c5",
+        "value": "I3",
+        "timestamp": 19045339
+      },
+      {
+        "id": "ps_Prod_V17_to_drop",
+        "value": "B1",
+        "timestamp": 19045931
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V12_4e22a7b0-e920-11ef-ab56-7b756c0d428f-cp_Prod_V18_e0305230-e920-11ef-8aab-13dfc45c483b",
+        "value": "I3",
+        "timestamp": 19053249
+      },
+      {
+        "id": "VisitedLevel-Prod_V18",
+        "value": "B1",
+        "timestamp": 19053851
+      },
+      {
+        "id": "ps_Boss_PukeyBoy_Attempts",
+        "value": "I2",
+        "timestamp": 19183787
+      },
+      {
+        "id": "ps_Boss_PukeyBoy_Beaten",
+        "value": "B1",
+        "timestamp": 19320770
+      },
+      {
+        "id": "ps_Prod_V18_d336557d-21de-494b-9252-3249efd8a329",
+        "value": "B1",
+        "timestamp": 19328524
+      },
+      {
+        "id": "ps_LootBag_loot_MiniBossEraser",
+        "value": "I1",
+        "timestamp": 19328715
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V18_f31530a0-3740-11f0-b6b6-f17a98cc21b4-cp_Prod_V19_f139b9e0-3740-11f0-b6b6-0f5a677824f5",
+        "value": "I3",
+        "timestamp": 19352936
+      },
+      {
+        "id": "VisitedLevel-Prod_V19",
+        "value": "B1",
+        "timestamp": 19353531
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V19_174f0ff0-3740-11f0-b6b6-23d3a1621fb0-cp_Prod_V20_1529bef0-3740-11f0-b6b6-f1f533ac7b8c",
+        "value": "I3",
+        "timestamp": 19418674
+      },
+      {
+        "id": "VisitedLevel-Prod_V20",
+        "value": "B1",
+        "timestamp": 19419277
+      },
+      {
+        "id": "ps_Prod_V20_0ab92a6a-1e3f-28de-8e61-ab38e5f248e7",
+        "value": "I0",
+        "timestamp": 19426253
+      },
+      {
+        "id": "ps_Prod_V20_af7dae45-b37b-4f06-85e5-b0eaf937d844",
+        "value": "I0",
+        "timestamp": 19426255
+      },
+      {
+        "id": "ps_Prod_V20_cc1c1e79-ac05-4c61-bb9a-ce415a5296b6",
+        "value": "I0",
+        "timestamp": 19435113
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V14_360ea500-e920-11ef-ab56-df83cdd23277-cp_Prod_V15_1d171160-e920-11ef-9240-2ff7f122ded1",
+        "value": "I3",
+        "timestamp": 19509096
+      },
+      {
+        "id": "VisitedLevel-Prod_V15",
+        "value": "B1",
+        "timestamp": 19509693
+      },
+      {
+        "id": "ps_Prod_V15_d49d80f7-fa98-9bd2-e7f3-ee7262d78d0f",
+        "value": "I0",
+        "timestamp": 19534541
+      },
+      {
+        "id": "ps_Prod_V15_3686052a-5e42-30e7-6a20-be1c2f6a612c",
+        "value": "I0",
+        "timestamp": 19534542
+      },
+      {
+        "id": "ps_Prod_V15_ee744011-38f7-b42b-90b2-6e2de55d8eb1",
+        "value": "I0",
+        "timestamp": 19535941
+      },
+      {
+        "id": "ps_Prod_V15_2144c10b-32a4-1133-e4e3-dd33f7768395",
+        "value": "I0",
+        "timestamp": 19536174
+      },
+      {
+        "id": "ps_Prod_V15_72206fe6-a521-e7d1-1640-62204a315450",
+        "value": "I0",
+        "timestamp": 19536176
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V14_37546b70-e920-11ef-ab56-73a28539b75e-cp_Prod_V15_1de3d740-e920-11ef-9240-15e36db22d2e",
+        "value": "I3",
+        "timestamp": 19565267
+      },
+      {
+        "id": "ps_ShopKeeperFound_Prod_V15",
+        "value": "B1",
+        "timestamp": 19578302
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_3",
+        "value": "I1",
+        "timestamp": 19579294
+      },
+      {
+        "id": "ps_Prod_V17_c56f2c5f-46ae-4a59-bcd9-d49eb49f053c",
+        "value": "B1",
+        "timestamp": 19799474
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V20_0c4655f0-5e50-11f0-a299-0bd1db235ccd-cp_Prod_V21_0d49bc30-5e50-11f0-a299-893c09acdc17",
+        "value": "I3",
+        "timestamp": 20402484
+      },
+      {
+        "id": "VisitedLevel-Prod_V21",
+        "value": "B1",
+        "timestamp": 20403078
+      },
+      {
+        "id": "ps_Prod_V21_742d374f-0dcd-47e7-9353-505dc12b972e",
+        "value": "B1",
+        "timestamp": 20825319
+      },
+      {
+        "id": "ps_Prod_V21_4d8f091e-0820-4232-abbc-1c46831348d0",
+        "value": "I0",
+        "timestamp": 20835826
+      },
+      {
+        "id": "ps_Prod_V21_05e8e100-477e-4ef7-9250-ffaaf745d12b",
+        "value": "I0",
+        "timestamp": 20835828
+      },
+      {
+        "id": "ps_Prod_V21_2eeb3dd8-492f-4d53-9b86-66bfaf60c659",
+        "value": "I0",
+        "timestamp": 20835829
+      },
+      {
+        "id": "ps_Prod_V21_cdbcf355-fafe-08a4-8c1f-c587fca81234",
+        "value": "I0",
+        "timestamp": 20838777
+      },
+      {
+        "id": "ps_Prod_V21_c7e7bf57-9c33-4f22-8447-01d9228d4927",
+        "value": "I0",
+        "timestamp": 20839718
+      },
+      {
+        "id": "ps_Prod_V21_ffdeb53e-e56d-4513-b433-3ede22f43783",
+        "value": "I0",
+        "timestamp": 20840943
+      },
+      {
+        "id": "ps_Prod_V21_838c20ab-146c-4b3e-85f3-176b607fa271",
+        "value": "I0",
+        "timestamp": 20841585
+      },
+      {
+        "id": "ps_Prod_V20_a5b95fdc-04e3-4832-96b1-cc5f81088615",
+        "value": "B1",
+        "timestamp": 21244973
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V20_6ddf7820-5e50-11f0-a6d1-e780b563fc0d-cp_Prod_V23_6eb9f9a0-5e50-11f0-a6d1-1fa9cdf72ba7",
+        "value": "I3",
+        "timestamp": 21247156
+      },
+      {
+        "id": "VisitedLevel-Prod_V23",
+        "value": "B1",
+        "timestamp": 21247752
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V19_20039710-5e50-11f0-9bf8-216e120a6c66-cp_Prod_V23_211ad370-5e50-11f0-9bf8-6b4d7421dc53",
+        "value": "I3",
+        "timestamp": 21254086
+      },
+      {
+        "id": "ps_Prod_V23_SC",
+        "value": "B1",
+        "timestamp": 21258078
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V23_f6a62770-5e50-11f0-ac03-615ee0969384-cp_Prod_V24_f7ae48a0-5e50-11f0-ac03-d3ecef9cc97c",
+        "value": "I3",
+        "timestamp": 21463042
+      },
+      {
+        "id": "VisitedLevel-Prod_V24",
+        "value": "B1",
+        "timestamp": 21463636
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_P03_e1ace840-5e50-11f0-89df-cdd787db88b1-cp_Prod_V24_de53d230-5e50-11f0-89df-f5fc8350e2a5",
+        "value": "I3",
+        "timestamp": 21488291
+      },
+      {
+        "id": "VisitedLevel-Prod_P03",
+        "value": "B1",
+        "timestamp": 21488887
+      },
+      {
+        "id": "ps_Prod_P03_e0784245-4939-14a1-9ca4-500a00000000",
+        "value": "B1",
+        "timestamp": 21645598
+      },
+      {
+        "id": "ps_Prod_P03_73cee3e6-0f17-4b15-817f-476c28071c80",
+        "value": "B1",
+        "timestamp": 21650394
+      },
+      {
+        "id": "ps_Prod_P03_SC",
+        "value": "B1",
+        "timestamp": 21657108
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_P03_141c3df0-8560-11f0-9556-21e1054633ed-cp_Prod_V25_164670f0-8560-11f0-9556-fdd1804f73a9",
+        "value": "I3",
+        "timestamp": 21658540
+      },
+      {
+        "id": "VisitedLevel-Prod_V25",
+        "value": "B1",
+        "timestamp": 21659137
+      },
+      {
+        "id": "ps_Prod_V25_2ddd80d9-441f-40da-bc60-81f93456dfd3",
+        "value": "B1",
+        "timestamp": 21760800
+      },
+      {
+        "id": "ps_Prod_V25_f114104e-469f-4199-b8a9-3959746c961d",
+        "value": "B1",
+        "timestamp": 21793527
+      },
+      {
+        "id": "ps_Prod_V25_85f4c4a9-2607-4e0b-a8cf-880b870b5547",
+        "value": "B1",
+        "timestamp": 21876894
+      },
+      {
+        "id": "ps_LootBag_loot_LightStone_S",
+        "value": "I2",
+        "timestamp": 21877083
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V25_fc5ec630-5e50-11f0-88ec-0d752a63c943-cp_Prod_V26_fe656ba0-5e50-11f0-88ec-314961c09745",
+        "value": "I3",
+        "timestamp": 21883086
+      },
+      {
+        "id": "VisitedLevel-Prod_V26",
+        "value": "B1",
+        "timestamp": 21883682
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V26_86c7b490-5e50-11f0-9518-93ee8276559c-cp_Prod_V27_88ba83e0-5e50-11f0-9518-fdec0a4291b5",
+        "value": "I3",
+        "timestamp": 21936302
+      },
+      {
+        "id": "VisitedLevel-Prod_V27",
+        "value": "B1",
+        "timestamp": 21936905
+      },
+      {
+        "id": "ps_Prod_V27_3bc72a67-9c95-78f8-032f-0312e666dba9",
+        "value": "I0",
+        "timestamp": 21948427
+      },
+      {
+        "id": "ps_Prod_V27_2311624f-6ea6-6094-b09d-eedc59916b9f",
+        "value": "I0",
+        "timestamp": 21948428
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V27_92eb9d90-5e50-11f0-9518-03d9f5a680e4-cp_Prod_V28_8fe64cd0-5e50-11f0-9518-97ab523bbaed",
+        "value": "I3",
+        "timestamp": 21968181
+      },
+      {
+        "id": "VisitedLevel-Prod_V28",
+        "value": "B1",
+        "timestamp": 21968777
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V23_fe931bb0-5e50-11f0-ac03-b325fce53faa-cp_Prod_V28_fc0fa520-5e50-11f0-ac03-87797e53ef1c",
+        "value": "I3",
+        "timestamp": 21987643
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V11_bdab7870-8560-11f0-bc59-4f35be48e65c-cp_Prod_V28_9b0afd80-8560-11f0-9e86-5b0ce09b22f3",
+        "value": "I3",
+        "timestamp": 21993460
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V23_a3ddf5e0-5e50-11f0-b2c6-f57dd70bef76-cp_Prod_V25_a48afec0-5e50-11f0-b2c6-f5ade6816487",
+        "value": "I3",
+        "timestamp": 22169249
+      },
+      {
+        "id": "ps_Prod_V28_SC",
+        "value": "B1",
+        "timestamp": 22440081
+      },
+      {
+        "id": "ps_Boss_SlimeNemesis_Attempts",
+        "value": "I10",
+        "timestamp": 23460358
+      },
+      {
+        "id": "ps_Boss_SlimeNemesis_Beaten",
+        "value": "B1",
+        "timestamp": 23580357
+      },
+      {
+        "id": "VisitedLevel-Prod_Flashback_Violin",
+        "value": "B1",
+        "timestamp": 23601633
+      },
+      {
+        "id": "ps_unlock_Tear_Vaults",
+        "value": "I1",
+        "timestamp": 23734594
+      },
+      {
+        "id": "ps_Achievement_TearVaults",
+        "value": "B1",
+        "timestamp": 23734595
+      },
+      {
+        "id": "VisitedLevel-Prod_Void_Glimpse",
+        "value": "B1",
+        "timestamp": 23737643
+      },
+      {
+        "id": "ps_quest_Vaults_intel",
+        "value": "SABC",
+        "timestamp": 23970705
+      },
+      {
+        "id": "ps_quest_Vaults_status",
+        "value": "I2",
+        "timestamp": 23970706
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Emilie_V11_Cutscene_AfterFlashback",
+        "value": "I1",
+        "timestamp": 23970706
+      },
+      {
+        "id": "ps_Prod_V11_c6e55137-8808-169d-04c4-4e0b00000000",
+        "value": "B1",
+        "timestamp": 23970713
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V09_044c7c10-73f0-11ef-a1e8-75eec8f49193-cp_Prod_V10_92559f00-e920-11ef-ad10-3768b0f846ed",
+        "value": "I3",
+        "timestamp": 24046301
+      },
+      {
+        "id": "VisitedLevel-Prod_V10",
+        "value": "B1",
+        "timestamp": 24046896
+      },
+      {
+        "id": "ps_Prod_V10_e04a26e9-6503-47ce-bb8b-e1e9d919b9bd",
+        "value": "I0",
+        "timestamp": 24049033
+      },
+      {
+        "id": "ps_Prod_V10_5c7279f0-979a-91e0-b06d-70c34f061e88",
+        "value": "I0",
+        "timestamp": 24050325
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V09_037221a0-73f0-11ef-a1e8-0f65517ba0bf-cp_Prod_V10_949c5ab0-e920-11ef-ad10-0b1dfcd5a8d9",
+        "value": "I3",
+        "timestamp": 24074794
+      },
+      {
+        "id": "ps_Prod_V10_4fe5e6c6-f0bd-40fd-846a-0496106e877f",
+        "value": "B1",
+        "timestamp": 24208561
+      },
+      {
+        "id": "ps_inspDrawing_NaturalTwenty_Upgraded",
+        "value": "B1",
+        "timestamp": 24647584
+      },
+      {
+        "id": "ps_inspDrawing_DarkLightning_Upgraded",
+        "value": "B1",
+        "timestamp": 24654404
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Mayor_Junction_AfterVincent",
+        "value": "I2",
+        "timestamp": 24662815
+      },
+      {
+        "id": "ps_shopItem_LightStonePack1",
+        "value": "I1",
+        "timestamp": 24670708
+      },
+      {
+        "id": "ps_shopItem_Eraser1",
+        "value": "I1",
+        "timestamp": 24675338
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F01_42d63ff0-73f0-11ef-91d7-8d87233691a9-cp_Prod_V03_4473ea60-73f0-11ef-91d7-8bdece15e101",
+        "value": "I3",
+        "timestamp": 24742609
+      },
+      {
+        "id": "VisitedLevel-Prod_V03",
+        "value": "B1",
+        "timestamp": 24743205
+      },
+      {
+        "id": "ps_Prod_V03_2074d7e3-6544-4d22-a08a-ab8804f4ebdf",
+        "value": "I0",
+        "timestamp": 24749655
+      },
+      {
+        "id": "ps_Prod_V03_38c8b072-734f-48e3-816b-4558b1319022",
+        "value": "I0",
+        "timestamp": 24750639
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V02_92a52170-4ce0-11ef-8177-7dfcb7d1c327-cp_Prod_V03_c8279640-73f0-11ef-b977-d356cddcf410",
+        "value": "I3",
+        "timestamp": 24753374
+      },
+      {
+        "id": "ps_inspDrawing_TaxRefund_Upgraded",
+        "value": "B1",
+        "timestamp": 24938242
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A28_50c269d0-c210-11ef-9877-9fb175024b10-cp_Prod_VD02_55009bd0-1030-11f0-8fef-01507257725f",
+        "value": "I3",
+        "timestamp": 25017701
+      },
+      {
+        "id": "VisitedLevel-Prod_VD02",
+        "value": "B1",
+        "timestamp": 25018294
+      },
+      {
+        "id": "ps_Prod_A30_e0c3c0ec-3d42-4745-869b-0e4c28b5f99a",
+        "value": "I0",
+        "timestamp": 25178425
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A20_afbed930-9b00-11ef-841a-1dfe8bd3935f-cp_Prod_A25_f264a410-9b00-11ef-841a-696bc8c3ca1d",
+        "value": "I3",
+        "timestamp": 25212974
+      },
+      {
+        "id": "VisitedLevel-Prod_A20",
+        "value": "B1",
+        "timestamp": 25213569
+      },
+      {
+        "id": "ps_Prod_A20_11ecfcf7-a13a-4053-af12-fab2d38ff31c",
+        "value": "I0",
+        "timestamp": 25223262
+      },
+      {
+        "id": "ps_Prod_A20_ad6c07ce-126b-440a-9e2a-7edf0d456b76",
+        "value": "I0",
+        "timestamp": 25224421
+      },
+      {
+        "id": "ps_LootBag_loot_EnemyEliteOnlyHealth",
+        "value": "I15",
+        "timestamp": 25339956
+      },
+      {
+        "id": "ps_Prod_A20_84adf542-0865-42a9-b73c-406ca61df102",
+        "value": "B1",
+        "timestamp": 25342065
+      },
+      {
+        "id": "ps_Prod_A20_d51fea7c-0552-d01f-4c9c-439cafe52c8a",
+        "value": "B1",
+        "timestamp": 25345027
+      },
+      {
+        "id": "ps_Prod_A20_15656f34-63df-45c5-b9e5-4c48c0ac925d",
+        "value": "I0",
+        "timestamp": 25352063
+      },
+      {
+        "id": "ps_Prod_A20_0f1b13d1-6676-41c9-a447-85401866c905",
+        "value": "I0",
+        "timestamp": 25352065
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A19_1b40e420-9b00-11ef-841a-bd718f74a3f1-cp_Prod_A20_aef43630-9b00-11ef-841a-b3125c5937c7",
+        "value": "I3",
+        "timestamp": 25357081
+      },
+      {
+        "id": "VisitedLevel-Prod_A19",
+        "value": "B1",
+        "timestamp": 25357686
+      },
+      {
+        "id": "ps_Prod_A19_ef9a3ac6-2d1b-4c6b-819f-1f26c5009df8",
+        "value": "B1",
+        "timestamp": 25368552
+      },
+      {
+        "id": "ps_Prod_A19_4975259c-8ef3-41a3-84cf-691999005f52",
+        "value": "I0",
+        "timestamp": 25371589
+      },
+      {
+        "id": "A19_secret_ghost_area",
+        "value": "B1",
+        "timestamp": 25375335
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A18_d7b280b0-9b00-11ef-b3df-278d1d00e9ba-cp_Prod_A19_197ee8d0-9b00-11ef-841a-339ab13b6526",
+        "value": "I3",
+        "timestamp": 25408433
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Cornelis_C01_Sad",
+        "value": "I3",
+        "timestamp": 25869386
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C01_892bdb30-8560-11f0-9198-a58078f4a12b-cp_Prod_VD03_8c4d3f70-8560-11f0-9198-09c6ccf99122",
+        "value": "I3",
+        "timestamp": 25884221
+      },
+      {
+        "id": "VisitedLevel-Prod_VD03",
+        "value": "B1",
+        "timestamp": 25884819
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C01_37f700e0-5e50-11f0-829b-8fbd0a2caa51-cp_Prod_C90_39f34610-5e50-11f0-829b-6beb83d83fd2",
+        "value": "I3",
+        "timestamp": 25903031
+      },
+      {
+        "id": "VisitedLevel-Prod_C90",
+        "value": "B1",
+        "timestamp": 25904450
+      },
+      {
+        "id": "ps_Boss_BossJoker_Attempts",
+        "value": "I2",
+        "timestamp": 26068527
+      },
+      {
+        "id": "ps_Boss_BossJoker_Beaten",
+        "value": "B1",
+        "timestamp": 26203471
+      },
+      {
+        "id": "ps_Prod_C90_3a191403-d505-9a9d-10ce-6be0167f13d2",
+        "value": "B1",
+        "timestamp": 26209306
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C02_f164e2f0-5e50-11f0-afa9-b7b7e4a7df2c-cp_Prod_C90_e83f1ec0-5e50-11f0-afa9-5f4dc83dffd1",
+        "value": "I3",
+        "timestamp": 26214299
+      },
+      {
+        "id": "VisitedLevel-Prod_C02",
+        "value": "B1",
+        "timestamp": 26214903
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C02_9fcadb40-5e50-11f0-8e1f-b7a51b3f137d-cp_Prod_C91_a3eebb60-5e50-11f0-8e1f-51626ae937ae",
+        "value": "I3",
+        "timestamp": 26239016
+      },
+      {
+        "id": "VisitedLevel-Prod_C91",
+        "value": "B1",
+        "timestamp": 26240427
+      },
+      {
+        "id": "ps_unlock_Ability_Pogo",
+        "value": "I1",
+        "timestamp": 26259474
+      },
+      {
+        "id": "ps_Prod_C91_04fe9c8a-4bef-60bb-1f97-2772de34c934",
+        "value": "I0",
+        "timestamp": 26270119
+      },
+      {
+        "id": "ps_Prod_C91_7164b41b-f31d-684d-542e-09eb6b3aea73",
+        "value": "I0",
+        "timestamp": 26270120
+      },
+      {
+        "id": "ps_Prod_C91_70c72f71-67cc-6fd2-7016-568b75bd1fe9",
+        "value": "I0",
+        "timestamp": 26270122
+      },
+      {
+        "id": "ps_Prod_C91_fdf5756d-a3b2-90a6-aa0f-525639bae4c1",
+        "value": "I0",
+        "timestamp": 26270194
+      },
+      {
+        "id": "ps_C02_BossTentLocation",
+        "value": "B0",
+        "timestamp": 26321451
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C02_EnterLeft-cp_Prod_C02_TentLeftOutside",
+        "value": "I3",
+        "timestamp": 26321451
+      },
+      {
+        "id": "VisitedLevel-Prod_C95",
+        "value": "B1",
+        "timestamp": 26322871
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C95_ExitRight-cp_Prod_C95_RightInside",
+        "value": "I2",
+        "timestamp": 26322949
+      },
+      {
+        "id": "ps_Boss_JugglerBalloons_Attempts",
+        "value": "I2",
+        "timestamp": 26534682
+      },
+      {
+        "id": "ps_Boss_JugglerBalloons_Beaten",
+        "value": "B1",
+        "timestamp": 26645535
+      },
+      {
+        "id": "ps_Prod_C95_e7442277-a767-7428-c17d-05c9b94ec518",
+        "value": "B1",
+        "timestamp": 26650233
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C95_ExitLeft-cp_Prod_C95_LeftInside",
+        "value": "I3",
+        "timestamp": 26656589
+      },
+      {
+        "id": "VisitedLevel-Prod_C03",
+        "value": "B1",
+        "timestamp": 26657187
+      },
+      {
+        "id": "ps_Prod_C03_e34d599e-2aa5-5a1e-dc93-1b73c0249a67",
+        "value": "I0",
+        "timestamp": 26678899
+      },
+      {
+        "id": "ps_Prod_C03_89504667-3c71-bfb4-08e4-1697014bece7",
+        "value": "I0",
+        "timestamp": 26678900
+      },
+      {
+        "id": "ps_Prod_C03_eee80a8e-ecbb-859a-56e4-082b0cf08e55",
+        "value": "I0",
+        "timestamp": 26678901
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C03_EnterRight-cp_Prod_C03_TentRightOutside",
+        "value": "I3",
+        "timestamp": 26882475
+      },
+      {
+        "id": "ps_ElevatorUnlocked_Carnival",
+        "value": "B1",
+        "timestamp": 26912179
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C02_EnterRight-cp_Prod_C02_TentRightOutside",
+        "value": "I3",
+        "timestamp": 26924185
+      },
+      {
+        "id": "VisitedLevel-Prod_C93",
+        "value": "B1",
+        "timestamp": 26925600
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C93_ExitLeft-cp_Prod_C93_LeftInside",
+        "value": "I2",
+        "timestamp": 26925666
+      },
+      {
+        "id": "ps_Prod_C93_0d28e8d6-a001-436e-9ec1-9c525217f192",
+        "value": "B1",
+        "timestamp": 26930643
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C93_ExitRight-cp_Prod_C93_RightInside",
+        "value": "I3",
+        "timestamp": 26934135
+      },
+      {
+        "id": "VisitedLevel-Prod_C04",
+        "value": "B1",
+        "timestamp": 26934732
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C04_EnterLeft-cp_Prod_C04_TentLeftOutside",
+        "value": "I2",
+        "timestamp": 26934802
+      },
+      {
+        "id": "ps_Prod_C04_HeadlightEye",
+        "value": "B1",
+        "timestamp": 26965699
+      },
+      {
+        "id": "ps_inspDrawing_SliceConductor",
+        "value": "I1",
+        "timestamp": 26993078
+      },
+      {
+        "id": "ps_Prod_C04_a0660ae5-9c1c-6f5c-98d1-e8b84d321134",
+        "value": "I0",
+        "timestamp": 27023184
+      },
+      {
+        "id": "ps_Prod_C04_eb17c2bf-1788-aaf6-aca1-89532e76fc01",
+        "value": "I0",
+        "timestamp": 27024384
+      },
+      {
+        "id": "ps_Prod_C04_cf7975ba-8520-438a-9db5-0b50b29eaba6",
+        "value": "I0",
+        "timestamp": 27024385
+      },
+      {
+        "id": "ps_Prod_C04_c4c32e9e-0718-9fd1-2df9-b43db598d170",
+        "value": "I0",
+        "timestamp": 27025237
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C04_5e0846f0-5e50-11f0-8f17-07414a766496-cp_Prod_C96_61d0e7b0-5e50-11f0-8f17-836489986c21",
+        "value": "I3",
+        "timestamp": 27035215
+      },
+      {
+        "id": "VisitedLevel-Prod_C96",
+        "value": "B1",
+        "timestamp": 27036629
+      },
+      {
+        "id": "ps_Boss_JugglerBalls_Attempts",
+        "value": "I2",
+        "timestamp": 27307315
+      },
+      {
+        "id": "ps_Boss_JugglerBalls_Beaten",
+        "value": "B1",
+        "timestamp": 27396747
+      },
+      {
+        "id": "ps_Prod_C96_49252065-b059-02ba-e69e-edaa30f89d14",
+        "value": "B1",
+        "timestamp": 27400832
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C05_69898750-5e50-11f0-8f17-d95ba883db32-cp_Prod_C96_64b34720-5e50-11f0-8f17-a740df06ffa0",
+        "value": "I3",
+        "timestamp": 27407500
+      },
+      {
+        "id": "VisitedLevel-Prod_C05",
+        "value": "B1",
+        "timestamp": 27408096
+      },
+      {
+        "id": "ps_Prod_C05_HeadlightEye",
+        "value": "B1",
+        "timestamp": 27420662
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C05_20663400-8560-11f0-95b6-a39357cb7961-cp_Prod_C94_199e35f0-8560-11f0-95b6-038d88a61f6e",
+        "value": "I3",
+        "timestamp": 27473264
+      },
+      {
+        "id": "VisitedLevel-Prod_C94",
+        "value": "B1",
+        "timestamp": 27474685
+      },
+      {
+        "id": "ps_Boss_JokerInvisible_Attempts",
+        "value": "I3",
+        "timestamp": 27851818
+      },
+      {
+        "id": "ps_Boss_JokerInvisible_Beaten",
+        "value": "B1",
+        "timestamp": 27958155
+      },
+      {
+        "id": "ps_Prod_C94_1feb337b-de88-b0db-92e5-c948661aa51d",
+        "value": "B1",
+        "timestamp": 27963644
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C03_a05264c0-5e50-11f0-848c-9dbc331803a2-cp_Prod_C94_a51013e0-5e50-11f0-848c-fbf5163a526f",
+        "value": "I3",
+        "timestamp": 27969754
+      },
+      {
+        "id": "ps_Prod_C03_abd414de-cf18-ede2-f2a2-d0c791a8779e",
+        "value": "B1",
+        "timestamp": 28005320
+      },
+      {
+        "id": "ps_Prod_C03_b038b214-1e46-01f6-8a75-e55a917e6574",
+        "value": "I0",
+        "timestamp": 28010871
+      },
+      {
+        "id": "ps_Prod_C03_cda00d97-9d2e-0307-2c25-567e9366e92e",
+        "value": "I0",
+        "timestamp": 28010873
+      },
+      {
+        "id": "ps_Prod_C03_ee536d0d-3ae9-cfa5-06d3-5b2e5c33834a",
+        "value": "I0",
+        "timestamp": 28013122
+      },
+      {
+        "id": "ps_Prod_C03_6c2e0344-1dc5-7934-c9b7-f69582cdc797",
+        "value": "I0",
+        "timestamp": 28015014
+      },
+      {
+        "id": "ps_gacha_RewardGlimmer",
+        "value": "I1",
+        "timestamp": 28083781
+      },
+      {
+        "id": "ps_gacha_RewardHeartPiece",
+        "value": "I1",
+        "timestamp": 28088926
+      },
+      {
+        "id": "ps_gacha_RewardPaintPiece",
+        "value": "I1",
+        "timestamp": 28092644
+      },
+      {
+        "id": "ps_Prod_C03_HeadlightEye",
+        "value": "B1",
+        "timestamp": 28136529
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Jackie_AfterLastEye",
+        "value": "I1",
+        "timestamp": 28155438
+      },
+      {
+        "id": "ps_JackieTentSpawned",
+        "value": "B0",
+        "timestamp": 28173247
+      },
+      {
+        "id": "ps_Boss_CornelisBoss_Attempts",
+        "value": "I6",
+        "timestamp": 28808405
+      },
+      {
+        "id": "ps_Boss_CornelisBoss_Beaten",
+        "value": "B1",
+        "timestamp": 29364146
+      },
+      {
+        "id": "VisitedLevel-Prod_Flashback_Painting",
+        "value": "B1",
+        "timestamp": 29376290
+      },
+      {
+        "id": "ps_unlock_Tear_Carnival",
+        "value": "I1",
+        "timestamp": 29544129
+      },
+      {
+        "id": "ps_quest_Carnival_intel",
+        "value": "SABCD",
+        "timestamp": 29831491
+      },
+      {
+        "id": "ps_quest_Carnival_status",
+        "value": "I2",
+        "timestamp": 29831491
+      },
+      {
+        "id": "ps_Prod_C01_d2e4f5d4-011a-6582-8d00-c13200000000",
+        "value": "B1",
+        "timestamp": 29831498
+      },
+      {
+        "id": "ps_FridaTearHintPlayed",
+        "value": "B1",
+        "timestamp": 29976857
+      },
+      {
+        "id": "VisitedLevel-Prod_Flashback_Cinematic",
+        "value": "B1",
+        "timestamp": 30118795
+      },
+      {
+        "id": "ps_unlock_FridaMask",
+        "value": "I1",
+        "timestamp": 30162543
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Mayor_FridaDeath",
+        "value": "I1",
+        "timestamp": 30182314
+      },
+      {
+        "id": "ps_Boss_PuppetHandStrings_Attempts",
+        "value": "I4",
+        "timestamp": 30962790
+      },
+      {
+        "id": "ps_Boss_PuppetHandStrings_Beaten",
+        "value": "B1",
+        "timestamp": 31186149
+      },
+      {
+        "id": "ps_VoidClosed_VD03",
+        "value": "B1",
+        "timestamp": 31193649
+      },
+      {
+        "id": "ps_Boss_PuppetHandKungfu_Attempts",
+        "value": "I1",
+        "timestamp": 31243338
+      },
+      {
+        "id": "ps_Boss_PuppetHandKungfu_Beaten",
+        "value": "B1",
+        "timestamp": 31354856
+      },
+      {
+        "id": "ps_VoidClosed_VD02",
+        "value": "B1",
+        "timestamp": 31362354
+      },
+      {
+        "id": "ps_Boss_PuppetHandCorruption_Attempts",
+        "value": "I3",
+        "timestamp": 31804433
+      },
+      {
+        "id": "ps_Boss_PuppetHandCorruption_Beaten",
+        "value": "B1",
+        "timestamp": 31861924
+      },
+      {
+        "id": "ps_Boss_PuppetMaster_Attempts",
+        "value": "I3",
+        "timestamp": 32384258
+      },
+      {
+        "id": "ps_Boss_PuppetMaster_Beaten",
+        "value": "B1",
+        "timestamp": 32595424
+      },
+      {
+        "id": "ps_VoidClosed_VD01",
+        "value": "B1",
+        "timestamp": 32595424
+      },
+      {
+        "id": "ps_quest_Peak_intel",
+        "value": "SABCDEFGH",
+        "timestamp": 32696404
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Frida_V01_AfterPuppetMaster",
+        "value": "I2",
+        "timestamp": 32947831
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.TrainConductor_J05_PuppetMasterBeaten",
+        "value": "I2",
+        "timestamp": 32982347
+      },
+      {
+        "id": "ps_quest_Peak_status",
+        "value": "I2",
+        "timestamp": 33011091
+      },
+      {
+        "id": "ps_Achievement_CollectGlimmer2",
+        "value": "B1",
+        "timestamp": 33172962
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J08_57375ca0-e920-11ef-a371-09692fa21482-cp_Prod_J15_f77e7010-e920-11ef-8b9e-05ea70cd7b81",
+        "value": "I3",
+        "timestamp": 33256452
+      },
+      {
+        "id": "ps_Prod_J15_SC",
+        "value": "B1",
+        "timestamp": 33261470
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J15_f6ad6470-e920-11ef-8b9e-4da3b053b8bd-cp_Prod_J17_dfa96670-e920-11ef-8f22-9be524eccfdb",
+        "value": "I3",
+        "timestamp": 33264746
+      },
+      {
+        "id": "VisitedLevel-Prod_J17",
+        "value": "B1",
+        "timestamp": 33265342
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J17_e1dbfde0-e920-11ef-8f22-e98a6de270ec-cp_Prod_J19_35eb7730-e920-11ef-9e16-4b9783173ce2",
+        "value": "I3",
+        "timestamp": 33311612
+      },
+      {
+        "id": "VisitedLevel-Prod_J19",
+        "value": "B1",
+        "timestamp": 33312209
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J17_e35382b0-e920-11ef-8f22-9dda0c08bdfc-cp_Prod_J18_e72e3050-e920-11ef-9e16-5908e1817449",
+        "value": "I3",
+        "timestamp": 33346867
+      },
+      {
+        "id": "VisitedLevel-Prod_J18",
+        "value": "B1",
+        "timestamp": 33347463
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J14_ce92c010-e920-11ef-9e16-f36ad35f4aa3-cp_Prod_J18_d04af760-e920-11ef-9e16-a580c30076cf",
+        "value": "I3",
+        "timestamp": 33367962
+      },
+      {
+        "id": "ps_Prod_J18_18dc7e62-3bd2-4c83-9bd9-46e27b440eb5",
+        "value": "I0",
+        "timestamp": 33372096
+      },
+      {
+        "id": "ps_Prod_J18_1609a3cc-1ab1-4d40-8bb6-4e912d61e9c7",
+        "value": "I0",
+        "timestamp": 33372097
+      },
+      {
+        "id": "ps_Prod_J18_42ddae36-9496-4ffe-ba80-f9bde199a5d7",
+        "value": "I0",
+        "timestamp": 33376815
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J18_f91777d0-e920-11ef-b843-397173cdb815-cp_Prod_J20_3e78f420-e920-11ef-be65-6f42bb4090a7",
+        "value": "I3",
+        "timestamp": 33409602
+      },
+      {
+        "id": "VisitedLevel-Prod_J20",
+        "value": "B1",
+        "timestamp": 33410204
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J20_30531320-e920-11ef-b843-afa038b92ea7-cp_Prod_J22_cb0634c0-e920-11ef-b843-132b5ba9e66b",
+        "value": "I3",
+        "timestamp": 33440783
+      },
+      {
+        "id": "VisitedLevel-Prod_J22",
+        "value": "B1",
+        "timestamp": 33441380
+      },
+      {
+        "id": "ps_Prod_J22_599a60b4-fc44-4676-b45b-d5b0c198ea24",
+        "value": "I0",
+        "timestamp": 33448158
+      },
+      {
+        "id": "ps_Prod_J22_2ba7cffd-3b2a-4ed8-ad06-75454513f57c",
+        "value": "I0",
+        "timestamp": 33448159
+      },
+      {
+        "id": "ps_Prod_J22_b13250f7-2dc8-436e-9ca4-c5de222b6ceb",
+        "value": "I0",
+        "timestamp": 33449051
+      },
+      {
+        "id": "ps_Prod_J22_5d98803c-157d-4c4a-9a6e-01b3080d80ea",
+        "value": "I0",
+        "timestamp": 33449284
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J21_8f0f9640-e920-11ef-be65-8315ecbaadac-cp_Prod_J22_5b61cba0-e920-11ef-b946-05ac6b7fbeb9",
+        "value": "I3",
+        "timestamp": 33458253
+      },
+      {
+        "id": "VisitedLevel-Prod_J21",
+        "value": "B1",
+        "timestamp": 33458857
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J20_2f05d2a0-e920-11ef-b843-ad360c097f20-cp_Prod_J21_8d2ea140-e920-11ef-be65-d156b973932e",
+        "value": "I3",
+        "timestamp": 33460931
+      },
+      {
+        "id": "ps_Prod_J21_55183f43-40ed-4ca8-ab6c-d3f87fa7f9c2",
+        "value": "I0",
+        "timestamp": 33461456
+      },
+      {
+        "id": "ps_Prod_J21_f659d8d8-18b4-42d2-a6b1-f512f0ae5f3c",
+        "value": "I0",
+        "timestamp": 33462940
+      },
+      {
+        "id": "ps_Prod_J21_d2751cb3-939f-413b-8fb5-5ad1026b250a",
+        "value": "I0",
+        "timestamp": 33463507
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J14_60c98f10-e920-11ef-bda8-3373c4702555-cp_Prod_J21_95ddaed0-e920-11ef-be65-fddaa2abbb8c",
+        "value": "I3",
+        "timestamp": 33468641
+      },
+      {
+        "id": "ps_PhoneBoothSolved_Prod_J21",
+        "value": "B1",
+        "timestamp": 33620960
+      },
+      {
+        "id": "ps_Prod_J21_8f58526c-3d7f-4697-ac96-f9eadcaa1a2c",
+        "value": "I1",
+        "timestamp": 33649624
+      },
+      {
+        "id": "ps_Prod_J21_75616576-f245-4960-800c-80054a294e69",
+        "value": "I0",
+        "timestamp": 33649629
+      },
+      {
+        "id": "ps_PhoneBoothSolved_Prod_J12",
+        "value": "B1",
+        "timestamp": 33744783
+      },
+      {
+        "id": "ps_Prod_J08_SW",
+        "value": "B1",
+        "timestamp": 34008601
+      },
+      {
+        "id": "ps_Prod_J08_05ab593c-d503-41cf-b3eb-0eb89726594f",
+        "value": "B1",
+        "timestamp": 34010093
+      },
+      {
+        "id": "ps_Prod_A23_SecretWall_TopRight",
+        "value": "B1",
+        "timestamp": 34296324
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A23_33724700-1030-11f0-9240-81eb5b048257-cp_Prod_A24_7e32b320-9b00-11ef-841a-0f8a7e31ad59",
+        "value": "I3",
+        "timestamp": 34297150
+      },
+      {
+        "id": "VisitedLevel-Prod_A24",
+        "value": "B1",
+        "timestamp": 34297745
+      },
+      {
+        "id": "ps_Prod_A24_a3b87cc0-e0c6-4e23-aa27-7aa807ae7b5f",
+        "value": "B1",
+        "timestamp": 34299899
+      },
+      {
+        "id": "ps_Prod_A24_c87a9c57-a5e6-4457-9734-77cb4cc303a5",
+        "value": "B1",
+        "timestamp": 34301390
+      },
+      {
+        "id": "ps_unlock_Ability_BombClone",
+        "value": "I1",
+        "timestamp": 34328735
+      },
+      {
+        "id": "ps_Prod_A24_77ee40d0-c99b-4517-8fa4-3747a5960cfb",
+        "value": "B1",
+        "timestamp": 34336371
+      },
+      {
+        "id": "ps_Prod_A24_2d207068-4c62-4c9e-baac-6c940b073de4",
+        "value": "B1",
+        "timestamp": 34339596
+      },
+      {
+        "id": "ps_LootBag_loot_EnemyDefault_XXL",
+        "value": "I2",
+        "timestamp": 34345340
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A23_5c276620-1030-11f0-9240-b17e1b47b8a8-cp_Prod_A24_7fc6e7b0-9b00-11ef-841a-f927d7aa16e6",
+        "value": "I3",
+        "timestamp": 34354132
+      },
+      {
+        "id": "ps_Prod_A23_SecretWall_BottomRight",
+        "value": "B1",
+        "timestamp": 34355368
+      },
+      {
+        "id": "ps_Prod_A23_3de75c0c-5b5c-4169-ab52-610ff229ca89",
+        "value": "B1",
+        "timestamp": 34358694
+      },
+      {
+        "id": "ps_Prod_A07_e3ce36d2-fdd3-f4a1-0e49-2d3fd203bb35",
+        "value": "I0",
+        "timestamp": 34441758
+      },
+      {
+        "id": "ps_Prod_A07_2ecad6c1-371f-4ed2-bc30-7c94a6e1b816",
+        "value": "I0",
+        "timestamp": 34442825
+      },
+      {
+        "id": "ps_Prod_A07_fe4c2515-a647-4ebc-967a-64da3adaa6de",
+        "value": "I0",
+        "timestamp": 34443366
+      },
+      {
+        "id": "ps_Prod_A07_467afa0e-04ae-b02d-bdd2-d91e5c9d0371",
+        "value": "I0",
+        "timestamp": 34444483
+      },
+      {
+        "id": "ps_Prod_C05_HiddenArea",
+        "value": "B1",
+        "timestamp": 35290426
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C05_3ca5fb80-8560-11f0-95b6-2b1911c896a1-cp_Prod_F30_3e8ff130-8560-11f0-95b6-11615ef3f7e7",
+        "value": "I3",
+        "timestamp": 35307503
+      },
+      {
+        "id": "VisitedLevel-Prod_F30",
+        "value": "B1",
+        "timestamp": 35308109
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F05_a52b0f90-c210-11ef-9177-418695127b65-cp_Prod_F30_785bcef0-c210-11ef-9177-e38647a66c4e",
+        "value": "I3",
+        "timestamp": 35326149
+      },
+      {
+        "id": "ps_Prod_F05_SW",
+        "value": "B1",
+        "timestamp": 35327499
+      },
+      {
+        "id": "Prod_ElevatorRoom_SecretCorridor",
+        "value": "B1",
+        "timestamp": 35333059
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F05_12f44700-b0a0-11ee-806a-a93949002380-cp_Prod_F23_2f2837e0-d7b0-11ee-8e99-131f11448bd3",
+        "value": "I3",
+        "timestamp": 35333884
+      },
+      {
+        "id": "VisitedLevel-Prod_F23",
+        "value": "B1",
+        "timestamp": 35334483
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F23_30fe5770-d7b0-11ee-8e99-194cb2445d59-cp_Prod_F24_fa7b2160-d7b0-11ee-b388-5b19766be302",
+        "value": "I3",
+        "timestamp": 35390300
+      },
+      {
+        "id": "VisitedLevel-Prod_F24",
+        "value": "B1",
+        "timestamp": 35390899
+      },
+      {
+        "id": "ps_Prod_F24_bc23b11b-1e74-4387-9ef4-78ab3710197d",
+        "value": "I0",
+        "timestamp": 35403692
+      },
+      {
+        "id": "ps_Prod_F24_79fd53cc-1b9d-4fca-80d8-1fff36c19e33",
+        "value": "I0",
+        "timestamp": 35403933
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F24_f981dd60-d7b0-11ee-b388-71b37614d7d0-cp_Prod_F25_da3e07d0-d7b0-11ee-8f6b-9360716b3c98",
+        "value": "I3",
+        "timestamp": 35411359
+      },
+      {
+        "id": "VisitedLevel-Prod_F25",
+        "value": "B1",
+        "timestamp": 35411958
+      },
+      {
+        "id": "ps_Achievement_CollectLightstone2",
+        "value": "B1",
+        "timestamp": 35426604
+      },
+      {
+        "id": "ps_Prod_F25_a9281b5e-6464-4ffe-a916-00ba3c53f1eb",
+        "value": "I0",
+        "timestamp": 35427005
+      },
+      {
+        "id": "ps_Prod_F25_59c1fd4a-b025-4d6d-8684-673bd99f0f91",
+        "value": "I0",
+        "timestamp": 35431046
+      },
+      {
+        "id": "ps_Prod_F25_504aaf70-5e0d-43ed-a5eb-51785d615a71",
+        "value": "I0",
+        "timestamp": 35431905
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F16_bce5a850-1030-11f0-b8d4-c9aef1f400a8-cp_Prod_F25_db63ea30-d7b0-11ee-8f6b-a58f50727670",
+        "value": "I3",
+        "timestamp": 35467294
+      },
+      {
+        "id": "ps_Prod_F25_4c00523c-d76a-4a35-9fdc-971bf8d61fc0",
+        "value": "B1",
+        "timestamp": 35490049
+      },
+      {
+        "id": "ps_Prod_F25_2a26ffc7-0a98-1ced-4f63-ac3ee2224f5c",
+        "value": "B1",
+        "timestamp": 35531205
+      },
+      {
+        "id": "ps_LootBag_loot_Glimmer_M",
+        "value": "I3",
+        "timestamp": 35531394
+      },
+      {
+        "id": "ps_LootBag_loot_LightStone_M",
+        "value": "I8",
+        "timestamp": 35531396
+      },
+      {
+        "id": "ps_Prod_F25_SC",
+        "value": "B1",
+        "timestamp": 35571046
+      },
+      {
+        "id": "ps_Prod_F25_60183a47-aa41-433b-a7ff-47f2acf4750e",
+        "value": "I0",
+        "timestamp": 35573372
+      },
+      {
+        "id": "ps_Prod_F25_6622f4a7-9b2a-41b2-8491-2f02f8d8fd37",
+        "value": "I0",
+        "timestamp": 35573373
+      },
+      {
+        "id": "ps_Prod_F25_17c4be3e-0f40-4ec1-9f6c-6e1db1cb27d3",
+        "value": "I0",
+        "timestamp": 35573374
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F25_dd28f2c0-d7b0-11ee-8f6b-17ffd8169b25-cp_Prod_F26_c109de60-d7b0-11ee-8f6b-9dbc8fb91db7",
+        "value": "I3",
+        "timestamp": 35586484
+      },
+      {
+        "id": "VisitedLevel-Prod_F26",
+        "value": "B1",
+        "timestamp": 35587079
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_C05_9fa267f0-8560-11f0-95b6-cd7a642e0bd7-cp_Prod_F26_a10c3120-8560-11f0-95b6-294557b9307a",
+        "value": "I3",
+        "timestamp": 35587156
+      },
+      {
+        "id": "ps_Prod_F26_SC",
+        "value": "B1",
+        "timestamp": 35589773
+      },
+      {
+        "id": "Prod_F27_alt",
+        "value": "B1",
+        "timestamp": 35696288
+      },
+      {
+        "id": "ps_Prod_F26_d40df734-d0a0-4922-b6de-a2b4c2063027",
+        "value": "B1",
+        "timestamp": 35705247
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F26_13f854b0-fec0-11ee-ba30-118b784b9417-cp_Prod_F27_950d37d0-fec0-11ee-b635-1d1fd38c9f31",
+        "value": "I3",
+        "timestamp": 35708648
+      },
+      {
+        "id": "VisitedLevel-Prod_F27",
+        "value": "B1",
+        "timestamp": 35709248
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F27_15915850-3740-11f0-b8d1-fb12767a6fc7-cp_Prod_J19_4c57f980-e920-11ef-9e16-2bbbe20d05f8",
+        "value": "I3",
+        "timestamp": 35727498
+      },
+      {
+        "id": "ps_Prod_F27_SC",
+        "value": "B1",
+        "timestamp": 35727974
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F23_1ee432e0-fec0-11ee-ba30-5b342049538e-cp_Prod_F27_ad708110-fec0-11ee-b635-8b09f738361a",
+        "value": "I3",
+        "timestamp": 35760301
+      },
+      {
+        "id": "ps_Boss_Palettus_Attempts",
+        "value": "I5",
+        "timestamp": 36431923
+      },
+      {
+        "id": "ps_Palettus_DeathPos",
+        "value": "F448.1529",
+        "timestamp": 36501817
+      },
+      {
+        "id": "ps_Boss_Palettus_Beaten",
+        "value": "B1",
+        "timestamp": 36505310
+      },
+      {
+        "id": "ps_unlock_Ability_DoubleJump",
+        "value": "I1",
+        "timestamp": 36518475
+      },
+      {
+        "id": "ps_Achievement_AllBrushTechniques",
+        "value": "B1",
+        "timestamp": 36518477
+      },
+      {
+        "id": "ps_StatId_BackToShrine",
+        "value": "I48",
+        "timestamp": 36532466
+      },
+      {
+        "id": "ps_Prod_J08_e91a9d75-37a0-4b25-bc99-35773b98f242",
+        "value": "B1",
+        "timestamp": 36631735
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J08_0d05c560-e920-11ef-8e68-d1d1406f30d6-cp_Prod_J09_9b6140a0-e920-11ef-8e68-1385be97eb9b",
+        "value": "I3",
+        "timestamp": 36633052
+      },
+      {
+        "id": "ps_PhoneBoothSolved_Prod_J09",
+        "value": "B1",
+        "timestamp": 36650261
+      },
+      {
+        "id": "ps_Prod_J17_d6c9bed9-2b17-44bf-9a95-289974b8e77c",
+        "value": "B1",
+        "timestamp": 36707815
+      },
+      {
+        "id": "ps_Prod_J17_de0e102b-ab1a-3006-652e-8d14100f1793",
+        "value": "I0",
+        "timestamp": 36709132
+      },
+      {
+        "id": "ps_Prod_J17_599ccbc9-7a2b-805a-e5c6-e747c568bcd4",
+        "value": "I0",
+        "timestamp": 36710016
+      },
+      {
+        "id": "ps_Prod_J17_4bfda189-27ed-35cf-c140-b6e64fdda89c",
+        "value": "I0",
+        "timestamp": 36710090
+      },
+      {
+        "id": "ps_Prod_J17_1b28b94b-0b8c-9358-d6fc-1ebbcc8811b0",
+        "value": "I0",
+        "timestamp": 36710532
+      },
+      {
+        "id": "ps_Prod_J17_01cf9957-c53f-449a-aff9-2734aba809c7",
+        "value": "B1",
+        "timestamp": 36713349
+      },
+      {
+        "id": "ps_Prod_J17_ca5cbac4-abd8-1060-1cde-ba1ca7c65c17",
+        "value": "I0",
+        "timestamp": 36714665
+      },
+      {
+        "id": "ps_Prod_J17_d3098a2f-62d3-9b6f-ecaf-fa2974cde850",
+        "value": "I0",
+        "timestamp": 36715116
+      },
+      {
+        "id": "ps_Prod_J17_f5f470cf-88c1-fc74-0f9a-0694244057cb",
+        "value": "I0",
+        "timestamp": 36716433
+      },
+      {
+        "id": "ps_Prod_J17_243dcbd4-4ffa-6629-f851-33f27e326013",
+        "value": "I0",
+        "timestamp": 36717124
+      },
+      {
+        "id": "ps_Prod_J17_fd9eba31-5181-4f2c-875b-f6574cf687bf",
+        "value": "I0",
+        "timestamp": 36717374
+      },
+      {
+        "id": "ps_Prod_J17_6272eb7e-9f04-449e-ba4f-064e89dfc43c",
+        "value": "I0",
+        "timestamp": 36718825
+      },
+      {
+        "id": "ps_Prod_J17_2ea5ac46-32f0-4aa4-8c65-a8eac5c63811",
+        "value": "I0",
+        "timestamp": 36719891
+      },
+      {
+        "id": "ps_StatId_GameOverByCorruption",
+        "value": "I7",
+        "timestamp": 36741119
+      },
+      {
+        "id": "ps_PhoneBoothSolved_Prod_J17",
+        "value": "B1",
+        "timestamp": 36788018
+      },
+      {
+        "id": "ps_quest_PhoneBooth_intel",
+        "value": "SBADCE",
+        "timestamp": 36788018
+      },
+      {
+        "id": "ps_Prod_J18_969ec9d9-8938-4531-8495-f047b500d95b",
+        "value": "B1",
+        "timestamp": 36974485
+      },
+      {
+        "id": "ps_ShopKeeperFound_Prod_J18",
+        "value": "B1",
+        "timestamp": 36986087
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_J18",
+        "value": "I1",
+        "timestamp": 36987087
+      },
+      {
+        "id": "ps_quest_PhoneBooth_status",
+        "value": "I2",
+        "timestamp": 37110270
+      },
+      {
+        "id": "ps_inspDrawing_StabProjectile",
+        "value": "I1",
+        "timestamp": 37112012
+      },
+      {
+        "id": "ps_inspDrawing_StabProjectile_Upgraded",
+        "value": "B1",
+        "timestamp": 37241329
+      },
+      {
+        "id": "ps_shopItem_ArchitectsBlueprint",
+        "value": "I1",
+        "timestamp": 37254875
+      },
+      {
+        "id": "ps_unlock_ArchitectsBlueprint",
+        "value": "I1",
+        "timestamp": 37254875
+      },
+      {
+        "id": "ps_shopItem_LightStonePack3",
+        "value": "I1",
+        "timestamp": 37260533
+      },
+      {
+        "id": "ps_shopItem_SnapshotPack2",
+        "value": "I1",
+        "timestamp": 37263268
+      },
+      {
+        "id": "ps_item_Polaroid",
+        "value": "I30",
+        "timestamp": 37263268
+      },
+      {
+        "id": "ps_Prod_A04_2e49d1a6-9130-4674-8c14-7d3130c542ee",
+        "value": "B1",
+        "timestamp": 37361055
+      },
+      {
+        "id": "ps_ShopKeeperFound_Prod_A04",
+        "value": "B1",
+        "timestamp": 37377181
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_4",
+        "value": "I1",
+        "timestamp": 37378173
+      },
+      {
+        "id": "ps_quest_ShopKeeper_intel",
+        "value": "SACBDE",
+        "timestamp": 37494158
+      },
+      {
+        "id": "ps_quest_ShopKeeper_status",
+        "value": "I2",
+        "timestamp": 37494159
+      },
+      {
+        "id": "ps_inspDrawing_PotionSynthesizer",
+        "value": "I1",
+        "timestamp": 37495900
+      },
+      {
+        "id": "ps_shopItem_Potion2",
+        "value": "I1",
+        "timestamp": 37517347
+      },
+      {
+        "id": "ps_item_Potion",
+        "value": "I2",
+        "timestamp": 37517347
+      },
+      {
+        "id": "ps_shopItem_UnstableBubble",
+        "value": "I1",
+        "timestamp": 37520981
+      },
+      {
+        "id": "ps_unlock_UnstableBubble",
+        "value": "I1",
+        "timestamp": 37520981
+      },
+      {
+        "id": "ps_shopItem_LightStonePack2",
+        "value": "I1",
+        "timestamp": 37524574
+      },
+      {
+        "id": "ps_Achievement_BuyAllShopItems",
+        "value": "B1",
+        "timestamp": 37524575
+      },
+      {
+        "id": "ps_inspDrawing_PotionSynthesizer_Upgraded",
+        "value": "B1",
+        "timestamp": 37557139
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Jackie_C03",
+        "value": "I10",
+        "timestamp": 37776090
+      },
+      {
+        "id": "ps_GachaMachineSpent",
+        "value": "I0",
+        "timestamp": 37779990
+      },
+      {
+        "id": "ps_gacha_RewardEraser",
+        "value": "I1",
+        "timestamp": 37783866
+      },
+      {
+        "id": "ps_quest_Jackie_intel",
+        "value": "SACDEF",
+        "timestamp": 37794302
+      },
+      {
+        "id": "ps_quest_Jackie_status",
+        "value": "I2",
+        "timestamp": 37794302
+      },
+      {
+        "id": "ps_Snapshot_4_Texture",
+        "value": "Xf67c6583-c403-4a64-a984-bc4d4f986523.jpg",
+        "timestamp": 38826026
+      },
+      {
+        "id": "ps_Snapshot_4_Level",
+        "value": "SProd_A10",
+        "timestamp": 38826026
+      },
+      {
+        "id": "ps_Snapshot_4_Position",
+        "value": "V0.3839144;0.3368308",
+        "timestamp": 38826026
+      },
+      {
+        "id": "ps_SnapshotGhost_Prod_A10",
+        "value": "I2",
+        "timestamp": 38835848
+      },
+      {
+        "id": "ps_SnapshotGhost_Prod_A23",
+        "value": "I2",
+        "timestamp": 38835848
+      },
+      {
+        "id": "ps_Prod_A08_d45e4485-35ef-4c09-8b27-4dc6e0097ecd",
+        "value": "B1",
+        "timestamp": 38951376
+      },
+      {
+        "id": "ps_Prod_A08_e8fc9b3c-2043-468a-bc67-a41a870af851",
+        "value": "B1",
+        "timestamp": 38958210
+      },
+      {
+        "id": "ps_Snapshot_5_Texture",
+        "value": "Xf35a9e2f-580b-4579-ae90-446e2b350e71.jpg",
+        "timestamp": 39022126
+      },
+      {
+        "id": "ps_Snapshot_5_Level",
+        "value": "SProd_A19",
+        "timestamp": 39022126
+      },
+      {
+        "id": "ps_Snapshot_5_Position",
+        "value": "V0.7139128;0.1150546",
+        "timestamp": 39022126
+      },
+      {
+        "id": "ps_quest_SnapshotGhosts_intel",
+        "value": "SADCBE",
+        "timestamp": 39022126
+      },
+      {
+        "id": "ps_SnapshotGhost_Prod_A19",
+        "value": "I2",
+        "timestamp": 39216772
+      },
+      {
+        "id": "ps_quest_SnapshotGhosts_status",
+        "value": "I2",
+        "timestamp": 39233034
+      },
+      {
+        "id": "ps_inspDrawing_Copycat",
+        "value": "I1",
+        "timestamp": 39234776
+      },
+      {
+        "id": "ps_StatId_PoppedUnstableBubbles",
+        "value": "I5",
+        "timestamp": 39600331
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.BubbleBoy_V13",
+        "value": "I3",
+        "timestamp": 39811217
+      },
+      {
+        "id": "ps_quest_Bertram_intel",
+        "value": "SABCD",
+        "timestamp": 39952493
+      },
+      {
+        "id": "ps_quest_Bertram_status",
+        "value": "I2",
+        "timestamp": 39952493
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.BubbleBoy_J04",
+        "value": "I1",
+        "timestamp": 39952495
+      },
+      {
+        "id": "ps_inspDrawing_Copycat_Upgraded",
+        "value": "B1",
+        "timestamp": 40056258
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_J04",
+        "value": "I13",
+        "timestamp": 40065544
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.ShopKeeper_ShopEmpty",
+        "value": "I9",
+        "timestamp": 40067828
+      },
+      {
+        "id": "ps_LupinFound_Prod_F08",
+        "value": "B1",
+        "timestamp": 40193249
+      },
+      {
+        "id": "ps_item_HeartPiece",
+        "value": "I7",
+        "timestamp": 40304112
+      },
+      {
+        "id": "ps_Prod_F12_b7318b60-261b-49fc-8971-6dd3c33e79d3",
+        "value": "B1",
+        "timestamp": 40306771
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F12_d52f4bb0-4ce0-11ef-a979-f59f936e72a0-cp_Prod_F19_d5ed1d70-4ce0-11ef-a979-5fb88dca27a0",
+        "value": "I3",
+        "timestamp": 40324007
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_F19_e42dd780-b0a0-11ee-99e7-5d511c72ce41-cp_Prod_F20_c9e1f540-d7b0-11ee-8a2f-195d6e7aebd6",
+        "value": "I3",
+        "timestamp": 40365287
+      },
+      {
+        "id": "VisitedLevel-Prod_F20",
+        "value": "B1",
+        "timestamp": 40365884
+      },
+      {
+        "id": "ps_Prod_F20_deb19eb4-2e0b-4019-b69b-077d2c13b58f",
+        "value": "B1",
+        "timestamp": 40383693
+      },
+      {
+        "id": "ps_Prod_F20_24cdf30b-ea82-d1b5-7068-091b6a2d6c9f",
+        "value": "I0",
+        "timestamp": 40428458
+      },
+      {
+        "id": "ps_Prod_F20_b34d6f2b-3f17-eef6-2156-2ce556dadf17",
+        "value": "I0",
+        "timestamp": 40428459
+      },
+      {
+        "id": "ps_Prod_F20_56fb87ef-9e44-23a3-fccc-7086e975061f",
+        "value": "I0",
+        "timestamp": 40428533
+      },
+      {
+        "id": "ps_Prod_F20_2ae33a1b-889b-5aad-dfb2-ccebd6511c71",
+        "value": "I0",
+        "timestamp": 40428974
+      },
+      {
+        "id": "ps_Prod_F20_612fb9b6-78ba-4ce9-8072-fea708d64d7d",
+        "value": "B1",
+        "timestamp": 40474647
+      },
+      {
+        "id": "ps_Achievement_FindCommunityRoom",
+        "value": "B1",
+        "timestamp": 40484993
+      },
+      {
+        "id": "ps_Prod_F20_6713e14b-6a29-4871-8ac6-7f04b594bd57",
+        "value": "B1",
+        "timestamp": 40488285
+      },
+      {
+        "id": "ps_LootBag_loot_Glimmer_L",
+        "value": "I9",
+        "timestamp": 40488480
+      },
+      {
+        "id": "ps_LootBag_loot_LightStone_L",
+        "value": "I2",
+        "timestamp": 40488484
+      },
+      {
+        "id": "ps_Snapshot_6_Texture",
+        "value": "Xa66cba6f-d52e-49ee-830a-836f388098d7.jpg",
+        "timestamp": 40560686
+      },
+      {
+        "id": "ps_Snapshot_6_Level",
+        "value": "SProd_F20",
+        "timestamp": 40560686
+      },
+      {
+        "id": "ps_Snapshot_6_Position",
+        "value": "V0.2362281;0.7830051",
+        "timestamp": 40560686
+      },
+      {
+        "id": "ps_StatId_SnapshotsTaken",
+        "value": "I8",
+        "timestamp": 40560686
+      },
+      {
+        "id": "ps_inspDrawing_MilkshakeRemix",
+        "value": "I1",
+        "timestamp": 40603850
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Earl_Foundry_Paint_3",
+        "value": "I11",
+        "timestamp": 40668927
+      },
+      {
+        "id": "ps_LupinFound_Prod_A14",
+        "value": "B1",
+        "timestamp": 41610147
+      },
+      {
+        "id": "ps_LupinFound_Prod_C91",
+        "value": "B1",
+        "timestamp": 41926586
+      },
+      {
+        "id": "ps_StatId_PetTheCat",
+        "value": "I1",
+        "timestamp": 42030417
+      },
+      {
+        "id": "ps_LupinFound_Prod_V23",
+        "value": "B1",
+        "timestamp": 42034176
+      },
+      {
+        "id": "ps_quest_FindLupin_intel",
+        "value": "SABDCE",
+        "timestamp": 42034176
+      },
+      {
+        "id": "ps_quest_FindLupin_status",
+        "value": "I2",
+        "timestamp": 42181616
+      },
+      {
+        "id": "ps_Achievement_AllFavorsDone",
+        "value": "B1",
+        "timestamp": 42181616
+      },
+      {
+        "id": "ps_inspDrawing_DarkRevival",
+        "value": "I1",
+        "timestamp": 42183358
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_P03_bc5bb6b0-8560-11f0-bca8-91c974f917dd-cp_Prod_V24_ba7877c0-8560-11f0-bca8-cbbba8bb3da6",
+        "value": "I3",
+        "timestamp": 42437411
+      },
+      {
+        "id": "ps_inspDrawing_ScrewJump",
+        "value": "I1",
+        "timestamp": 42526968
+      },
+      {
+        "id": "ps_Prod_P03_a0cde55d-afa6-a43d-3a7d-6b838857056a",
+        "value": "I0",
+        "timestamp": 42642845
+      },
+      {
+        "id": "ps_Prod_P03_662467b0-295f-4f81-6af0-72cc6c64bb5b",
+        "value": "I0",
+        "timestamp": 42643078
+      },
+      {
+        "id": "ps_Prod_P03_839bccc1-64d3-c615-1865-35f5120c18b9",
+        "value": "I0",
+        "timestamp": 42643220
+      },
+      {
+        "id": "ps_Prod_P03_4e629ba0-dd3e-35d8-a7fe-3eb8e0701754",
+        "value": "I0",
+        "timestamp": 42643512
+      },
+      {
+        "id": "ps_Prod_P03_3f25b297-97b9-eb07-1a04-c0da2b989554",
+        "value": "I0",
+        "timestamp": 42643862
+      },
+      {
+        "id": "ps_Prod_P03_46ce7bc4-1256-2e17-ff56-3f151e3b56f5",
+        "value": "I0",
+        "timestamp": 42644004
+      },
+      {
+        "id": "ps_Prod_P03_LightStoneDepotFound",
+        "value": "B1",
+        "timestamp": 42860226
+      },
+      {
+        "id": "ps_Prod_P03_42533a88-da6c-41a6-40df-c7bb1e2f016a",
+        "value": "I0",
+        "timestamp": 42861926
+      },
+      {
+        "id": "ps_Prod_P03_a3b471bd-59c1-f96b-68e0-d9f591cc6663",
+        "value": "I0",
+        "timestamp": 42861927
+      },
+      {
+        "id": "ps_Prod_P03_2da03baf-0c07-256d-b953-c4aa118b8b4b",
+        "value": "I0",
+        "timestamp": 42864160
+      },
+      {
+        "id": "ps_Prod_P03_d484e6b8-21b7-a975-fb78-2fd833b363ba",
+        "value": "I0",
+        "timestamp": 42864161
+      },
+      {
+        "id": "ps_Prod_P03_5c8904c6-dc16-4d43-ddbd-c4d20e1b132f",
+        "value": "I0",
+        "timestamp": 42873645
+      },
+      {
+        "id": "ps_Prod_P03_9ee852d4-d0fd-0aea-f468-0f1c3c6ed37f",
+        "value": "I0",
+        "timestamp": 42875087
+      },
+      {
+        "id": "ps_Prod_P03_33f10bfe-94ec-9827-6f13-b45dd1ac652d",
+        "value": "I0",
+        "timestamp": 42879388
+      },
+      {
+        "id": "ps_Prod_P03_7c788a02-5b8c-11cf-72d1-1b3a645a7cbc",
+        "value": "I0",
+        "timestamp": 42882580
+      },
+      {
+        "id": "ps_Prod_V23_d44d9268-c56b-d844-6dcc-181ffe04fdcb",
+        "value": "B1",
+        "timestamp": 43117838
+      },
+      {
+        "id": "ps_inspDrawing_PaintOverload",
+        "value": "I1",
+        "timestamp": 43122789
+      },
+      {
+        "id": "ps_Prod_V21_b0ed6ce5-5191-49b0-bbe3-a4367579c7df",
+        "value": "I0",
+        "timestamp": 43191857
+      },
+      {
+        "id": "ps_Prod_V21_SW",
+        "value": "B1",
+        "timestamp": 43196033
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V21_cb5e38b0-8560-11f0-ac17-6314f4f4c1c0-cp_Prod_V22_ccb7fc50-8560-11f0-ac17-05f86c37d501",
+        "value": "I3",
+        "timestamp": 43200234
+      },
+      {
+        "id": "VisitedLevel-Prod_V22",
+        "value": "B1",
+        "timestamp": 43200831
+      },
+      {
+        "id": "ps_Prod_V22_bd5b3932-6fdb-8283-4e07-40f701713bc2",
+        "value": "B1",
+        "timestamp": 43213654
+      },
+      {
+        "id": "ps_Prod_V22_8968a183-31fd-ed00-57e7-f1be3cbd4539",
+        "value": "B1",
+        "timestamp": 43628947
+      },
+      {
+        "id": "ps_Prod_V22_595dc31f-7279-48f1-3590-bc7321ea8e8e",
+        "value": "I0",
+        "timestamp": 43635115
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V20_e639ee70-8560-11f0-ac17-33ba14de03c1-cp_Prod_V22_e4086870-8560-11f0-ac17-0d666bffd5db",
+        "value": "I3",
+        "timestamp": 43636082
+      },
+      {
+        "id": "ps_Prod_V22_132f3aec-3e85-9495-76e7-7ed1f84dd4cc",
+        "value": "I0",
+        "timestamp": 43637091
+      },
+      {
+        "id": "ps_inspDrawing_TeleportClone",
+        "value": "I1",
+        "timestamp": 43638657
+      },
+      {
+        "id": "ps_Prod_V22_SC",
+        "value": "B1",
+        "timestamp": 43729185
+      },
+      {
+        "id": "ps_Prod_A33_SW",
+        "value": "B1",
+        "timestamp": 43920513
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A01_31d2c600-c210-11ef-bc21-6b86e8d10fed-cp_Prod_A33_5a103af0-c210-11ef-8852-13f4d704d242",
+        "value": "I3",
+        "timestamp": 43924997
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_A01_30262770-c210-11ef-bc21-d54607c6670f-cp_Prod_A02_9f271cf0-9b00-11ef-99eb-ad5aed1546df",
+        "value": "I3",
+        "timestamp": 43994604
+      },
+      {
+        "id": "A1_BridgeBacktrackdoor",
+        "value": "B1",
+        "timestamp": 43995337
+      },
+      {
+        "id": "ps_inspDrawing_PotentPotion",
+        "value": "I1",
+        "timestamp": 44000871
+      },
+      {
+        "id": "ps_inspDrawing_SturdyKnight",
+        "value": "I1",
+        "timestamp": 44199112
+      },
+      {
+        "id": "ps_LootBag_loot_EnemyDefault_L",
+        "value": "I63",
+        "timestamp": 44231428
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J15_ab471c80-1030-11f0-910e-6f5be9c286de-cp_Prod_J16_aeed8f40-1030-11f0-910e-c1bdd13949e0",
+        "value": "I3",
+        "timestamp": 44369864
+      },
+      {
+        "id": "VisitedLevel-Prod_J16",
+        "value": "B1",
+        "timestamp": 44370468
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_J16_e8d18370-e920-11ef-b843-bfb6522d0533-cp_Prod_J18_e69fd660-e920-11ef-b843-476c2044c444",
+        "value": "I3",
+        "timestamp": 44817780
+      },
+      {
+        "id": "ps_inspDrawing_PogoWave",
+        "value": "I1",
+        "timestamp": 44818772
+      },
+      {
+        "id": "ps_Achievement_CollectAllInspirations",
+        "value": "B1",
+        "timestamp": 44818772
+      },
+      {
+        "id": "ps_Prod_J16_4dfe7efc-f463-af13-c538-cefd8b06d8a3",
+        "value": "I0",
+        "timestamp": 44838491
+      },
+      {
+        "id": "ps_Prod_J16_37a63a01-b8f8-e34e-25ff-ce96c4638802",
+        "value": "I0",
+        "timestamp": 44839791
+      },
+      {
+        "id": "ps_Prod_J16_SC",
+        "value": "B1",
+        "timestamp": 44840850
+      },
+      {
+        "id": "ps_inspDrawing_MilkshakeRemix_Upgraded",
+        "value": "B1",
+        "timestamp": 44925753
+      },
+      {
+        "id": "ps_inspDrawing_TeleportClone_Upgraded",
+        "value": "B1",
+        "timestamp": 44938790
+      },
+      {
+        "id": "ps_inspDrawing_DarkRevival_Upgraded",
+        "value": "B1",
+        "timestamp": 44947824
+      },
+      {
+        "id": "$Yarn.Internal.Visiting.Clara_Junction",
+        "value": "I10",
+        "timestamp": 45070471
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V26_7c1caff0-5e50-11f0-9518-097cb949e1b6-cp_Prod_V28_7eeebbb0-5e50-11f0-9518-7b48cdb0ea9c",
+        "value": "I3",
+        "timestamp": 45322271
+      },
+      {
+        "id": "ps_Prod_V26_c6360e69-c25a-d7e1-028c-cf70d467a3f6",
+        "value": "B1",
+        "timestamp": 45645571
+      },
+      {
+        "id": "ps_Prod_V26_bab419c4-452a-7ce6-6f45-442f1fc4b3d5",
+        "value": "B1",
+        "timestamp": 45647530
+      },
+      {
+        "id": "ps_Prod_V26_0d6e3f5e-99c7-429d-efea-9f1f5637780b",
+        "value": "B1",
+        "timestamp": 45655599
+      },
+      {
+        "id": "ps_Prod_V26_36d322dc-11fe-1bb4-e14f-5175906ae936",
+        "value": "I0",
+        "timestamp": 45659700
+      },
+      {
+        "id": "ps_Prod_V26_c5faf90f-1871-3138-0905-1d9d4b098346",
+        "value": "I0",
+        "timestamp": 45659701
+      },
+      {
+        "id": "ps_Prod_V26_ce299450-36a8-3d4a-2fa6-d79ae4f7cfec",
+        "value": "I0",
+        "timestamp": 45661042
+      },
+      {
+        "id": "ps_Prod_V26_89921209-439d-d5f5-4a87-d4a922ff599f",
+        "value": "I0",
+        "timestamp": 45661917
+      },
+      {
+        "id": "ps_Prod_V26_e84fe585-e609-19aa-a0e3-d271466d4dc9",
+        "value": "I0",
+        "timestamp": 45662667
+      },
+      {
+        "id": "ps_Prod_V26_38de74c6-20df-b761-451c-7c2096ec2d1a",
+        "value": "I0",
+        "timestamp": 45663943
+      },
+      {
+        "id": "ps_Prod_V26_68091359-1304-4c8a-556d-2db3869cb401",
+        "value": "I0",
+        "timestamp": 45665568
+      },
+      {
+        "id": "ps_Prod_V26_4c25329b-af6c-19d8-6d03-ac39710a2c25",
+        "value": "I0",
+        "timestamp": 45667977
+      },
+      {
+        "id": "ps_StatId_Persevered",
+        "value": "I18",
+        "timestamp": 45826295
+      },
+      {
+        "id": "ps_Prod_V27_SW",
+        "value": "B1",
+        "timestamp": 46201641
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V27_a0b823a0-5e50-11f0-a61d-35c432fbad9a-cp_Prod_V30_9fef5560-5e50-11f0-a61d-2db33b7d2319",
+        "value": "I3",
+        "timestamp": 46206849
+      },
+      {
+        "id": "VisitedLevel-Prod_V30",
+        "value": "B1",
+        "timestamp": 46207445
+      },
+      {
+        "id": "ps_Achievement_VisitEveryRoom",
+        "value": "B1",
+        "timestamp": 46207445
+      },
+      {
+        "id": "ps_Prod_V30_c7f96fa0-5a10-0d61-64fd-c2f3cff9c495",
+        "value": "B1",
+        "timestamp": 46238762
+      },
+      {
+        "id": "VisitedLevelLink-cp_Prod_V02_41b33680-5e50-11f0-a61d-a9185a5b3d6f-cp_Prod_V30_3c604c40-5e50-11f0-a61d-75d2e0464323",
+        "value": "I3",
+        "timestamp": 46241319
+      },
+      {
+        "id": "ps_Prod_V02_ad14f954-d429-43bd-9ac4-b0ad4c857a2a",
+        "value": "B1",
+        "timestamp": 46246462
+      },
+      {
+        "id": "ps_Prod_V02_3216e5c2-6578-20b4-ef76-ebfc7a50e962",
+        "value": "I0",
+        "timestamp": 46248687
+      },
+      {
+        "id": "ps_LootBag_loot_LightStone_XS",
+        "value": "I116",
+        "timestamp": 46250463
+      },
+      {
+        "id": "ps_Prod_V02_8f8efda0-c9e1-a677-04f2-a8ddece48623",
+        "value": "I0",
+        "timestamp": 46250745
+      },
+      {
+        "id": "ps_Prod_V02_d97c785a-acd1-835c-3fe2-ff64108f28c2",
+        "value": "I0",
+        "timestamp": 46251229
+      },
+      {
+        "id": "ps_LootBag_loot_LightStone_XXS",
+        "value": "I58",
+        "timestamp": 46251229
+      },
+      {
+        "id": "ps_item_LightStone",
+        "value": "I100",
+        "timestamp": 46252354
+      },
+      {
+        "id": "ps_TotalCollectCount_Lightstone",
+        "value": "I840",
+        "timestamp": 46252354
+      },
+      {
+        "id": "ps_StatId_AllTimeCollectedLightStones",
+        "value": "I840",
+        "timestamp": 46252354
+      },
+      {
+        "id": "ps_item_Eraser",
+        "value": "I6",
+        "timestamp": 46256997
+      },
+      {
+        "id": "ps_Achievement_CollectAllErasers",
+        "value": "B1",
+        "timestamp": 46256999
+      },
+      {
+        "id": "ps_Prod_V02_2fd1a020-0e9c-4d67-8bb3-8b1aa4692d57",
+        "value": "B1",
+        "timestamp": 46262599
+      },
+      {
+        "id": "ps_InspirationPlaced_StabProjectile",
+        "value": "v0;5",
+        "timestamp": 46590691
+      },
+      {
+        "id": "ps_InspirationPlaced_DarkLightning",
+        "value": "v1;0",
+        "timestamp": 46626036
+      },
+      {
+        "id": "ps_InspirationPlaced_ScrewJump",
+        "value": "v0;0",
+        "timestamp": 46627745
+      },
+      {
+        "id": "ps_InspirationPlaced_PotentPotion",
+        "value": "v2;1",
+        "timestamp": 46706342
+      },
+      {
+        "id": "ps_InspirationPlaced_PotionSynthesizer",
+        "value": "v3;1",
+        "timestamp": 46709376
+      },
+      {
+        "id": "ps_InspirationPlaced_DarkRevival",
+        "value": "v0;3",
+        "timestamp": 46718710
+      },
+      {
+        "id": "ps_InspirationPlaced_StabLifesteal",
+        "value": "v0;4",
+        "timestamp": 46725264
+      },
+      {
+        "id": "ps_InspirationPlaced_NaturalTwenty",
+        "value": "v2;4",
+        "timestamp": 46737207
+      },
+      {
+        "id": "ps_InspirationPlaced_MilkshakeRemix",
+        "value": "v0;2",
+        "timestamp": 46757001
+      },
+      {
+        "id": "ps_InspirationPlaced_SturdyKnight",
+        "value": "v1;2",
+        "timestamp": 46763523
+      },
+      {
+        "id": "ps_Achievement_PlaceInspirations1",
+        "value": "B1",
+        "timestamp": 46763524
+      },
+      {
+        "id": "ps_Achievement_TearCarnival",
+        "value": "B1",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_PuppetMasterDefeated",
+        "value": "B1",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_Achievement_GameFinished",
+        "value": "B1",
+        "timestamp": 0
+      },
+      {
+        "id": "ps_StatId_CloneCount",
+        "value": "I71",
+        "timestamp": 46959436
+      },
+      {
+        "id": "ps_Prod_V12_2005c18a-8bf0-4551-8b3a-f33b593b92cb",
+        "value": "B1",
+        "timestamp": 54503037
+      },
+      {
+        "id": "ps_Prod_V12_a898ee56-7f1d-4446-a691-8ebc73b9ae4b",
+        "value": "I0",
+        "timestamp": 54505996
+      },
+      {
+        "id": "ps_Prod_V12_07f666db-737f-d359-e979-a1b497a1f2b4",
+        "value": "I0",
+        "timestamp": 54506387
+      },
+      {
+        "id": "ps_Prod_V12_1b366004-7888-ee8d-402d-b9d30b3521e0",
+        "value": "I0",
+        "timestamp": 54510771
+      },
+      {
+        "id": "ps_Prod_V12_97408124-2d62-da36-80fe-3a5748c84059",
+        "value": "I0",
+        "timestamp": 54512871
+      },
+      {
+        "id": "ps_Prod_V12_ca82b444-7a86-c2b7-34f0-639c1b80f147",
+        "value": "I0",
+        "timestamp": 54519596
+      },
+      {
+        "id": "ps_Prod_V12_f704b8d9-b7e3-0889-246a-80cc22af01f1",
+        "value": "I0",
+        "timestamp": 54522979
+      },
+      {
+        "id": "ps_Prod_V12_1cabaa86-a1ea-84a3-ab8d-6ceac29e1d6f",
+        "value": "I0",
+        "timestamp": 54525721
+      },
+      {
+        "id": "ps_Prod_V12_dd3d3f4f-1b8d-9dee-919b-8de17c8e8a14",
+        "value": "I0",
+        "timestamp": 54528221
+      },
+      {
+        "id": "ps_Prod_V12_91a60ee7-4bcc-56c1-4936-956ec4c01206",
+        "value": "I0",
+        "timestamp": 54533488
+      },
+      {
+        "id": "ps_LootBag_loot_Glimmer_XS",
+        "value": "I257",
+        "timestamp": 54533488
+      },
+      {
+        "id": "ps_Prod_V12_ed5f0dc7-66ba-6bf6-ae7b-e1b356e90ba4",
+        "value": "B1",
+        "timestamp": 54616660
+      },
+      {
+        "id": "ps_Prod_V12_f34ac7b4-c509-8d7b-0ee1-952435483041",
+        "value": "B1",
+        "timestamp": 54637469
+      },
+      {
+        "id": "ps_LootBag_loot_EnemyDefault_XL",
+        "value": "I40",
+        "timestamp": 55059325
+      },
+      {
+        "id": "ps_LootBag_loot_EnemyDefault_M",
+        "value": "I105",
+        "timestamp": 55380522
+      },
+      {
+        "id": "ps_StatId_Electrocuted",
+        "value": "I231",
+        "timestamp": 55472161
+      },
+      {
+        "id": "ps_LootBag_loot_HealVase_L",
+        "value": "I47",
+        "timestamp": 55804627
+      },
+      {
+        "id": "ps_Prod_V24_622d80e3-c7ae-416c-ad2f-f348b6904608",
+        "value": "B1",
+        "timestamp": 55880259
+      },
+      {
+        "id": "ps_item_PaintPiece",
+        "value": "I8",
+        "timestamp": 55884401
+      },
+      {
+        "id": "ps_Prod_V24_c1739f72-f8d2-4986-8583-bc19237e180d",
+        "value": "B1",
+        "timestamp": 55887177
+      },
+      {
+        "id": "ps_LootBag_loot_HealVase",
+        "value": "I822",
+        "timestamp": 57075174
+      },
+      {
+        "id": "ps_item_HealFeather_Potion",
+        "value": "I480",
+        "timestamp": 57076408
+      },
+      {
+        "id": "ps_StatId_EnemiesKilled",
+        "value": "I574",
+        "timestamp": 57130847
+      },
+      {
+        "id": "ps_LootBag_loot_EnemyDefault_S",
+        "value": "I125",
+        "timestamp": 57130948
+      },
+      {
+        "id": "ps_item_Currency",
+        "value": "I971",
+        "timestamp": 57131890
+      },
+      {
+        "id": "ps_TotalCollectCount_Currency",
+        "value": "I6631",
+        "timestamp": 57131890
+      },
+      {
+        "id": "ps_StatId_AllTimeCollectedGlimmer",
+        "value": "I6631",
+        "timestamp": 57131890
+      },
+      {
+        "id": "ps_StatId_SplooshCount",
+        "value": "I461",
+        "timestamp": 57244685
+      },
+      {
+        "id": "ps_StatId_DroppedMilkshakes",
+        "value": "I2",
+        "timestamp": 57244702
+      },
+      {
+        "id": "ps_StatId_ReceivedDamage",
+        "value": "I73566",
+        "timestamp": 57267396
+      },
+      {
+        "id": "ps_StatId_BrushHits",
+        "value": "I8770",
+        "timestamp": 57287635
+      },
+      {
+        "id": "ps_MilkShake_Prod_V10",
+        "value": "B1",
+        "timestamp": 57289969
+      },
+      {
+        "id": "ps_StatId_DashCount",
+        "value": "I7845",
+        "timestamp": 57293861
+      }
+    ],
+    "TmpLevelPersistence": [],
+    "TmpMeditationPersistence": []
+  },
+  "InitCommands": [],
+  "Modifiers": {
+    "GameMode": 0,
+    "Permadeath": false
+  }
+}

@@ -322,6 +322,76 @@
                                                     Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
                                                     Margin="0,4" />
 
+                                            <!-- Completion -->
+                                            <TextBlock Text="{DynamicResource Progress.Missing.Title}"
+                                                       FontSize="15"
+                                                       FontWeight="SemiBold" />
+
+                                            <Grid ColumnDefinitions="160,*">
+                                                <TextBlock Grid.Column="0"
+                                                           Text="{DynamicResource Progress.Missing.Summary.Label}"
+                                                           VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="1"
+                                                           Text="{Binding ProgressTab.CompletionSummary}"
+                                                           VerticalAlignment="Center" />
+                                            </Grid>
+
+                                            <ItemsControl ItemsSource="{Binding ProgressTab.Regions}">
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate x:DataType="editors:RegionRow">
+                                                        <Grid ColumnDefinitions="160,80,*" Margin="0,2">
+                                                            <TextBlock Grid.Column="0"
+                                                                       Text="{Binding Name}"
+                                                                       VerticalAlignment="Center" />
+                                                            <TextBlock Grid.Column="1"
+                                                                       Text="{Binding Percent, StringFormat='{}{0} %'}"
+                                                                       HorizontalAlignment="Right"
+                                                                       FontWeight="SemiBold"
+                                                                       VerticalAlignment="Center" />
+                                                            <TextBlock Grid.Column="2"
+                                                                       Text="{Binding Counts}"
+                                                                       Opacity="0.6"
+                                                                       Margin="12,0,0,0"
+                                                                       VerticalAlignment="Center" />
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+
+                                            <!-- Missing list -->
+                                            <TextBlock Text="{DynamicResource Progress.Missing.ListTitle}"
+                                                       FontSize="12"
+                                                       FontWeight="SemiBold"
+                                                       Opacity="0.6" />
+
+                                            <TextBlock Text="{DynamicResource Progress.Missing.Empty}"
+                                                       Opacity="0.6"
+                                                       IsVisible="{Binding !ProgressTab.MissingItems.Count}" />
+
+                                            <ItemsControl ItemsSource="{Binding ProgressTab.MissingItems}">
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate x:DataType="editors:MissingItem">
+                                                        <Grid ColumnDefinitions="160,80,*" Margin="0,2">
+                                                            <TextBlock Grid.Column="0"
+                                                                       Text="{Binding Region}"
+                                                                       VerticalAlignment="Center" />
+                                                            <TextBlock Grid.Column="1"
+                                                                       Text="{Binding Room}"
+                                                                       FontWeight="SemiBold"
+                                                                       VerticalAlignment="Center" />
+                                                            <TextBlock Grid.Column="2"
+                                                                       Text="{Binding Category}"
+                                                                       Opacity="0.7"
+                                                                       VerticalAlignment="Center" />
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+
+                                            <Border Height="1"
+                                                    Background="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                                                    Margin="0,4" />
+
                                             <!-- Inspirations -->
                                             <TextBlock Text="{DynamicResource Progress.Inspirations.Title}"
                                                        FontSize="15"

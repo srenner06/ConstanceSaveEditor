@@ -1,0 +1,1854 @@
+{
+ "entries": [
+  {
+   "id": "VisitedLevel-Prod_VD01",
+   "category": "VisitedLevel",
+   "level": "Prod_VD01",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_VoidClosed_VD01",
+   "category": "ManualTrigger",
+   "level": "Prod_VD01",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_F17",
+   "category": "VisitedLevel",
+   "level": "Prod_F17",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_inspDrawing_TaxRefund",
+   "category": "Collectable",
+   "level": "Prod_F17",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F17_3b77313f-d277-479b-b829-2cdaa3d3bdf3",
+   "category": "SecretWall",
+   "level": "Prod_F17",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_Flashback_Violin",
+   "category": "VisitedLevel",
+   "level": "Prod_Flashback_Violin",
+   "region": "Undefined"
+  },
+  {
+   "id": "VisitedLevel-Prod_J21",
+   "category": "VisitedLevel",
+   "level": "Prod_J21",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_MilkShake_Prod_J21",
+   "category": "Milkshake",
+   "level": "Prod_J21",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_C01",
+   "category": "VisitedLevel",
+   "level": "Prod_C01",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_V21",
+   "category": "VisitedLevel",
+   "level": "Prod_V21",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V21_SW",
+   "category": "SecretWall",
+   "level": "Prod_V21",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_J18",
+   "category": "VisitedLevel",
+   "level": "Prod_J18",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J18_969ec9d9-8938-4531-8495-f047b500d95b",
+   "category": "SecretWall",
+   "level": "Prod_J18",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_F13",
+   "category": "VisitedLevel",
+   "level": "Prod_F13",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F13_c5e9a808-8a12-5dbe-943b-9e50cadf6f18",
+   "category": "Chest",
+   "level": "Prod_F13",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_J03",
+   "category": "VisitedLevel",
+   "level": "Prod_J03",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_F20",
+   "category": "VisitedLevel",
+   "level": "Prod_F20",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_MilkShake_Prod_F20",
+   "category": "Milkshake",
+   "level": "Prod_F20",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F20_6713e14b-6a29-4871-8ac6-7f04b594bd57",
+   "category": "Chest",
+   "level": "Prod_F20",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F20_612fb9b6-78ba-4ce9-8072-fea708d64d7d",
+   "category": "SecretWall",
+   "level": "Prod_F20",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_inspDrawing_MilkshakeRemix",
+   "category": "Collectable",
+   "level": "Prod_F20",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_F04",
+   "category": "VisitedLevel",
+   "level": "Prod_F04",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_A06",
+   "category": "VisitedLevel",
+   "level": "Prod_A06",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_unlock_Ability_Slice",
+   "category": "Collectable",
+   "level": "Prod_A06",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V18",
+   "category": "VisitedLevel",
+   "level": "Prod_V18",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V18_d336557d-21de-494b-9252-3249efd8a329",
+   "category": "Chest",
+   "level": "Prod_V18",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_inspDrawing_DarkLightning",
+   "category": "Collectable",
+   "level": "Prod_V18",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A32",
+   "category": "VisitedLevel",
+   "level": "Prod_A32",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_C93",
+   "category": "VisitedLevel",
+   "level": "Prod_C93",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C93_0d28e8d6-a001-436e-9ec1-9c525217f192",
+   "category": "Chest",
+   "level": "Prod_C93",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_F16",
+   "category": "VisitedLevel",
+   "level": "Prod_F16",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F16_a046b9c0-14bd-4053-b0ad-cef476f54daa",
+   "category": "Chest",
+   "level": "Prod_F16",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F16_89ee4b58-e0d8-43bc-9392-9ce475d3962b",
+   "category": "SecretWall",
+   "level": "Prod_F16",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_C91",
+   "category": "VisitedLevel",
+   "level": "Prod_C91",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_unlock_Ability_Pogo",
+   "category": "Collectable",
+   "level": "Prod_C91",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_V26",
+   "category": "VisitedLevel",
+   "level": "Prod_V26",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V26_c6360e69-c25a-d7e1-028c-cf70d467a3f6",
+   "category": "SecretWall",
+   "level": "Prod_V26",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A19",
+   "category": "VisitedLevel",
+   "level": "Prod_A19",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A19_ef9a3ac6-2d1b-4c6b-819f-1f26c5009df8",
+   "category": "SecretWall",
+   "level": "Prod_A19",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A09",
+   "category": "VisitedLevel",
+   "level": "Prod_A09",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A07",
+   "category": "VisitedLevel",
+   "level": "Prod_A07",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V19",
+   "category": "VisitedLevel",
+   "level": "Prod_V19",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V27",
+   "category": "VisitedLevel",
+   "level": "Prod_V27",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V27_SW",
+   "category": "SecretWall",
+   "level": "Prod_V27",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A15",
+   "category": "VisitedLevel",
+   "level": "Prod_A15",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V05",
+   "category": "VisitedLevel",
+   "level": "Prod_V05",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V05_e920382f-1447-4e07-9354-ee30dde782f1",
+   "category": "SecretWall",
+   "level": "Prod_V05",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_C03",
+   "category": "VisitedLevel",
+   "level": "Prod_C03",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C03_abd414de-cf18-ede2-f2a2-d0c791a8779e",
+   "category": "SecretWall",
+   "level": "Prod_C03",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_inspDrawing_DarkLightning",
+   "category": "Collectable",
+   "level": "Prod_C03",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_V30",
+   "category": "VisitedLevel",
+   "level": "Prod_V30",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V16",
+   "category": "VisitedLevel",
+   "level": "Prod_V16",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V16_c53a0b8e-b431-4f3d-a902-9d132736153c",
+   "category": "SecretWall",
+   "level": "Prod_V16",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_F06",
+   "category": "VisitedLevel",
+   "level": "Prod_F06",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F06_ccee5bd6-fc4b-4b1e-ab1d-c1da6345fb45",
+   "category": "SecretWall",
+   "level": "Prod_F06",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_A_NemesisChase",
+   "category": "VisitedLevel",
+   "level": "Prod_A_NemesisChase",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V07",
+   "category": "VisitedLevel",
+   "level": "Prod_V07",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V07_fab7be2d-ee03-098b-46bb-cf604f33acce",
+   "category": "Collectable",
+   "level": "Prod_V07",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_J19",
+   "category": "VisitedLevel",
+   "level": "Prod_J19",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J19_dacbb823-357f-b229-30ec-3a5f372e265a",
+   "category": "Chest",
+   "level": "Prod_J19",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_A08",
+   "category": "VisitedLevel",
+   "level": "Prod_A08",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A08_d45e4485-35ef-4c09-8b27-4dc6e0097ecd",
+   "category": "SecretWall",
+   "level": "Prod_A08",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A08_e8fc9b3c-2043-468a-bc67-a41a870af851",
+   "category": "Collectable",
+   "level": "Prod_A08",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A23",
+   "category": "VisitedLevel",
+   "level": "Prod_A23",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A23_SecretWall_TopRight",
+   "category": "SecretWall",
+   "level": "Prod_A23",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A23_SecretWall_BottomRight",
+   "category": "SecretWall",
+   "level": "Prod_A23",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A23_3de75c0c-5b5c-4169-ab52-610ff229ca89",
+   "category": "SecretWall",
+   "level": "Prod_A23",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V13",
+   "category": "VisitedLevel",
+   "level": "Prod_V13",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_unlock_Ability_WallDive",
+   "category": "Collectable",
+   "level": "Prod_V13",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A03",
+   "category": "VisitedLevel",
+   "level": "Prod_A03",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A05",
+   "category": "VisitedLevel",
+   "level": "Prod_A05",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A33",
+   "category": "VisitedLevel",
+   "level": "Prod_A33",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A33_SW",
+   "category": "SecretWall",
+   "level": "Prod_A33",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V03",
+   "category": "VisitedLevel",
+   "level": "Prod_V03",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A26",
+   "category": "VisitedLevel",
+   "level": "Prod_A26",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V12",
+   "category": "VisitedLevel",
+   "level": "Prod_V12",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V12_2005c18a-8bf0-4551-8b3a-f33b593b92cb",
+   "category": "SecretWall",
+   "level": "Prod_V12",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V12_ed5f0dc7-66ba-6bf6-ae7b-e1b356e90ba4",
+   "category": "SecretWall",
+   "level": "Prod_V12",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V12_f34ac7b4-c509-8d7b-0ee1-952435483041",
+   "category": "Collectable",
+   "level": "Prod_V12",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_F22",
+   "category": "VisitedLevel",
+   "level": "Prod_F22",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_V06",
+   "category": "VisitedLevel",
+   "level": "Prod_V06",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_F11",
+   "category": "VisitedLevel",
+   "level": "Prod_F11",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F11_b15b95e2-0c85-4d84-8966-8b66cb3b812f",
+   "category": "SecretWall",
+   "level": "Prod_F11",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_A30",
+   "category": "VisitedLevel",
+   "level": "Prod_A30",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F29",
+   "category": "VisitedLevel",
+   "level": "Prod_F29",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_F21",
+   "category": "VisitedLevel",
+   "level": "Prod_F21",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F21_6a1b3f09-be2b-4645-a74f-75174bace78d",
+   "category": "Chest",
+   "level": "Prod_F21",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_V22",
+   "category": "VisitedLevel",
+   "level": "Prod_V22",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_inspDrawing_TeleportClone",
+   "category": "Collectable",
+   "level": "Prod_V22",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V11",
+   "category": "VisitedLevel",
+   "level": "Prod_V11",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V24",
+   "category": "VisitedLevel",
+   "level": "Prod_V24",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V24_622d80e3-c7ae-416c-ad2f-f348b6904608",
+   "category": "SecretWall",
+   "level": "Prod_V24",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V24_c1739f72-f8d2-4986-8583-bc19237e180d",
+   "category": "Collectable",
+   "level": "Prod_V24",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A16",
+   "category": "VisitedLevel",
+   "level": "Prod_A16",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A16_a8a6a17b-df53-495e-9c7a-8b9b828ccdc7",
+   "category": "Chest",
+   "level": "Prod_A16",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_inspDrawing_DarkLightning",
+   "category": "Collectable",
+   "level": "Prod_A16",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F03",
+   "category": "VisitedLevel",
+   "level": "Prod_F03",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_unlock_Ability_Stab",
+   "category": "Collectable",
+   "level": "Prod_F03",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F03_9c79f624-ecb2-4be2-a979-dae5fd90f875",
+   "category": "Chest",
+   "level": "Prod_F03",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_F24",
+   "category": "VisitedLevel",
+   "level": "Prod_F24",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_Flashback_IntroCutscene",
+   "category": "VisitedLevel",
+   "level": "Prod_Flashback_IntroCutscene",
+   "region": "Undefined"
+  },
+  {
+   "id": "VisitedLevel-Prod_A17",
+   "category": "VisitedLevel",
+   "level": "Prod_A17",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F25",
+   "category": "VisitedLevel",
+   "level": "Prod_F25",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F25_4c00523c-d76a-4a35-9fdc-971bf8d61fc0",
+   "category": "SecretWall",
+   "level": "Prod_F25",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F25_2a26ffc7-0a98-1ced-4f63-ac3ee2224f5c",
+   "category": "Chest",
+   "level": "Prod_F25",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_F28",
+   "category": "VisitedLevel",
+   "level": "Prod_F28",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_inspDrawing_StabLifesteal",
+   "category": "Collectable",
+   "level": "Prod_F28",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_VD02",
+   "category": "VisitedLevel",
+   "level": "Prod_VD02",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_VoidClosed_VD02",
+   "category": "ManualTrigger",
+   "level": "Prod_VD02",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J09",
+   "category": "VisitedLevel",
+   "level": "Prod_J09",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_J16",
+   "category": "VisitedLevel",
+   "level": "Prod_J16",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_MilkShake_Prod_J16",
+   "category": "Milkshake",
+   "level": "Prod_J16",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_PogoWave",
+   "category": "Collectable",
+   "level": "Prod_J16",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_F18",
+   "category": "VisitedLevel",
+   "level": "Prod_F18",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_V01",
+   "category": "VisitedLevel",
+   "level": "Prod_V01",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V01_f2baa7d1-8dde-43cc-84fb-abec4f165ff0",
+   "category": "SecretWall",
+   "level": "Prod_V01",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V01_1617678a-ed9b-4945-8a99-90e6a26215cc",
+   "category": "SecretWall",
+   "level": "Prod_V01",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V01_ac4ef57d-77b6-46ff-a77f-76f4645d6cc9",
+   "category": "SecretWall",
+   "level": "Prod_V01",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_F27",
+   "category": "VisitedLevel",
+   "level": "Prod_F27",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_unlock_Ability_DoubleJump",
+   "category": "Collectable",
+   "level": "Prod_F27",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_C96",
+   "category": "VisitedLevel",
+   "level": "Prod_C96",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C96_49252065-b059-02ba-e69e-edaa30f89d14",
+   "category": "Chest",
+   "level": "Prod_C96",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_F12",
+   "category": "VisitedLevel",
+   "level": "Prod_F12",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F12_b7318b60-261b-49fc-8971-6dd3c33e79d3",
+   "category": "Collectable",
+   "level": "Prod_F12",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_V10",
+   "category": "VisitedLevel",
+   "level": "Prod_V10",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_MilkShake_Prod_V10",
+   "category": "Milkshake",
+   "level": "Prod_V10",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V10_4fe5e6c6-f0bd-40fd-846a-0496106e877f",
+   "category": "Collectable",
+   "level": "Prod_V10",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V20",
+   "category": "VisitedLevel",
+   "level": "Prod_V20",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V02",
+   "category": "VisitedLevel",
+   "level": "Prod_V02",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V02_2fd1a020-0e9c-4d67-8bb3-8b1aa4692d57",
+   "category": "Collectable",
+   "level": "Prod_V02",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V02_d20ebc9f-e6c2-448d-a81c-573affe43074",
+   "category": "SecretWall",
+   "level": "Prod_V02",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V02_def63608-4825-4d9d-930a-d907f763b168",
+   "category": "SecretWall",
+   "level": "Prod_V02",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V02_ad14f954-d429-43bd-9ac4-b0ad4c857a2a",
+   "category": "SecretWall",
+   "level": "Prod_V02",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V02_d59fe825-b724-4a22-8b42-691dfc8b28ba",
+   "category": "SecretWall",
+   "level": "Prod_V02",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_J11",
+   "category": "VisitedLevel",
+   "level": "Prod_J11",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_J13",
+   "category": "VisitedLevel",
+   "level": "Prod_J13",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J13_2176d0ba-6fff-4407-417a-ecbe13c97576",
+   "category": "Chest",
+   "level": "Prod_J13",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_A20",
+   "category": "VisitedLevel",
+   "level": "Prod_A20",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A20_d51fea7c-0552-d01f-4c9c-439cafe52c8a",
+   "category": "Chest",
+   "level": "Prod_A20",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A01",
+   "category": "VisitedLevel",
+   "level": "Prod_A01",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_inspDrawing_PotentPotion",
+   "category": "Collectable",
+   "level": "Prod_A01",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A24",
+   "category": "VisitedLevel",
+   "level": "Prod_A24",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A24_a3b87cc0-e0c6-4e23-aa27-7aa807ae7b5f",
+   "category": "SecretWall",
+   "level": "Prod_A24",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A24_c87a9c57-a5e6-4457-9734-77cb4cc303a5",
+   "category": "SecretWall",
+   "level": "Prod_A24",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A24_77ee40d0-c99b-4517-8fa4-3747a5960cfb",
+   "category": "SecretWall",
+   "level": "Prod_A24",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A24_2d207068-4c62-4c9e-baac-6c940b073de4",
+   "category": "SecretWall",
+   "level": "Prod_A24",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_unlock_Ability_BombClone",
+   "category": "Collectable",
+   "level": "Prod_A24",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J02",
+   "category": "VisitedLevel",
+   "level": "Prod_J02",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J02_3a916616-3894-45ef-a63a-2012dd80ac3a",
+   "category": "SecretWall",
+   "level": "Prod_J02",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_A31",
+   "category": "VisitedLevel",
+   "level": "Prod_A31",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_MilkShake_Prod_A31",
+   "category": "Milkshake",
+   "level": "Prod_A31",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A31_9335a583-2116-4cf8-9d5c-ec20ded08c75",
+   "category": "SecretWall",
+   "level": "Prod_A31",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A31_77994aa3-56cd-4897-8728-9aa02c5eca5e",
+   "category": "Collectable",
+   "level": "Prod_A31",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J08",
+   "category": "VisitedLevel",
+   "level": "Prod_J08",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J08_e91a9d75-37a0-4b25-bc99-35773b98f242",
+   "category": "SecretWall",
+   "level": "Prod_J08",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J08_SW",
+   "category": "SecretWall",
+   "level": "Prod_J08",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J08_05ab593c-d503-41cf-b3eb-0eb89726594f",
+   "category": "Chest",
+   "level": "Prod_J08",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_J06",
+   "category": "VisitedLevel",
+   "level": "Prod_J06",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_F10",
+   "category": "VisitedLevel",
+   "level": "Prod_F10",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_J20",
+   "category": "VisitedLevel",
+   "level": "Prod_J20",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J20_SW",
+   "category": "SecretWall",
+   "level": "Prod_J20",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_C04",
+   "category": "VisitedLevel",
+   "level": "Prod_C04",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_inspDrawing_SliceConductor",
+   "category": "Collectable",
+   "level": "Prod_C04",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_J04",
+   "category": "VisitedLevel",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_DarkRevival",
+   "category": "Collectable",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_PotionSynthesizer",
+   "category": "Collectable",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_P02",
+   "category": "VisitedLevel",
+   "level": "Prod_P02",
+   "region": "Peak"
+  },
+  {
+   "id": "VisitedLevel-Prod_A29",
+   "category": "VisitedLevel",
+   "level": "Prod_A29",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_inspDrawing_SturdyKnight",
+   "category": "Collectable",
+   "level": "Prod_A29",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F30",
+   "category": "VisitedLevel",
+   "level": "Prod_F30",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_Void_Glimpse",
+   "category": "VisitedLevel",
+   "level": "Prod_Void_Glimpse",
+   "region": "Voids"
+  },
+  {
+   "id": "VisitedLevel-Prod_A22",
+   "category": "VisitedLevel",
+   "level": "Prod_A22",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_MilkShake_Prod_A22",
+   "category": "Milkshake",
+   "level": "Prod_A22",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J22",
+   "category": "VisitedLevel",
+   "level": "Prod_J22",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_F26",
+   "category": "VisitedLevel",
+   "level": "Prod_F26",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F26_d40df734-d0a0-4922-b6de-a2b4c2063027",
+   "category": "Collectable",
+   "level": "Prod_F26",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_P01",
+   "category": "VisitedLevel",
+   "level": "Prod_P01",
+   "region": "Peak"
+  },
+  {
+   "id": "VisitedLevel-Prod_V04",
+   "category": "VisitedLevel",
+   "level": "Prod_V04",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V04_1323ea94-0f95-dc12-c4ce-691e45cfd61c",
+   "category": "Chest",
+   "level": "Prod_V04",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V14",
+   "category": "VisitedLevel",
+   "level": "Prod_V14",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_C05",
+   "category": "VisitedLevel",
+   "level": "Prod_C05",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_MilkShake_Prod_C05",
+   "category": "Milkshake",
+   "level": "Prod_C05",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C05_2578e0d5-3e73-7f23-c5d8-9d159d1f1efc",
+   "category": "Collectable",
+   "level": "Prod_C05",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_F02",
+   "category": "VisitedLevel",
+   "level": "Prod_F02",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F02_cc06e08a-23b9-4cc9-ab1e-e4795e51419e",
+   "category": "Chest",
+   "level": "Prod_F02",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_J10",
+   "category": "VisitedLevel",
+   "level": "Prod_J10",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_Flashback_Cinematic",
+   "category": "VisitedLevel",
+   "level": "Prod_Flashback_Cinematic",
+   "region": "Undefined"
+  },
+  {
+   "id": "VisitedLevel-Prod_V08",
+   "category": "VisitedLevel",
+   "level": "Prod_V08",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V08_cf9f4266-a082-4c53-b28e-5631cf4107a6",
+   "category": "SecretWall",
+   "level": "Prod_V08",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_unlock_Ability_Dash",
+   "category": "Collectable",
+   "level": "Prod_V08",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V08_47add804-cdd9-43b4-8d80-eabcfc5787b8",
+   "category": "Chest",
+   "level": "Prod_V08",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A13",
+   "category": "VisitedLevel",
+   "level": "Prod_A13",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A13_8cd32e0f-2a74-479d-a297-56dfe6c25191",
+   "category": "SecretWall",
+   "level": "Prod_A13",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A13_812fcb32-54e8-46e1-bbe4-ae49ba218a51",
+   "category": "Collectable",
+   "level": "Prod_A13",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J17",
+   "category": "VisitedLevel",
+   "level": "Prod_J17",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J17_d6c9bed9-2b17-44bf-9a95-289974b8e77c",
+   "category": "SecretWall",
+   "level": "Prod_J17",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J17_01cf9957-c53f-449a-aff9-2734aba809c7",
+   "category": "SecretWall",
+   "level": "Prod_J17",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_F15",
+   "category": "VisitedLevel",
+   "level": "Prod_F15",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_A14",
+   "category": "VisitedLevel",
+   "level": "Prod_A14",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A04",
+   "category": "VisitedLevel",
+   "level": "Prod_A04",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A04_2e49d1a6-9130-4674-8c14-7d3130c542ee",
+   "category": "SecretWall",
+   "level": "Prod_A04",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J07",
+   "category": "VisitedLevel",
+   "level": "Prod_J07",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J07_a115468a-2a96-4b67-9ebd-37e0be846c63",
+   "category": "Chest",
+   "level": "Prod_J07",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_J05",
+   "category": "VisitedLevel",
+   "level": "Prod_J05",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_V25",
+   "category": "VisitedLevel",
+   "level": "Prod_V25",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V25_7c0bfbc3-5d61-4b75-99b2-309cb0b6cc67",
+   "category": "SecretWall",
+   "level": "Prod_V25",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V25_85f4c4a9-2607-4e0b-a8cf-880b870b5547",
+   "category": "Chest",
+   "level": "Prod_V25",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_J12",
+   "category": "VisitedLevel",
+   "level": "Prod_J12",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_StabProjectile",
+   "category": "Collectable",
+   "level": "Prod_J12",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_J14",
+   "category": "VisitedLevel",
+   "level": "Prod_J14",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_C90",
+   "category": "VisitedLevel",
+   "level": "Prod_C90",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C90_3a191403-d505-9a9d-10ce-6be0167f13d2",
+   "category": "Chest",
+   "level": "Prod_C90",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_inspDrawing_DarkLightning",
+   "category": "Collectable",
+   "level": "Prod_C90",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_J01",
+   "category": "VisitedLevel",
+   "level": "Prod_J01",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_NaturalTwenty",
+   "category": "Collectable",
+   "level": "Prod_J01",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_A27",
+   "category": "VisitedLevel",
+   "level": "Prod_A27",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A27_2d28c2b8-aeea-4fd1-b695-0faae8b91057",
+   "category": "Chest",
+   "level": "Prod_A27",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_inspDrawing_DarkLightning",
+   "category": "Collectable",
+   "level": "Prod_A27",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F05",
+   "category": "VisitedLevel",
+   "level": "Prod_F05",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F05_6c7d0733-6830-4b23-a44d-3616b22dc154",
+   "category": "SecretWall",
+   "level": "Prod_F05",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F05_SW",
+   "category": "SecretWall",
+   "level": "Prod_F05",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_P03",
+   "category": "VisitedLevel",
+   "level": "Prod_P03",
+   "region": "Peak"
+  },
+  {
+   "id": "ps_Prod_P03_73cee3e6-0f17-4b15-817f-476c28071c80",
+   "category": "Chest",
+   "level": "Prod_P03",
+   "region": "Peak"
+  },
+  {
+   "id": "ps_MilkShake_Prod_P03",
+   "category": "Milkshake",
+   "level": "Prod_P03",
+   "region": "Peak"
+  },
+  {
+   "id": "ps_Prod_P03_LightStoneDepotFound",
+   "category": "ManualTrigger",
+   "level": "Prod_P03",
+   "region": "Peak"
+  },
+  {
+   "id": "ps_inspDrawing_ScrewJump",
+   "category": "Collectable",
+   "level": "Prod_P03",
+   "region": "Peak"
+  },
+  {
+   "id": "VisitedLevel-Prod_F14",
+   "category": "VisitedLevel",
+   "level": "Prod_F14",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_A28",
+   "category": "VisitedLevel",
+   "level": "Prod_A28",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V23",
+   "category": "VisitedLevel",
+   "level": "Prod_V23",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V23_d44d9268-c56b-d844-6dcc-181ffe04fdcb",
+   "category": "SecretWall",
+   "level": "Prod_V23",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_inspDrawing_PaintOverload",
+   "category": "Collectable",
+   "level": "Prod_V23",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_inspDrawing_PaintOverload",
+   "category": "Collectable",
+   "level": "Prod_V23",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_Flashback_Photoalbum",
+   "category": "VisitedLevel",
+   "level": "Prod_Flashback_Photoalbum",
+   "region": "Undefined"
+  },
+  {
+   "id": "VisitedLevel-Prod_F23",
+   "category": "VisitedLevel",
+   "level": "Prod_F23",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_C94",
+   "category": "VisitedLevel",
+   "level": "Prod_C94",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C94_1feb337b-de88-b0db-92e5-c948661aa51d",
+   "category": "Chest",
+   "level": "Prod_C94",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_F07",
+   "category": "VisitedLevel",
+   "level": "Prod_F07",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F07_3d5959ed-c94d-4021-8d03-2bc14c45f3c4",
+   "category": "SecretWall",
+   "level": "Prod_F07",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_Flashback_Painting",
+   "category": "VisitedLevel",
+   "level": "Prod_Flashback_Painting",
+   "region": "Undefined"
+  },
+  {
+   "id": "VisitedLevel-Prod_V17",
+   "category": "VisitedLevel",
+   "level": "Prod_V17",
+   "region": "Vaults"
+  },
+  {
+   "id": "ps_Prod_V17_c56f2c5f-46ae-4a59-bcd9-d49eb49f053c",
+   "category": "Collectable",
+   "level": "Prod_V17",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V15",
+   "category": "VisitedLevel",
+   "level": "Prod_V15",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_V09",
+   "category": "VisitedLevel",
+   "level": "Prod_V09",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A21",
+   "category": "VisitedLevel",
+   "level": "Prod_A21",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A21_8f456724-da5d-49ed-9893-bac514d704d4",
+   "category": "SecretWall",
+   "level": "Prod_A21",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A21_33c01c49-420f-4d00-a8e6-aa08d85e22cd",
+   "category": "Collectable",
+   "level": "Prod_A21",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_V28",
+   "category": "VisitedLevel",
+   "level": "Prod_V28",
+   "region": "Vaults"
+  },
+  {
+   "id": "VisitedLevel-Prod_A11",
+   "category": "VisitedLevel",
+   "level": "Prod_A11",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_Flashback_Photoshop",
+   "category": "VisitedLevel",
+   "level": "Prod_Flashback_Photoshop",
+   "region": "Undefined"
+  },
+  {
+   "id": "VisitedLevel-Prod_C02",
+   "category": "VisitedLevel",
+   "level": "Prod_C02",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C02_7b22ed75-fabf-4bc7-9a2c-1541853f84d9",
+   "category": "Collectable",
+   "level": "Prod_C02",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_F01",
+   "category": "VisitedLevel",
+   "level": "Prod_F01",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_A25",
+   "category": "VisitedLevel",
+   "level": "Prod_A25",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_A10",
+   "category": "VisitedLevel",
+   "level": "Prod_A10",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_inspDrawing_Copycat",
+   "category": "Collectable",
+   "level": "Prod_A10",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_J15",
+   "category": "VisitedLevel",
+   "level": "Prod_J15",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_Prod_J15_afc93d72-e931-433a-9e89-42a92471b430",
+   "category": "SecretWall",
+   "level": "Prod_J15",
+   "region": "Junction"
+  },
+  {
+   "id": "VisitedLevel-Prod_A12",
+   "category": "VisitedLevel",
+   "level": "Prod_A12",
+   "region": "Academy"
+  },
+  {
+   "id": "ps_Prod_A12_d58a3084-1f7e-415d-97d8-3e0b51563bd4",
+   "category": "SecretWall",
+   "level": "Prod_A12",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F09",
+   "category": "VisitedLevel",
+   "level": "Prod_F09",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_Prod_F09_ce6f8b75-d99b-4749-98b4-d8fd3fa2ed83",
+   "category": "Collectable",
+   "level": "Prod_F09",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_VD03",
+   "category": "VisitedLevel",
+   "level": "Prod_VD03",
+   "region": "Voids"
+  },
+  {
+   "id": "ps_VoidClosed_VD03",
+   "category": "ManualTrigger",
+   "level": "Prod_VD03",
+   "region": "Voids"
+  },
+  {
+   "id": "VisitedLevel-Prod_A02",
+   "category": "VisitedLevel",
+   "level": "Prod_A02",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F08",
+   "category": "VisitedLevel",
+   "level": "Prod_F08",
+   "region": "Foundry"
+  },
+  {
+   "id": "VisitedLevel-Prod_C95",
+   "category": "VisitedLevel",
+   "level": "Prod_C95",
+   "region": "Carnival"
+  },
+  {
+   "id": "ps_Prod_C95_e7442277-a767-7428-c17d-05c9b94ec518",
+   "category": "Chest",
+   "level": "Prod_C95",
+   "region": "Carnival"
+  },
+  {
+   "id": "VisitedLevel-Prod_A18",
+   "category": "VisitedLevel",
+   "level": "Prod_A18",
+   "region": "Academy"
+  },
+  {
+   "id": "VisitedLevel-Prod_F19",
+   "category": "VisitedLevel",
+   "level": "Prod_F19",
+   "region": "Foundry"
+  },
+  {
+   "id": "ps_shopItem_ArchitectsBlueprint",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_Eraser1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_HeartPiece1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_LightStonePack1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_LightStonePack2",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_LightStonePack3",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_MapIcons",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_PaintPiece1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_Potion1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_Potion2",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_Snapshot1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_Snapshot2",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_Snapshot3",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_SnapshotPack1",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_SnapshotPack2",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_shopItem_UnstableBubble",
+   "category": "ShopItem",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_Copycat_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_DarkLightning_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_DarkRevival_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_MilkshakeRemix_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_NaturalTwenty_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_PogoWave_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_PotentPotion_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_PotionSynthesizer_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_StabLifesteal_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_StabProjectile_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_TaxRefund_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  },
+  {
+   "id": "ps_inspDrawing_TeleportClone_Upgraded",
+   "category": "Upgrade",
+   "level": "Prod_J04",
+   "region": "Junction"
+  }
+ ],
+ "quests": [
+  {
+   "name": "Academy",
+   "level": "Prod_A07",
+   "region": "Academy",
+   "intel": 4
+  },
+  {
+   "name": "SnapshotGhosts",
+   "level": "Prod_A10",
+   "region": "Academy",
+   "intel": 5
+  },
+  {
+   "name": "Carnival",
+   "level": "Prod_C01",
+   "region": "Carnival",
+   "intel": 4
+  },
+  {
+   "name": "Jackie",
+   "level": "Prod_C03",
+   "region": "Carnival",
+   "intel": 6
+  },
+  {
+   "name": "Foundry",
+   "level": "Prod_F28",
+   "region": "Foundry",
+   "intel": 4
+  },
+  {
+   "name": "FindLupin",
+   "level": "Prod_J04",
+   "region": "Junction",
+   "intel": 5
+  },
+  {
+   "name": "Peak",
+   "level": "Prod_J05",
+   "region": "Junction",
+   "intel": 8
+  },
+  {
+   "name": "PhoneBooth",
+   "level": "Prod_J12",
+   "region": "Junction",
+   "intel": 5
+  },
+  {
+   "name": "ShopKeeper",
+   "level": "Prod_J04",
+   "region": "Junction",
+   "intel": 5
+  },
+  {
+   "name": "Bertram",
+   "level": "Prod_V13",
+   "region": "Vaults",
+   "intel": 4
+  },
+  {
+   "name": "Vaults",
+   "level": "Prod_V11",
+   "region": "Vaults",
+   "intel": 3
+  }
+ ]
+}

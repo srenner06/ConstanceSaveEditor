@@ -62,6 +62,30 @@
     <x:String x:Key="Progress.Collectibles.Erasers">Radierer</x:String>
     <x:String x:Key="Progress.Collectibles.LightStones">Lichtsteine</x:String>
 
+
+    <!-- Progress-Tab: Abschluss -->
+    <x:String x:Key="Progress.Missing.Title">Abschluss</x:String>
+    <x:String x:Key="Progress.Missing.Summary.Label">Gesamt</x:String>
+    <x:String x:Key="Progress.Missing.ListTitle">Fehlt noch</x:String>
+    <x:String x:Key="Progress.Missing.Empty">Nichts offen — 100% abgeschlossen.</x:String>
+    <x:String x:Key="Progress.Missing.Region.Academy">Astrale Akademie</x:String>
+    <x:String x:Key="Progress.Missing.Region.Vaults">Hallen des Vergessens</x:String>
+    <x:String x:Key="Progress.Missing.Region.Carnival">Chaotischer Karneval</x:String>
+    <x:String x:Key="Progress.Missing.Region.Foundry">Eisenhain</x:String>
+    <x:String x:Key="Progress.Missing.Region.Junction">Flickwerk-Kreuzung</x:String>
+    <x:String x:Key="Progress.Missing.Region.Peak">Malerischer Gipfel</x:String>
+    <x:String x:Key="Progress.Missing.Region.Voids">Leere</x:String>
+    <x:String x:Key="Progress.Missing.Region.Undefined">Sonstiges</x:String>
+    <x:String x:Key="Progress.Missing.Category.Chest">Truhe</x:String>
+    <x:String x:Key="Progress.Missing.Category.Milkshake">Milchshake-Herausforderung</x:String>
+    <x:String x:Key="Progress.Missing.Category.Collectable">Sammelobjekt</x:String>
+    <x:String x:Key="Progress.Missing.Category.SecretWall">Geheime Wand</x:String>
+    <x:String x:Key="Progress.Missing.Category.ManualTrigger">Besonderes</x:String>
+    <x:String x:Key="Progress.Missing.Category.VisitedLevel">Nicht besuchter Raum</x:String>
+    <x:String x:Key="Progress.Missing.Category.ShopItem">Shop-Gegenstand</x:String>
+    <x:String x:Key="Progress.Missing.Category.Upgrade">Inspirations-Upgrade</x:String>
+    <x:String x:Key="Progress.Missing.Category.Quest">Quest</x:String>
+
     <!-- Fortschritt-Tab: Inspirationen -->
     <x:String x:Key="Progress.Inspirations.Title">Inspirationen</x:String>
     <x:String x:Key="Progress.Inspirations.Summary.Label">Zusammenfassung</x:String>
